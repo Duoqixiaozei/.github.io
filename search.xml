@@ -396,4 +396,67 @@ ESP8266 智能设备</p>
         <tag>记录</tag>
       </tags>
   </entry>
+  <entry>
+    <title>【云端黑科技】用 Cloudflare Zaraz 轻松提升网站速度和用户体验！</title>
+    <url>/%E3%80%90%E4%BA%91%E7%AB%AF%E9%BB%91%E7%A7%91%E6%8A%80%E3%80%91%E7%94%A8-Cloudflare-Zaraz-%E8%BD%BB%E6%9D%BE%E6%8F%90%E5%8D%87%E7%BD%91%E7%AB%99%E9%80%9F%E5%BA%A6%E5%92%8C%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%EF%BC%81/</url>
+    <content><![CDATA[<h2 id="🚀-什么是-Cloudflare-Zaraz？"><a href="#🚀-什么是-Cloudflare-Zaraz？" class="headerlink" title="🚀 什么是 Cloudflare Zaraz？"></a>🚀 什么是 Cloudflare Zaraz？</h2><p>Cloudflare Zaraz 是 Cloudflare 提供的一项功能，通过 <strong>在云端加载和管理第三方脚本</strong>，减少对用户浏览器的性能消耗。相比传统方法，Zaraz 可以： <span id="more"></span> </p>
+<ul>
+<li>减少脚本对页面速度的影响。  </li>
+<li>提升网站的 Google PageSpeed 分数。  </li>
+<li>优化用户隐私保护，符合 GDPR 等合规要求。</li>
+</ul>
+<hr>
+<h2 id="🛠️-如何配置和使用-Cloudflare-Zaraz"><a href="#🛠️-如何配置和使用-Cloudflare-Zaraz" class="headerlink" title="🛠️ 如何配置和使用 Cloudflare Zaraz"></a>🛠️ 如何配置和使用 Cloudflare Zaraz</h2><h3 id="1️⃣-激活-Cloudflare-Zaraz"><a href="#1️⃣-激活-Cloudflare-Zaraz" class="headerlink" title="1️⃣ 激活 Cloudflare Zaraz"></a>1️⃣ 激活 Cloudflare Zaraz</h3><ol>
+<li><p><strong>登录 Cloudflare 账户</strong>。<br>访问 <a href="https://dash.cloudflare.com/">Cloudflare Dashboard</a>。  </p>
+</li>
+<li><p><strong>选择你的网站</strong>。<br>在仪表板中，点击你要优化的网站域名。  </p>
+</li>
+<li><p><strong>启用 Zaraz</strong>。  </p>
+<ul>
+<li>在左侧菜单中找到 <strong>“Zaraz”</strong> 选项。  </li>
+<li>如果没有看到，确保你的网站启用了 Cloudflare Pro 或更高版本。<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://raw.githubusercontent.com/Duoqixiaozei/img/master/Zaraz.webp" alt="Zaraz"></li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="2️⃣-添加脚本（例如-Google-Analytics）"><a href="#2️⃣-添加脚本（例如-Google-Analytics）" class="headerlink" title="2️⃣ 添加脚本（例如 Google Analytics）"></a>2️⃣ 添加脚本（例如 Google Analytics）</h3><ol>
+<li><strong>点击 “Add Tool”</strong> 按钮。<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://raw.githubusercontent.com/Duoqixiaozei/img/master/Analytics.webp" alt="Analytics"></li>
+<li>在弹出的工具列表中选择你要添加的脚本，比如 <strong>Google Analytics</strong>。  </li>
+<li>填写必要的配置参数，例如：  <ul>
+<li>Google Analytics 的追踪 ID（形如 <code>UA-XXXXXX</code>）。<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://raw.githubusercontent.com/Duoqixiaozei/img/master/gcode.webp" alt="ID"></li>
+</ul>
+</li>
+<li>点击保存，你的脚本将被自动托管到云端！<br>这样我们就不用在我们的服务器添加文件和代码，直接在Zaraz就可以用很方便</li>
+</ol>
+<hr>
+<h3 id="3️⃣-自定义规则"><a href="#3️⃣-自定义规则" class="headerlink" title="3️⃣ 自定义规则"></a>3️⃣ 自定义规则</h3><p>Zaraz 支持为不同的页面或用户设置触发条件：  </p>
+<ul>
+<li><strong>页面 URL</strong>：为特定页面加载脚本。  </li>
+<li><strong>用户操作</strong>：例如点击按钮时触发脚本。  </li>
+<li><strong>地域限制</strong>：根据访客位置加载脚本，提升隐私保护。</li>
+</ul>
+<hr>
+<h3 id="4️⃣-测试与优化"><a href="#4️⃣-测试与优化" class="headerlink" title="4️⃣ 测试与优化"></a>4️⃣ 测试与优化</h3><ol>
+<li>访问你的网站，确保新脚本正常运行。  </li>
+<li>使用 Google PageSpeed Insights 检查性能提升情况。  </li>
+<li>定期优化 Zaraz 配置，移除无用脚本。</li>
+</ol>
+<hr>
+<h2 id="🎯-为什么选择-Zaraz？"><a href="#🎯-为什么选择-Zaraz？" class="headerlink" title="🎯 为什么选择 Zaraz？"></a>🎯 为什么选择 Zaraz？</h2><ul>
+<li><strong>降低脚本对页面的影响</strong>，提升用户体验。  </li>
+<li><strong>统一管理第三方服务</strong>，无需修改代码。  </li>
+<li><strong>提升安全性</strong>，减少脚本直接访问用户数据的风险。</li>
+</ul>
+<hr>
+<h2 id="📢-分享这篇教程，解锁网站性能新境界！"><a href="#📢-分享这篇教程，解锁网站性能新境界！" class="headerlink" title="📢 分享这篇教程，解锁网站性能新境界！"></a>📢 分享这篇教程，解锁网站性能新境界！</h2><p>还在等什么？快试试 Cloudflare Zaraz，让你的网站加载如风，用户体验飞升！别忘了分享这篇教程，帮助更多人发现这个神奇的工具！ 🌟</p>
+]]></content>
+      <categories>
+        <category>cloudflare</category>
+        <category>Zaraz</category>
+      </categories>
+      <tags>
+        <tag>cloudflare</tag>
+        <tag>Zaraz</tag>
+      </tags>
+  </entry>
 </search>
