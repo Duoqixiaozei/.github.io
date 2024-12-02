@@ -199,23 +199,42 @@
   <entry>
     <title>Spotify 美化指南</title>
     <url>/spotify%E7%BE%8E%E5%8C%96/</url>
-    <content><![CDATA[<h1 id="如何使用插件实现最佳-Spotify-界面美化"><a href="#如何使用插件实现最佳-Spotify-界面美化" class="headerlink" title="如何使用插件实现最佳 Spotify 界面美化"></a>如何使用插件实现最佳 Spotify 界面美化</h1><p>首先你要安装好Spotify，什么版本都行，去官网安装就行了，这个我就不教。</p>
+    <content><![CDATA[<h1 id="Spotify-美化指南：用插件打造个性化音乐世界"><a href="#Spotify-美化指南：用插件打造个性化音乐世界" class="headerlink" title="Spotify 美化指南：用插件打造个性化音乐世界"></a>Spotify 美化指南：用插件打造个性化音乐世界</h1><p>你是否觉得默认的 Spotify 界面有些单调？是否希望它能更符合你的审美？Spotify 美化不仅可以让你的音乐播放器变得更有趣，还能让操作更高效。通过简单的设置，你可以自定义主题颜色、安装功能插件，让每次听歌都更愉悦。<br>现在就跟随本指南，一起把你的 Spotify 打造得与众不同！<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://raw.githubusercontent.com/Duoqixiaozei/img/master/%E6%95%88%E6%9E%9C%E5%9B%BE.webp" alt="美化效果"></p>
 <span id="more"></span>
-<p>按系统键-打开Windows Powershell文件夹-打Windows Powershell然后复制以下内容去安装。<br>一定是Windows Powershell而不是CMD！！！<br>这个是安装插件程序，一般安装这个他会提醒你要不要下载marketplace 输入Y就会自动下载好就不用复制下面的代码<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://raw.githubusercontent.com/Duoqixiaozei/img/master/powershell.webp" alt="powershell"></p>
-<figure class="highlight awk"><table><tbody><tr><td class="code"><pre><span class="line">iwr -useb https:<span class="regexp">//</span>raw.githubusercontent.com<span class="regexp">/spicetify/</span>spicetify-cli<span class="regexp">/master/i</span>nstall.ps1 | iex </span><br></pre></td></tr></tbody></table></figure>
-<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://raw.githubusercontent.com/Duoqixiaozei/img/master/spotify%E5%AE%89%E8%A3%85%E7%95%8C%E9%9D%A2.webp" alt="spotify安装界面"><br>这个是里面的marketplace 安装这个后你可以在spotify的marketplace里面去安装你想要的主题和功能插件。</p>
-<figure class="highlight awk"><table><tbody><tr><td class="code"><pre><span class="line">iwr -useb https:<span class="regexp">//</span>raw.githubusercontent.com<span class="regexp">/spicetify/</span>spicetify-marketplace<span class="regexp">/main/</span>resources/install.ps1 | iex </span><br></pre></td></tr></tbody></table></figure>
+
+<hr>
+<h2 id="为什么要美化-Spotify？"><a href="#为什么要美化-Spotify？" class="headerlink" title="为什么要美化 Spotify？"></a>为什么要美化 Spotify？</h2><p>Spotify 是一款功能强大的流媒体音乐播放器，但它的默认界面风格可能无法满足所有人的喜好。通过美化，你可以实现以下目标：</p>
+<ul>
+<li><strong>个性化界面</strong>：选择你喜欢的主题和配色，打造专属于你的视觉风格。</li>
+<li><strong>增强功能</strong>：通过插件扩展，如歌词同步、快捷操作等，让使用体验更上一层楼。</li>
+<li><strong>让音乐更有仪式感</strong>：听音乐不仅是耳朵的享受，更是眼睛的盛宴。</li>
+</ul>
+<p>准备好了吗？接下来开始动手！</p>
+<hr>
+<h2 id="Windows-安装指南"><a href="#Windows-安装指南" class="headerlink" title="Windows 安装指南"></a>Windows 安装指南</h2><h3 id="1-安装-Spicetify-插件程序"><a href="#1-安装-Spicetify-插件程序" class="headerlink" title="1. 安装 Spicetify 插件程序"></a>1. 安装 Spicetify 插件程序</h3><p>确保 Spotify 已安装（任意版本均可）。然后按照以下步骤安装 Spicetify，这是一款功能强大的美化工具。</p>
+<h4 id="打开-Windows-Powershell"><a href="#打开-Windows-Powershell" class="headerlink" title="打开 Windows Powershell"></a>打开 Windows Powershell</h4><ul>
+<li>按下系统键，搜索并打开 <strong>Windows Powershell</strong>（注意：必须是 Powershell，而非 CMD）。  </li>
+<li>在 Powershell 中粘贴以下命令并运行：</li>
+</ul>
+<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">iwr</span> <span class="literal">-useb</span> https://raw.githubusercontent.com/spicetify/spicetify<span class="literal">-cli</span>/master/install.ps1 | <span class="built_in">iex</span></span><br></pre></td></tr></tbody></table></figure>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://raw.githubusercontent.com/Duoqixiaozei/img/master/spotify%E5%AE%89%E8%A3%85%E7%95%8C%E9%9D%A2.webp" alt="Spotify 安装界面"></p>
+<p>安装 <strong>Marketplace</strong> 插件后，你可以在 Spotify 的 <strong>Marketplace</strong> 中自由选择并安装各种主题和功能插件。安装命令如下：</p>
+<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">iwr</span> <span class="literal">-useb</span> https://raw.githubusercontent.com/spicetify/spicetify<span class="literal">-marketplace</span>/main/resources/install.ps1 | <span class="built_in">iex</span></span><br></pre></td></tr></tbody></table></figure>
 <p>安装的时候有报错请看看你有没有挂魔法，没有的话导致下载不了，因为是从github上下载的</p>
 <h1 id="Linux和Mac安装spicetify过程"><a href="#Linux和Mac安装spicetify过程" class="headerlink" title="Linux和Mac安装spicetify过程"></a>Linux和Mac安装spicetify过程</h1><ul>
 <li>打开控制命令台复制以下内容并回车 <figure class="highlight awk"><table><tbody><tr><td class="code"><pre><span class="line">curl -fsSL https:<span class="regexp">//</span>raw.githubusercontent.com<span class="regexp">/spicetify/</span>spicetify-cli<span class="regexp">/master/i</span>nstall.sh | sh</span><br></pre></td></tr></tbody></table></figure>
 <figure class="highlight vim"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">sh</span> curl -fsSL https://raw.githubusercontent.<span class="keyword">com</span>/spicetify/spicetify-marketplace/main/resources/install.<span class="keyword">sh</span>| <span class="keyword">sh</span></span><br></pre></td></tr></tbody></table></figure>
-重新打开spotify 会多出了一个按钮 Marketplace<br>点击一下你就可以看到主题和插件了</li>
+重新打开spotify 会多出了一个按钮 Marketplace，点击一下你就可以看到主题和插件了</li>
 </ul>
+<hr>
 <h1 id="报错的问题"><a href="#报错的问题" class="headerlink" title="报错的问题"></a>报错的问题</h1><ul>
 <li>安装的时候显示错误 大概率是你网络没用魔法</li>
 <li>如果是win7以下的系统那就是你的powershell太老得去微软下一个最新的powershell</li>
 <li>安装的时候选择了CMD而不是powershell导致显示’sh’ 不是内部或外部命令，也不是可运行的程序或批处理文件。</li>
+<li>误用 CMD：安装过程中必须使用 Powershell，而不是 CMD，否则会出现类似以下的错误提示：</li>
+<li>sh 不是内部或外部命令，也不是可运行的程序或批处理文件。</li>
 </ul>
+<hr>
 ]]></content>
       <categories>
         <category>Spotify</category>
