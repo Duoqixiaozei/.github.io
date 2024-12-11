@@ -358,20 +358,65 @@
   <entry>
     <title>世界上第一个网站 World Wide Web</title>
     <url>/%E4%B8%96%E7%95%8C%E4%B8%8A%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99-World-Wide-Web/</url>
-    <content><![CDATA[<h1 id="世界上第一个网站"><a href="#世界上第一个网站" class="headerlink" title="世界上第一个网站"></a>世界上第一个网站</h1><p><a href="https://info.cern.ch/hypertext/WWW/TheProject.html">点我带你进入世界上第一个网站</a></p>
-<span id="more"></span>
-<blockquote>
-<p>Never help a child with a task at which he feels he can succeed. —- Maria Montessori</p>
-<blockquote>
-<p>当一个孩子觉得自己能成功完成一项任务时，千万别去帮他。 —- Maria Montessori</p>
-</blockquote>
-</blockquote>
+    <content><![CDATA[<h1 id="世界上第一个网站"><a href="#世界上第一个网站" class="headerlink" title="世界上第一个网站"></a>世界上第一个网站</h1><p>想知道人类历史上第一个网站是什么样的吗？点击链接了解详情：<a href="https://info.cern.ch/hypertext/WWW/TheProject.html">点我进入世界上第一个网站</a></p>
+<p>这个网站由 <strong>蒂姆·伯纳斯-李 (Tim Berners-Lee)</strong> 于 1991 年创建，是全球信息互联的起点。它不仅为现代互联网铺平了道路，还彻底改变了人类分享与获取信息的方式。</p>
+<hr>
+<h2 id="万维网的由来"><a href="#万维网的由来" class="headerlink" title="万维网的由来"></a><strong>万维网的由来</strong></h2><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>1980 年代末，蒂姆·伯纳斯-李在欧洲核子研究中心 (CERN) 工作时，发现研究人员需要一种方便的方式共享研究成果和数据。然而，当时的计算机系统互不兼容，信息交换极为困难。</p>
+<h3 id="创造历程"><a href="#创造历程" class="headerlink" title="创造历程"></a>创造历程</h3><ol>
+<li><p><strong>想法的萌芽</strong><br>1989 年，伯纳斯-李提出了一个名为“信息管理：一个建议”的项目计划，旨在通过超文本系统解决信息共享问题。他提出的三个核心技术后来成为万维网的基石：</p>
+<ul>
+<li>**超文本标记语言 (HTML)**：用于创建网页内容。</li>
+<li>**统一资源定位符 (URL)**：用于唯一标识网络资源的位置。</li>
+<li>**超文本传输协议 (HTTP)**：用于信息在网络上的传递。</li>
+</ul>
+</li>
+<li><p><strong>原型开发</strong><br>1990 年，他在 CERN 的 NeXT 计算机上开发出了第一个网页浏览器和服务器。第一个网站于 1991 年上线，提供了关于万维网的基本信息，包括如何创建网页和使用浏览器。</p>
+</li>
+<li><p><strong>公开发布</strong><br>1993 年，伯纳斯-李决定将万维网技术免费开放，推动了全球范围的快速普及。</p>
+</li>
+</ol>
+<hr>
+<h2 id="万维网带来的启发"><a href="#万维网带来的启发" class="headerlink" title="万维网带来的启发"></a><strong>万维网带来的启发</strong></h2><ul>
+<li><strong>开放与合作</strong><br>万维网的成功得益于伯纳斯-李将其技术免费开放。这种开放精神成为互联网发展的核心理念，启发了开源软件运动和全球协作项目（如维基百科、Linux）。</li>
+<li><strong>技术的包容性</strong><br>万维网的设计初衷是包容不同的计算机和系统，这种跨平台思想在今天仍是互联网发展的重要原则。</li>
+<li><strong>信息的民主化</strong><br>万维网使每个人都能轻松创建、分享和获取信息。这种信息民主化极大地推动了教育、文化和科技的发展。</li>
+<li><strong>技术的社会责任</strong><br>伯纳斯-李曾警告，人们应珍视网络的开放性，同时防止其被滥用于隐私侵犯、虚假信息传播等目的。他的呼吁提醒后来者，技术创新应始终以人为本。</li>
+</ul>
+<hr>
+<h2 id="如何创造第一个网站"><a href="#如何创造第一个网站" class="headerlink" title="如何创造第一个网站"></a><strong>如何创造第一个网站</strong></h2><h3 id="创建工具"><a href="#创建工具" class="headerlink" title="创建工具"></a>创建工具</h3><ul>
+<li>使用 HTML 编写页面内容。</li>
+<li>使用简单的文本编辑器创建文档并通过 HTTP 服务发布。</li>
+<li>URL 用于让用户在浏览器中访问资源。</li>
+</ul>
+<h3 id="实践步骤"><a href="#实践步骤" class="headerlink" title="实践步骤"></a>实践步骤</h3><ol>
+<li><strong>编写 HTML 文档</strong>：<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="tag">&lt;<span class="name">title</span>&gt;</span>我的第一个网页<span class="tag">&lt;/<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>欢迎来到万维网<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>这是我的第一个网页！<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure></li>
+<li><strong>使用浏览器打开</strong>：<br>保存为 .html 文件后，直接用浏览器打开即可查看页面内容。</li>
+<li><strong>托管到服务器</strong>:</li>
+</ol>
+<ul>
+<li><p>将文件上传到 HTTP 服务器，例如 Apache 或 Nginx。</p>
+</li>
+<li><p>确保服务器运行并配置正确，其他人就可以通过 URL 访问你的页面。</p>
+</li>
+</ul>
+<hr>
+<h2 id="延伸阅读"><a href="#延伸阅读" class="headerlink" title="延伸阅读"></a><strong>延伸阅读</strong></h2><p>如果你对万维网的历史或蒂姆·伯纳斯-李的贡献感兴趣，可以查看以下资源：</p>
+<ol>
+<li><a href="https://www.history.com/topics/inventions/the-invention-of-the-world-wide-web">万维网的历史</a></li>
+<li><a href="https://www.w3.org/People/Berners-Lee/">蒂姆·伯纳斯-李的个人网站</a></li>
+<li><a href="https://home.cern/science/computing/birth-web">CERN 对万维网诞生的介绍</a></li>
+</ol>
+<hr>
+<p>通过了解万维网的诞生，我们能够感受到科技如何改变世界，也能从中汲取启示：创新不仅需要技术，更需要开放、合作和对未来的责任感。</p>
 ]]></content>
       <categories>
         <category>记录</category>
+        <category>科技</category>
       </categories>
       <tags>
         <tag>记录</tag>
+        <tag>科技史</tag>
+        <tag>网络</tag>
       </tags>
   </entry>
   <entry>
@@ -431,45 +476,25 @@
       </tags>
   </entry>
   <entry>
-    <title>记录一下我入坑linux</title>
+    <title>记录一下我入坑Linux</title>
     <url>/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8B%E6%88%91%E5%85%A5%E5%9D%91linux/</url>
-    <content><![CDATA[<h1 id="重生之linux初体验"><a href="#重生之linux初体验" class="headerlink" title="重生之linux初体验"></a>重生之linux初体验</h1><p>你们是什么时候入坑linux呢？学习？建站？<br>我那时候是听了Linus Torvalds的故事，那时候还是个小屁孩，听了b站的一个up主讲解linux，然后对linux感兴趣。</p>
-<span id="more"></span>
-<p>自己后面买了一本《鸟哥的私房菜》学了然后就没怎么看了，可能是命令太枯燥了，没有windows 鼠标点击的便捷 也可能我单纯的不喜欢哈哈，linux那时候入坑的时候大部分都是倒在虚拟机vmware 创建虚拟机的过程，那时候去下iso确实慢，不过等了好久就下好了，到时候出一期虚拟机教程，反正没人看写着玩，第一次 搜索linux的时候大部分出现的是ubuntu，后面好奇了一下去下了一个，那时候的ubuntu桌面化没有现在的直观容易，还是有些不兼容，gnome还行，如果你是用笔记本的话我建议还是用kde桌面，kde会流畅许多，虽然没有gnome可玩性，那时候第一个命令我记得是 cd cp mkdir touch 这些<br>这些都容易理解 来到 ls -al 这些有点费劲 还有chmod 添加权限这些就有点费劲 那时候初中，初中那时候还买了台树莓派，前年卖了还能卖原价，有点好笑。<br>高中那时候遇到了一位做游戏开发的现在他还在上学应该是往开发的方向去走，这个人就牛逼了，高中还会编译linux，那时候的他确实很牛啥都会，他用小米10还是11就开始在手机用docker 编译来运行windows 在手机运行，那时候很佩服，还参加了全国比赛挺牛的这人。大学我都没怎么学这些，因为都在玩，目前linux都是最近才搞，现在搞了一台云服务器<br>装了centos 那种无图形化的 你只能看到这种<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://raw.githubusercontent.com/Duoqixiaozei/img/master/%E5%91%BD%E4%BB%A4%E7%95%8C%E9%9D%A2.webp" alt="命令界面"><br>在搞linux的时候可以折腾一天，那时候天天看虽然没什么进步天天谷歌百度，天天找，很多报错的东西，大部分是404，比如你没挂国内的镜像，大部分都是从外网下载，有些是下载不了直接提成error导致你一些软件没安装上，会导致你一系列东西没搞好，就很烦，然后去找google，那时候还流行的一个表情包  google 百度都不会 来群里就是舍近求远<br>那时候还有坑人的 rm -rf 这个命令来坑人 这个命令是来强制删除不提醒 然后删除所有文件导致你所有文件被删除，系统损坏。<br>当你以为你离linux很远的时候，大部分都是linux的设备，地铁站，服务器，安卓系统（经过google的调教和修改变成安装 还是基于linux）嵌入式，机器人，大数据，人工智能，都会有linux的出现。</p>
+    <content><![CDATA[<h1 id="重生之Linux初体验"><a href="#重生之Linux初体验" class="headerlink" title="重生之Linux初体验"></a>重生之Linux初体验</h1><p>你们是什么时候入坑Linux的？是为了学习，还是为了建站？<br>我第一次接触Linux是在很久以前，那时还是个小屁孩。听了一位B站UP主讲解Linux后，我对它产生了浓厚的兴趣。然后，我读了《鸟哥的私房菜》开始自学，但很快因为命令行的枯燥和与Windows的差异，我停了下来。Linux那时对我来说太复杂了，尤其是没有Windows那种鼠标点击的便捷操作。毕竟，谁不想轻轻松松地“点点点”就搞定一切呢？</p>
+<h2 id="初识Linux：从虚拟机到Ubuntu"><a href="#初识Linux：从虚拟机到Ubuntu" class="headerlink" title="初识Linux：从虚拟机到Ubuntu"></a>初识Linux：从虚拟机到Ubuntu</h2><p>那时，我大部分的Linux体验都是通过虚拟机（VMware）来进行的。ISO文件下载速度非常慢，等了好久才下载好。虽然虚拟机中运行Linux的体验不好，但我还是忍不住好奇，尝试了一下。第一次使用Linux时，大部分搜索结果都是关于Ubuntu的，于是我下载了它。当时的Ubuntu并不像现在那么易用和直观，桌面环境也不如现在那样完善，兼容性有点差。Gnome桌面虽然还行，但如果你用的是笔记本，KDE桌面体验会更流畅，虽然KDE的可玩性没有Gnome那么高。那时候我常觉得自己像是在给电脑做“手术”，不过，幸运的是，它并没有“死掉”——至少还运行着。</p>
+<p>我记得第一个学会的命令是 <code>cd</code>、<code>cp</code>、<code>mkdir</code>、<code>touch</code> 等基础命令。那时这些命令对我来说比较容易理解，但像 <code>ls -al</code> 和 <code>chmod</code> 等命令就让我有些困惑了。尤其是<code>chmod</code>，感觉它就像是Linux的“魔法咒语”，一不小心就能“变戏法”把文件搞丢。</p>
+<h2 id="从树莓派到云服务器"><a href="#从树莓派到云服务器" class="headerlink" title="从树莓派到云服务器"></a>从树莓派到云服务器</h2><p>在初中时，我还买了台树莓派，用它学习Linux的更多知识。几年后，我以原价将树莓派卖掉，回想起来真有点好笑，简直像是给这台“小钢炮”举办了个小型拍卖会。到了高中，我认识了一位做游戏开发的同学，他对Linux的理解让我非常佩服。那时，他居然可以在小米10（或11）上使用Docker编译和运行Windows，他的技术实力令人叹为观止。那时我心想：“哇，这人不去做黑客真是浪费天赋啊！”</p>
+<p>大学时，我没有继续深造Linux，而是沉迷于娱乐。直到最近，我才重新开始深入学习Linux，安装了一个无图形界面的CentOS服务器。这种操作全靠命令行，完全不依赖GUI界面。像下面这样：</p>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://raw.githubusercontent.com/Duoqixiaozei/img/master/%E5%91%BD%E4%BB%A4%E7%95%8C%E9%9D%A2.webp" alt="命令界面"></p>
+<p>在重新接触Linux的过程中，我发现自己经常会卡在一些错误上。很多时候是因为没有配置国内镜像源，导致下载依赖时发生404错误，甚至导致安装失败。记得当时有一个流行的表情包：“Google都不会”，意指我们寻求帮助时反而找不到正确的答案。有时候我都怀疑，Google是不是变得“任性”了，连基本的答案都不给。</p>
+<h2 id="误入“坑”：rm-rf的危险"><a href="#误入“坑”：rm-rf的危险" class="headerlink" title="误入“坑”：rm -rf的危险"></a>误入“坑”：rm -rf的危险</h2><p>在Linux中，最让我印象深刻的命令之一就是 <code>rm -rf</code>。这个命令会在不做任何提示的情况下，强制删除文件，甚至可能导致系统崩溃，丢失所有数据。很多初学者都会在不小心执行这个命令后，损失惨重。记得我第一次用它时，屏幕上的“删除成功”字样简直像是把我所有的文件都埋进了“数字大海”，那一刻，我甚至怀疑人生。</p>
+<h2 id="Linux无处不在"><a href="#Linux无处不在" class="headerlink" title="Linux无处不在"></a>Linux无处不在</h2><p>虽然很多人认为Linux离自己很远，但其实你每天接触的很多设备都在运行Linux。无论是地铁站的自助售票机，还是云服务器、Android手机（即使Google做了修改，核心仍基于Linux），甚至是嵌入式设备、机器人、大数据和人工智能领域，Linux都无处不在。你有没有想过，你每天刷的某个APP背后，可能就是Linux在“默默为你服务”？</p>
+<hr>
+<p>通过这一段学习和实践，我逐渐明白了Linux的魅力。它不仅是一个操作系统，更代表了一种开放、自由的精神。Linux的应用范围越来越广，不仅改变了我们的工作和生活方式，也为创新和科技进步提供了无穷的动力。如果你还没有尝试过Linux，强烈建议你也加入这个探索的旅程，准备好接受“黑暗中的光明”吧。</p>
 ]]></content>
       <categories>
         <category>记录一下</category>
       </categories>
       <tags>
         <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>记录之前的计划</title>
-    <url>/%E8%AE%B0%E5%BD%95%E4%B9%8B%E5%89%8D%E7%9A%84%E8%AE%A1%E5%88%92/</url>
-    <content><![CDATA[<h1 id="那些事情实现了吗？"><a href="#那些事情实现了吗？" class="headerlink" title="那些事情实现了吗？"></a>那些事情实现了吗？</h1><ul>
-<li><p><input disabled="" type="checkbox"> 
-<strong>高中时候</strong></p>
-</li>
-<li><p><input checked="" disabled="" type="checkbox"> 
-创建博客HEXO并发表文章 <a href="https://www.pw0n.xyz/">博客</a></p>
-</li>
-<li><p><input disabled="" type="checkbox"> 
-ESP8266 智能设备</p>
-</li>
-<li><p><input disabled="" type="checkbox"> 
-<strong>大学时候</strong></p>
-</li>
-<li><p><input disabled="" type="checkbox"> 
-<strong>现在</strong></p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>生活记录</category>
-      </categories>
-      <tags>
-        <tag>记录</tag>
       </tags>
   </entry>
   <entry>
