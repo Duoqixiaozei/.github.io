@@ -186,7 +186,7 @@
 <figure class="highlight livecodeserver"><table><tbody><tr><td class="code"><pre><span class="line">$ npm install hexo-<span class="built_in">filter</span>-github-emojis <span class="comment">--save</span></span><br></pre></td></tr></tbody></table></figure>
 <span id="more"></span>😀
 <p>向站点配置文件 hexo（你的博客文件夹名）_config.yml 中添加如下设置</p>
-<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">githubEmojis:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">className:</span> <span class="string">github-emoji</span></span><br><span class="line">  <span class="attr">unicode:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">styles:</span></span><br><span class="line">    <span class="attr">display:</span> <span class="string">inline</span></span><br><span class="line">    <span class="attr">vertical-align:</span> <span class="string">middle</span> <span class="comment"># Freemind适用</span></span><br><span class="line">  <span class="attr">localEmojis:</span></span><br><span class="line">  </span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight nix"><table><tbody><tr><td class="code"><pre><span class="line"><span class="params">githubEmojis:</span></span><br><span class="line">  <span class="params">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="params">className:</span> github-emoji</span><br><span class="line">  <span class="params">unicode:</span> <span class="literal">true</span></span><br><span class="line">  <span class="params">styles:</span></span><br><span class="line">    <span class="params">display:</span> inline</span><br><span class="line">    <span class="params">vertical-align:</span> middle <span class="comment"># Freemind适用</span></span><br><span class="line">  <span class="params">localEmojis:</span></span><br><span class="line">  </span><br></pre></td></tr></tbody></table></figure>
 <p>保存好后你可以再你的文章尝试表情<br>在 emoji-cheat-sheet 中找到你想要的表情，然后点击即可复制。使用方法和 GitHub 一样，比如你想发一个笑脸 😄 直接输入笑脸对应的 emoji 编码 :smile： 就可以。<br>🤤😵‍💫🧐🤓👨‍🎤😏🦧🛗⏫</p>
 ]]></content>
       <categories>
@@ -243,6 +243,69 @@
         <tag>Spotify</tag>
         <tag>美化</tag>
         <tag>插件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【云端黑科技】用 Cloudflare Zaraz 轻松提升网站速度和用户体验！</title>
+    <url>/%E3%80%90%E4%BA%91%E7%AB%AF%E9%BB%91%E7%A7%91%E6%8A%80%E3%80%91%E7%94%A8-Cloudflare-Zaraz-%E8%BD%BB%E6%9D%BE%E6%8F%90%E5%8D%87%E7%BD%91%E7%AB%99%E9%80%9F%E5%BA%A6%E5%92%8C%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%EF%BC%81/</url>
+    <content><![CDATA[<h2 id="🚀-什么是-Cloudflare-Zaraz？"><a href="#🚀-什么是-Cloudflare-Zaraz？" class="headerlink" title="🚀 什么是 Cloudflare Zaraz？"></a>🚀 什么是 Cloudflare Zaraz？</h2><p>Cloudflare Zaraz 是 Cloudflare 提供的一项功能，通过 <strong>在云端加载和管理第三方脚本</strong>，减少对用户浏览器的性能消耗。相比传统方法，Zaraz 可以： <span id="more"></span> </p>
+<ul>
+<li>减少脚本对页面速度的影响。  </li>
+<li>提升网站的 Google PageSpeed 分数。  </li>
+<li>优化用户隐私保护，符合 GDPR 等合规要求。</li>
+</ul>
+<hr>
+<h2 id="🛠️-如何配置和使用-Cloudflare-Zaraz"><a href="#🛠️-如何配置和使用-Cloudflare-Zaraz" class="headerlink" title="🛠️ 如何配置和使用 Cloudflare Zaraz"></a>🛠️ 如何配置和使用 Cloudflare Zaraz</h2><h3 id="1️⃣-激活-Cloudflare-Zaraz"><a href="#1️⃣-激活-Cloudflare-Zaraz" class="headerlink" title="1️⃣ 激活 Cloudflare Zaraz"></a>1️⃣ 激活 Cloudflare Zaraz</h3><ol>
+<li><p><strong>登录 Cloudflare 账户</strong>。<br>访问 <a href="https://dash.cloudflare.com/">Cloudflare Dashboard</a>。  </p>
+</li>
+<li><p><strong>选择你的网站</strong>。<br>在仪表板中，点击你要优化的网站域名。  </p>
+</li>
+<li><p><strong>启用 Zaraz</strong>。  </p>
+<ul>
+<li>在左侧菜单中找到 <strong>“Zaraz”</strong> 选项。  </li>
+<li>如果没有看到，确保你的网站启用了 Cloudflare Pro 或更高版本。<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/Zaraz.webp" alt="Zaraz"></li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="2️⃣-添加脚本（例如-Google-Analytics）"><a href="#2️⃣-添加脚本（例如-Google-Analytics）" class="headerlink" title="2️⃣ 添加脚本（例如 Google Analytics）"></a>2️⃣ 添加脚本（例如 Google Analytics）</h3><ol>
+<li><strong>点击 “Add Tool”</strong> 按钮。<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/Analytics.webp" alt="Analytics"></li>
+<li>在弹出的工具列表中选择你要添加的脚本，比如 <strong>Google Analytics</strong>。  </li>
+<li>填写必要的配置参数，例如：  <ul>
+<li>Google Analytics 的追踪 ID（形如 <code>UA-XXXXXX</code>）。<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/gcode.webp" alt="ID"></li>
+</ul>
+</li>
+<li>点击保存，你的脚本将被自动托管到云端！<br>这样我们就不用在我们的服务器添加文件和代码，直接在Zaraz就可以用很方便</li>
+</ol>
+<hr>
+<h3 id="3️⃣-自定义规则"><a href="#3️⃣-自定义规则" class="headerlink" title="3️⃣ 自定义规则"></a>3️⃣ 自定义规则</h3><p>Zaraz 支持为不同的页面或用户设置触发条件：  </p>
+<ul>
+<li><strong>页面 URL</strong>：为特定页面加载脚本。  </li>
+<li><strong>用户操作</strong>：例如点击按钮时触发脚本。  </li>
+<li><strong>地域限制</strong>：根据访客位置加载脚本，提升隐私保护。</li>
+</ul>
+<hr>
+<h3 id="4️⃣-测试与优化"><a href="#4️⃣-测试与优化" class="headerlink" title="4️⃣ 测试与优化"></a>4️⃣ 测试与优化</h3><ol>
+<li>访问你的网站，确保新脚本正常运行。  </li>
+<li>使用 Google PageSpeed Insights 检查性能提升情况。  </li>
+<li>定期优化 Zaraz 配置，移除无用脚本。</li>
+</ol>
+<hr>
+<h2 id="🎯-为什么选择-Zaraz？"><a href="#🎯-为什么选择-Zaraz？" class="headerlink" title="🎯 为什么选择 Zaraz？"></a>🎯 为什么选择 Zaraz？</h2><ul>
+<li><strong>降低脚本对页面的影响</strong>，提升用户体验。  </li>
+<li><strong>统一管理第三方服务</strong>，无需修改代码。  </li>
+<li><strong>提升安全性</strong>，减少脚本直接访问用户数据的风险。</li>
+</ul>
+<hr>
+<h2 id="📢-分享这篇教程，解锁网站性能新境界！"><a href="#📢-分享这篇教程，解锁网站性能新境界！" class="headerlink" title="📢 分享这篇教程，解锁网站性能新境界！"></a>📢 分享这篇教程，解锁网站性能新境界！</h2><p>还在等什么？快试试 Cloudflare Zaraz，让你的网站加载如风，用户体验飞升！别忘了分享这篇教程，帮助更多人发现这个神奇的工具！ 🌟</p>
+]]></content>
+      <categories>
+        <category>cloudflare</category>
+        <category>Zaraz</category>
+      </categories>
+      <tags>
+        <tag>cloudflare</tag>
+        <tag>Zaraz</tag>
       </tags>
   </entry>
   <entry>
@@ -441,126 +504,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>这首歌的歌词让人震撼！《大石碎胸口》你听过吗？</title>
-    <url>/%E6%AD%8C%E6%9B%B2%E6%8E%A8%E8%8D%90%E3%80%8A%E5%A4%A7%E7%9F%B3%E7%A2%8E%E8%83%B8%E5%8F%A3%E3%80%8B/</url>
-    <content><![CDATA[<h1 id="🎶-这首歌的歌词让人震撼！《大石碎胸口》你听过吗？"><a href="#🎶-这首歌的歌词让人震撼！《大石碎胸口》你听过吗？" class="headerlink" title="🎶 这首歌的歌词让人震撼！《大石碎胸口》你听过吗？"></a>🎶 这首歌的歌词让人震撼！《大石碎胸口》你听过吗？</h1><p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/%E4%B8%87%E8%83%BD%E9%9D%92%E5%B9%B4%E6%97%85%E5%BA%97%E5%AD%90.webp" alt="万能青年旅店专辑封面"></p>
-<span id="more"></span>
-<p>你有过那种听一首歌，突然被歌词震撼到的感觉吗？今天我就想给大家推荐一首让我久久不能忘怀的歌——<strong>《大石碎胸口》</strong>，它出自万能青年旅店的同名专辑。这首歌至今已经发行13年，但每次听都能给我全新的感触，你一定不能错过。</p>
-<h2 id="🎧-为什么这首歌让我停不下来？"><a href="#🎧-为什么这首歌让我停不下来？" class="headerlink" title="🎧 为什么这首歌让我停不下来？"></a>🎧 为什么这首歌让我停不下来？</h2><p><strong>《大石碎胸口》</strong>这首歌的旋律和歌词有种让人无法抗拒的魅力。可能你第一次听，会觉得它和你之前听过的歌曲有点不同——它不是那种一听就让人愉快的旋律，而是给你一种<strong>沉重却不失力量的感觉</strong>。这首歌的旋律融合了<strong>摇滚、民谣与实验音乐</strong>，每次的编曲都能在耳朵里回响不已。</p>
-<p>在听这首歌的那一刻，你一定会感到一种莫名的压迫感，仿佛有一块石头压在胸口——这种感觉就是歌名的来源，而它的深意也远不止于此。</p>
-<h2 id="🎤-歌词究竟有多震撼？"><a href="#🎤-歌词究竟有多震撼？" class="headerlink" title="🎤 歌词究竟有多震撼？"></a>🎤 歌词究竟有多震撼？</h2><p>当你开始认真听歌词时，你会发现它的深度远超一般的歌。歌名里的“大石”和“胸口”，其实是两种象征：<strong>大石代表着生活中的压力、困境，而胸口则是承载这些痛苦的地方</strong>。歌词中的每一句话，都像是生活中的真实写照，讲述了普通人在社会变革中的迷茫、挣扎和不屈。</p>
-<p>歌词里提到的“<strong>黑暗好像一颗巨石按在胸口</strong>”，真的是让我每次都想停下来思考：生活中的那些“石头”，是不是我们每个人都曾背负过呢？</p>
-<p>这首歌也让你看到一个不为人知的世界——它不仅讲述个人的心境，也隐约透露着社会的巨大压力。歌词里有很多值得琢磨的地方，你可能听了好几遍，才会慢慢发现其中的深意。</p>
-<h2 id="🎶-音乐的独特魅力"><a href="#🎶-音乐的独特魅力" class="headerlink" title="🎶 音乐的独特魅力"></a>🎶 音乐的独特魅力</h2><p>这首歌的编曲和演奏真的是无可挑剔。它不仅仅是一首摇滚歌，更多的是一种情感的释放。每一个乐器的使用都非常精巧，从小号、小提琴到电吉他、贝斯，这些音符交织在一起，构成了歌的层次感和情感张力。特别是在高潮部分，音乐仿佛要把你拉进一个<strong>深邃的世界</strong>，让你与歌词中的情感产生共鸣。</p>
-<h2 id="💭-歌词摘选"><a href="#💭-歌词摘选" class="headerlink" title="💭 歌词摘选"></a>💭 歌词摘选</h2><blockquote>
-<p>渔王还想 继续做渔王<br>而海港已经 不知去向<br>此刻他醉倒 在洗浴中心<br>没有潮汐的梦<br>胸口已暮色苍茫</p>
-</blockquote>
-<blockquote>
-<p>肥胖的城市 递给他一个<br>传统的方法 来克制恐慌<br>卖掉武器 风暴喉咙<br>换取饮食<br>背叛能让你获得自由</p>
-</blockquote>
-<blockquote>
-<p>停电之后 暂时摆脱了<br>坚硬的时刻 倒转的河<br>肥胖的城市<br>驱赶着所有 拒绝沉没的人<br>那首疯狂的歌又响起</p>
-</blockquote>
-<blockquote>
-<p>电灯熄灭 物换星移 泥牛入海<br>黑暗好像 一颗巨石 按在胸口<br>独脚大盗 百万富翁 摸爬滚打<br>黑暗好像 一颗巨石 按在胸口</p>
-</blockquote>
-<h2 id="📢-总结：你敢尝试这份沉重与力量的结合吗？"><a href="#📢-总结：你敢尝试这份沉重与力量的结合吗？" class="headerlink" title="📢 总结：你敢尝试这份沉重与力量的结合吗？"></a>📢 总结：你敢尝试这份沉重与力量的结合吗？</h2><p>如果你还没有听过 <strong>《大石碎胸口》</strong>，真的是时候去听一听了。它不仅仅是一首歌，它是<strong>关于生活的深刻反思</strong>，是<strong>对抗压力和困境的力量</strong>。每次听完，你会感觉到一种被深深触动的感觉，它的歌词和旋律会在你心中留下印记。</p>
-<p>所以，<strong>你准备好被这首歌震撼了吗？</strong> 如果你也像我一样，喜欢那种能带来深刻思考的音乐，那么这首歌你一定不能错过！🌟</p>
-]]></content>
-      <categories>
-        <category>歌曲推荐</category>
-      </categories>
-      <tags>
-        <tag>歌曲推荐</tag>
-        <tag>万能青年旅店</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>记录一下我入坑Linux</title>
-    <url>/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8B%E6%88%91%E5%85%A5%E5%9D%91linux/</url>
-    <content><![CDATA[<h1 id="重生之Linux初体验"><a href="#重生之Linux初体验" class="headerlink" title="重生之Linux初体验"></a>重生之Linux初体验</h1><p>你们是什么时候入坑Linux的？是为了学习，还是为了建站？<br>我第一次接触Linux是在很久以前，那时还是个小屁孩。听了一位B站UP主讲解Linux后，我对它产生了浓厚的兴趣。然后，我读了《鸟哥的私房菜》开始自学，但很快因为命令行的枯燥和与Windows的差异，我停了下来。Linux那时对我来说太复杂了，尤其是没有Windows那种鼠标点击的便捷操作。毕竟，谁不想轻轻松松地“点点点”就搞定一切呢？</p>
-<h2 id="初识Linux：从虚拟机到Ubuntu"><a href="#初识Linux：从虚拟机到Ubuntu" class="headerlink" title="初识Linux：从虚拟机到Ubuntu"></a>初识Linux：从虚拟机到Ubuntu</h2><p>那时，我大部分的Linux体验都是通过虚拟机（VMware）来进行的。ISO文件下载速度非常慢，等了好久才下载好。虽然虚拟机中运行Linux的体验不好，但我还是忍不住好奇，尝试了一下。第一次使用Linux时，大部分搜索结果都是关于Ubuntu的，于是我下载了它。当时的Ubuntu并不像现在那么易用和直观，桌面环境也不如现在那样完善，兼容性有点差。Gnome桌面虽然还行，但如果你用的是笔记本，KDE桌面体验会更流畅，虽然KDE的可玩性没有Gnome那么高。那时候我常觉得自己像是在给电脑做“手术”，不过，幸运的是，它并没有“死掉”——至少还运行着。</p>
-<p>我记得第一个学会的命令是 <code>cd</code>、<code>cp</code>、<code>mkdir</code>、<code>touch</code> 等基础命令。那时这些命令对我来说比较容易理解，但像 <code>ls -al</code> 和 <code>chmod</code> 等命令就让我有些困惑了。尤其是<code>chmod</code>，感觉它就像是Linux的“魔法咒语”，一不小心就能“变戏法”把文件搞丢。</p>
-<h2 id="从树莓派到云服务器"><a href="#从树莓派到云服务器" class="headerlink" title="从树莓派到云服务器"></a>从树莓派到云服务器</h2><p>在初中时，我还买了台树莓派，用它学习Linux的更多知识。几年后，我以原价将树莓派卖掉，回想起来真有点好笑，简直像是给这台“小钢炮”举办了个小型拍卖会。到了高中，我认识了一位做游戏开发的同学，他对Linux的理解让我非常佩服。那时，他居然可以在小米10（或11）上使用Docker编译和运行Windows，他的技术实力令人叹为观止。那时我心想：“哇，这人不去做黑客真是浪费天赋啊！”</p>
-<p>大学时，我没有继续深造Linux，而是沉迷于娱乐。直到最近，我才重新开始深入学习Linux，安装了一个无图形界面的CentOS服务器。这种操作全靠命令行，完全不依赖GUI界面。像下面这样：</p>
-<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/%E5%91%BD%E4%BB%A4%E7%95%8C%E9%9D%A2.webp" alt="命令界面"></p>
-<p>在重新接触Linux的过程中，我发现自己经常会卡在一些错误上。很多时候是因为没有配置国内镜像源，导致下载依赖时发生404错误，甚至导致安装失败。记得当时有一个流行的表情包：“Google都不会”，意指我们寻求帮助时反而找不到正确的答案。有时候我都怀疑，Google是不是变得“任性”了，连基本的答案都不给。</p>
-<h2 id="误入“坑”：rm-rf的危险"><a href="#误入“坑”：rm-rf的危险" class="headerlink" title="误入“坑”：rm -rf的危险"></a>误入“坑”：rm -rf的危险</h2><p>在Linux中，最让我印象深刻的命令之一就是 <code>rm -rf</code>。这个命令会在不做任何提示的情况下，强制删除文件，甚至可能导致系统崩溃，丢失所有数据。很多初学者都会在不小心执行这个命令后，损失惨重。记得我第一次用它时，屏幕上的“删除成功”字样简直像是把我所有的文件都埋进了“数字大海”，那一刻，我甚至怀疑人生。</p>
-<h2 id="Linux无处不在"><a href="#Linux无处不在" class="headerlink" title="Linux无处不在"></a>Linux无处不在</h2><p>虽然很多人认为Linux离自己很远，但其实你每天接触的很多设备都在运行Linux。无论是地铁站的自助售票机，还是云服务器、Android手机（即使Google做了修改，核心仍基于Linux），甚至是嵌入式设备、机器人、大数据和人工智能领域，Linux都无处不在。你有没有想过，你每天刷的某个APP背后，可能就是Linux在“默默为你服务”？</p>
-<hr>
-<p>通过这一段学习和实践，我逐渐明白了Linux的魅力。它不仅是一个操作系统，更代表了一种开放、自由的精神。Linux的应用范围越来越广，不仅改变了我们的工作和生活方式，也为创新和科技进步提供了无穷的动力。如果你还没有尝试过Linux，强烈建议你也加入这个探索的旅程，准备好接受“黑暗中的光明”吧。</p>
-]]></content>
-      <categories>
-        <category>记录一下</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【云端黑科技】用 Cloudflare Zaraz 轻松提升网站速度和用户体验！</title>
-    <url>/%E3%80%90%E4%BA%91%E7%AB%AF%E9%BB%91%E7%A7%91%E6%8A%80%E3%80%91%E7%94%A8-Cloudflare-Zaraz-%E8%BD%BB%E6%9D%BE%E6%8F%90%E5%8D%87%E7%BD%91%E7%AB%99%E9%80%9F%E5%BA%A6%E5%92%8C%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%EF%BC%81/</url>
-    <content><![CDATA[<h2 id="🚀-什么是-Cloudflare-Zaraz？"><a href="#🚀-什么是-Cloudflare-Zaraz？" class="headerlink" title="🚀 什么是 Cloudflare Zaraz？"></a>🚀 什么是 Cloudflare Zaraz？</h2><p>Cloudflare Zaraz 是 Cloudflare 提供的一项功能，通过 <strong>在云端加载和管理第三方脚本</strong>，减少对用户浏览器的性能消耗。相比传统方法，Zaraz 可以： <span id="more"></span> </p>
-<ul>
-<li>减少脚本对页面速度的影响。  </li>
-<li>提升网站的 Google PageSpeed 分数。  </li>
-<li>优化用户隐私保护，符合 GDPR 等合规要求。</li>
-</ul>
-<hr>
-<h2 id="🛠️-如何配置和使用-Cloudflare-Zaraz"><a href="#🛠️-如何配置和使用-Cloudflare-Zaraz" class="headerlink" title="🛠️ 如何配置和使用 Cloudflare Zaraz"></a>🛠️ 如何配置和使用 Cloudflare Zaraz</h2><h3 id="1️⃣-激活-Cloudflare-Zaraz"><a href="#1️⃣-激活-Cloudflare-Zaraz" class="headerlink" title="1️⃣ 激活 Cloudflare Zaraz"></a>1️⃣ 激活 Cloudflare Zaraz</h3><ol>
-<li><p><strong>登录 Cloudflare 账户</strong>。<br>访问 <a href="https://dash.cloudflare.com/">Cloudflare Dashboard</a>。  </p>
-</li>
-<li><p><strong>选择你的网站</strong>。<br>在仪表板中，点击你要优化的网站域名。  </p>
-</li>
-<li><p><strong>启用 Zaraz</strong>。  </p>
-<ul>
-<li>在左侧菜单中找到 <strong>“Zaraz”</strong> 选项。  </li>
-<li>如果没有看到，确保你的网站启用了 Cloudflare Pro 或更高版本。<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/Zaraz.webp" alt="Zaraz"></li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="2️⃣-添加脚本（例如-Google-Analytics）"><a href="#2️⃣-添加脚本（例如-Google-Analytics）" class="headerlink" title="2️⃣ 添加脚本（例如 Google Analytics）"></a>2️⃣ 添加脚本（例如 Google Analytics）</h3><ol>
-<li><strong>点击 “Add Tool”</strong> 按钮。<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/Analytics.webp" alt="Analytics"></li>
-<li>在弹出的工具列表中选择你要添加的脚本，比如 <strong>Google Analytics</strong>。  </li>
-<li>填写必要的配置参数，例如：  <ul>
-<li>Google Analytics 的追踪 ID（形如 <code>UA-XXXXXX</code>）。<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/gcode.webp" alt="ID"></li>
-</ul>
-</li>
-<li>点击保存，你的脚本将被自动托管到云端！<br>这样我们就不用在我们的服务器添加文件和代码，直接在Zaraz就可以用很方便</li>
-</ol>
-<hr>
-<h3 id="3️⃣-自定义规则"><a href="#3️⃣-自定义规则" class="headerlink" title="3️⃣ 自定义规则"></a>3️⃣ 自定义规则</h3><p>Zaraz 支持为不同的页面或用户设置触发条件：  </p>
-<ul>
-<li><strong>页面 URL</strong>：为特定页面加载脚本。  </li>
-<li><strong>用户操作</strong>：例如点击按钮时触发脚本。  </li>
-<li><strong>地域限制</strong>：根据访客位置加载脚本，提升隐私保护。</li>
-</ul>
-<hr>
-<h3 id="4️⃣-测试与优化"><a href="#4️⃣-测试与优化" class="headerlink" title="4️⃣ 测试与优化"></a>4️⃣ 测试与优化</h3><ol>
-<li>访问你的网站，确保新脚本正常运行。  </li>
-<li>使用 Google PageSpeed Insights 检查性能提升情况。  </li>
-<li>定期优化 Zaraz 配置，移除无用脚本。</li>
-</ol>
-<hr>
-<h2 id="🎯-为什么选择-Zaraz？"><a href="#🎯-为什么选择-Zaraz？" class="headerlink" title="🎯 为什么选择 Zaraz？"></a>🎯 为什么选择 Zaraz？</h2><ul>
-<li><strong>降低脚本对页面的影响</strong>，提升用户体验。  </li>
-<li><strong>统一管理第三方服务</strong>，无需修改代码。  </li>
-<li><strong>提升安全性</strong>，减少脚本直接访问用户数据的风险。</li>
-</ul>
-<hr>
-<h2 id="📢-分享这篇教程，解锁网站性能新境界！"><a href="#📢-分享这篇教程，解锁网站性能新境界！" class="headerlink" title="📢 分享这篇教程，解锁网站性能新境界！"></a>📢 分享这篇教程，解锁网站性能新境界！</h2><p>还在等什么？快试试 Cloudflare Zaraz，让你的网站加载如风，用户体验飞升！别忘了分享这篇教程，帮助更多人发现这个神奇的工具！ 🌟</p>
-]]></content>
-      <categories>
-        <category>cloudflare</category>
-        <category>Zaraz</category>
-      </categories>
-      <tags>
-        <tag>cloudflare</tag>
-        <tag>Zaraz</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>曾经的百元机之王：酷派手机为何从辉煌走向低谷?</title>
     <url>/%E6%9B%BE%E7%BB%8F%E7%9A%84%E7%99%BE%E5%85%83%E6%9C%BA%E4%B9%8B%E7%8E%8B%EF%BC%9A%E9%85%B7%E6%B4%BE%E6%89%8B%E6%9C%BA%E4%B8%BA%E4%BD%95%E4%BB%8E%E8%BE%89%E7%85%8C%E8%B5%B0%E5%90%91%E4%BD%8E%E8%B0%B7/</url>
     <content><![CDATA[<h1 id="从巅峰到低谷：酷派手机的财务困局与市场份额分析"><a href="#从巅峰到低谷：酷派手机的财务困局与市场份额分析" class="headerlink" title="从巅峰到低谷：酷派手机的财务困局与市场份额分析"></a>从巅峰到低谷：酷派手机的财务困局与市场份额分析</h1><p>酷派（Coolpad），曾是国内智能手机市场的重要玩家之一，凭借其高性价比的百元机产品在早期吸引了大量消费者。然而，随着市场竞争的加剧、技术创新滞后以及战略失误，酷派的市场份额逐渐萎缩，最终陷入财务困境。本文将从酷派的辉煌历史、市场份额变化、财务状况和转型困局等多个方面进行详细分析。</p>
@@ -694,6 +637,91 @@
         <tag>财务分析</tag>
         <tag>手机行业衰退</tag>
         <tag>品牌失落</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>这首歌的歌词让人震撼！《大石碎胸口》你听过吗？</title>
+    <url>/%E6%AD%8C%E6%9B%B2%E6%8E%A8%E8%8D%90%E3%80%8A%E5%A4%A7%E7%9F%B3%E7%A2%8E%E8%83%B8%E5%8F%A3%E3%80%8B/</url>
+    <content><![CDATA[<h1 id="🎶-这首歌的歌词让人震撼！《大石碎胸口》你听过吗？"><a href="#🎶-这首歌的歌词让人震撼！《大石碎胸口》你听过吗？" class="headerlink" title="🎶 这首歌的歌词让人震撼！《大石碎胸口》你听过吗？"></a>🎶 这首歌的歌词让人震撼！《大石碎胸口》你听过吗？</h1><p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/%E4%B8%87%E8%83%BD%E9%9D%92%E5%B9%B4%E6%97%85%E5%BA%97%E5%AD%90.webp" alt="万能青年旅店专辑封面"></p>
+<span id="more"></span>
+<p>你有过那种听一首歌，突然被歌词震撼到的感觉吗？今天我就想给大家推荐一首让我久久不能忘怀的歌——<strong>《大石碎胸口》</strong>，它出自万能青年旅店的同名专辑。这首歌至今已经发行13年，但每次听都能给我全新的感触，你一定不能错过。</p>
+<h2 id="🎧-为什么这首歌让我停不下来？"><a href="#🎧-为什么这首歌让我停不下来？" class="headerlink" title="🎧 为什么这首歌让我停不下来？"></a>🎧 为什么这首歌让我停不下来？</h2><p><strong>《大石碎胸口》</strong>这首歌的旋律和歌词有种让人无法抗拒的魅力。可能你第一次听，会觉得它和你之前听过的歌曲有点不同——它不是那种一听就让人愉快的旋律，而是给你一种<strong>沉重却不失力量的感觉</strong>。这首歌的旋律融合了<strong>摇滚、民谣与实验音乐</strong>，每次的编曲都能在耳朵里回响不已。</p>
+<p>在听这首歌的那一刻，你一定会感到一种莫名的压迫感，仿佛有一块石头压在胸口——这种感觉就是歌名的来源，而它的深意也远不止于此。</p>
+<h2 id="🎤-歌词究竟有多震撼？"><a href="#🎤-歌词究竟有多震撼？" class="headerlink" title="🎤 歌词究竟有多震撼？"></a>🎤 歌词究竟有多震撼？</h2><p>当你开始认真听歌词时，你会发现它的深度远超一般的歌。歌名里的“大石”和“胸口”，其实是两种象征：<strong>大石代表着生活中的压力、困境，而胸口则是承载这些痛苦的地方</strong>。歌词中的每一句话，都像是生活中的真实写照，讲述了普通人在社会变革中的迷茫、挣扎和不屈。</p>
+<p>歌词里提到的“<strong>黑暗好像一颗巨石按在胸口</strong>”，真的是让我每次都想停下来思考：生活中的那些“石头”，是不是我们每个人都曾背负过呢？</p>
+<p>这首歌也让你看到一个不为人知的世界——它不仅讲述个人的心境，也隐约透露着社会的巨大压力。歌词里有很多值得琢磨的地方，你可能听了好几遍，才会慢慢发现其中的深意。</p>
+<h2 id="🎶-音乐的独特魅力"><a href="#🎶-音乐的独特魅力" class="headerlink" title="🎶 音乐的独特魅力"></a>🎶 音乐的独特魅力</h2><p>这首歌的编曲和演奏真的是无可挑剔。它不仅仅是一首摇滚歌，更多的是一种情感的释放。每一个乐器的使用都非常精巧，从小号、小提琴到电吉他、贝斯，这些音符交织在一起，构成了歌的层次感和情感张力。特别是在高潮部分，音乐仿佛要把你拉进一个<strong>深邃的世界</strong>，让你与歌词中的情感产生共鸣。</p>
+<h2 id="💭-歌词摘选"><a href="#💭-歌词摘选" class="headerlink" title="💭 歌词摘选"></a>💭 歌词摘选</h2><blockquote>
+<p>渔王还想 继续做渔王<br>而海港已经 不知去向<br>此刻他醉倒 在洗浴中心<br>没有潮汐的梦<br>胸口已暮色苍茫</p>
+</blockquote>
+<blockquote>
+<p>肥胖的城市 递给他一个<br>传统的方法 来克制恐慌<br>卖掉武器 风暴喉咙<br>换取饮食<br>背叛能让你获得自由</p>
+</blockquote>
+<blockquote>
+<p>停电之后 暂时摆脱了<br>坚硬的时刻 倒转的河<br>肥胖的城市<br>驱赶着所有 拒绝沉没的人<br>那首疯狂的歌又响起</p>
+</blockquote>
+<blockquote>
+<p>电灯熄灭 物换星移 泥牛入海<br>黑暗好像 一颗巨石 按在胸口<br>独脚大盗 百万富翁 摸爬滚打<br>黑暗好像 一颗巨石 按在胸口</p>
+</blockquote>
+<h2 id="📢-总结：你敢尝试这份沉重与力量的结合吗？"><a href="#📢-总结：你敢尝试这份沉重与力量的结合吗？" class="headerlink" title="📢 总结：你敢尝试这份沉重与力量的结合吗？"></a>📢 总结：你敢尝试这份沉重与力量的结合吗？</h2><p>如果你还没有听过 <strong>《大石碎胸口》</strong>，真的是时候去听一听了。它不仅仅是一首歌，它是<strong>关于生活的深刻反思</strong>，是<strong>对抗压力和困境的力量</strong>。每次听完，你会感觉到一种被深深触动的感觉，它的歌词和旋律会在你心中留下印记。</p>
+<p>所以，<strong>你准备好被这首歌震撼了吗？</strong> 如果你也像我一样，喜欢那种能带来深刻思考的音乐，那么这首歌你一定不能错过！🌟</p>
+]]></content>
+      <categories>
+        <category>歌曲推荐</category>
+      </categories>
+      <tags>
+        <tag>歌曲推荐</tag>
+        <tag>万能青年旅店</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记录一下我入坑Linux</title>
+    <url>/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8B%E6%88%91%E5%85%A5%E5%9D%91linux/</url>
+    <content><![CDATA[<h1 id="重生之Linux初体验"><a href="#重生之Linux初体验" class="headerlink" title="重生之Linux初体验"></a>重生之Linux初体验</h1><p>你们是什么时候入坑Linux的？是为了学习，还是为了建站？<br>我第一次接触Linux是在很久以前，那时还是个小屁孩。听了一位B站UP主讲解Linux后，我对它产生了浓厚的兴趣。然后，我读了《鸟哥的私房菜》开始自学，但很快因为命令行的枯燥和与Windows的差异，我停了下来。Linux那时对我来说太复杂了，尤其是没有Windows那种鼠标点击的便捷操作。毕竟，谁不想轻轻松松地“点点点”就搞定一切呢？</p>
+<h2 id="初识Linux：从虚拟机到Ubuntu"><a href="#初识Linux：从虚拟机到Ubuntu" class="headerlink" title="初识Linux：从虚拟机到Ubuntu"></a>初识Linux：从虚拟机到Ubuntu</h2><p>那时，我大部分的Linux体验都是通过虚拟机（VMware）来进行的。ISO文件下载速度非常慢，等了好久才下载好。虽然虚拟机中运行Linux的体验不好，但我还是忍不住好奇，尝试了一下。第一次使用Linux时，大部分搜索结果都是关于Ubuntu的，于是我下载了它。当时的Ubuntu并不像现在那么易用和直观，桌面环境也不如现在那样完善，兼容性有点差。Gnome桌面虽然还行，但如果你用的是笔记本，KDE桌面体验会更流畅，虽然KDE的可玩性没有Gnome那么高。那时候我常觉得自己像是在给电脑做“手术”，不过，幸运的是，它并没有“死掉”——至少还运行着。</p>
+<p>我记得第一个学会的命令是 <code>cd</code>、<code>cp</code>、<code>mkdir</code>、<code>touch</code> 等基础命令。那时这些命令对我来说比较容易理解，但像 <code>ls -al</code> 和 <code>chmod</code> 等命令就让我有些困惑了。尤其是<code>chmod</code>，感觉它就像是Linux的“魔法咒语”，一不小心就能“变戏法”把文件搞丢。</p>
+<h2 id="从树莓派到云服务器"><a href="#从树莓派到云服务器" class="headerlink" title="从树莓派到云服务器"></a>从树莓派到云服务器</h2><p>在初中时，我还买了台树莓派，用它学习Linux的更多知识。几年后，我以原价将树莓派卖掉，回想起来真有点好笑，简直像是给这台“小钢炮”举办了个小型拍卖会。到了高中，我认识了一位做游戏开发的同学，他对Linux的理解让我非常佩服。那时，他居然可以在小米10（或11）上使用Docker编译和运行Windows，他的技术实力令人叹为观止。那时我心想：“哇，这人不去做黑客真是浪费天赋啊！”</p>
+<p>大学时，我没有继续深造Linux，而是沉迷于娱乐。直到最近，我才重新开始深入学习Linux，安装了一个无图形界面的CentOS服务器。这种操作全靠命令行，完全不依赖GUI界面。像下面这样：</p>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/%E5%91%BD%E4%BB%A4%E7%95%8C%E9%9D%A2.webp" alt="命令界面"></p>
+<p>在重新接触Linux的过程中，我发现自己经常会卡在一些错误上。很多时候是因为没有配置国内镜像源，导致下载依赖时发生404错误，甚至导致安装失败。记得当时有一个流行的表情包：“Google都不会”，意指我们寻求帮助时反而找不到正确的答案。有时候我都怀疑，Google是不是变得“任性”了，连基本的答案都不给。</p>
+<h2 id="误入“坑”：rm-rf的危险"><a href="#误入“坑”：rm-rf的危险" class="headerlink" title="误入“坑”：rm -rf的危险"></a>误入“坑”：rm -rf的危险</h2><p>在Linux中，最让我印象深刻的命令之一就是 <code>rm -rf</code>。这个命令会在不做任何提示的情况下，强制删除文件，甚至可能导致系统崩溃，丢失所有数据。很多初学者都会在不小心执行这个命令后，损失惨重。记得我第一次用它时，屏幕上的“删除成功”字样简直像是把我所有的文件都埋进了“数字大海”，那一刻，我甚至怀疑人生。</p>
+<h2 id="Linux无处不在"><a href="#Linux无处不在" class="headerlink" title="Linux无处不在"></a>Linux无处不在</h2><p>虽然很多人认为Linux离自己很远，但其实你每天接触的很多设备都在运行Linux。无论是地铁站的自助售票机，还是云服务器、Android手机（即使Google做了修改，核心仍基于Linux），甚至是嵌入式设备、机器人、大数据和人工智能领域，Linux都无处不在。你有没有想过，你每天刷的某个APP背后，可能就是Linux在“默默为你服务”？</p>
+<hr>
+<p>通过这一段学习和实践，我逐渐明白了Linux的魅力。它不仅是一个操作系统，更代表了一种开放、自由的精神。Linux的应用范围越来越广，不仅改变了我们的工作和生活方式，也为创新和科技进步提供了无穷的动力。如果你还没有尝试过Linux，强烈建议你也加入这个探索的旅程，准备好接受“黑暗中的光明”吧。</p>
+]]></content>
+      <categories>
+        <category>记录一下</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记录之前的计划</title>
+    <url>/%E8%AE%B0%E5%BD%95%E4%B9%8B%E5%89%8D%E7%9A%84%E8%AE%A1%E5%88%92/</url>
+    <content><![CDATA[<h1 id="那些事情实现了吗？"><a href="#那些事情实现了吗？" class="headerlink" title="那些事情实现了吗？"></a>那些事情实现了吗？</h1><ul>
+<li><p><input disabled="" type="checkbox"> 
+<strong>高中时候</strong></p>
+</li>
+<li><p><input checked="" disabled="" type="checkbox"> 
+创建博客HEXO并发表文章 <a href="https://www.pw0n.xyz/">博客</a></p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+ESP8266 智能设备</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+<strong>大学时候</strong></p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+<strong>现在</strong></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>生活记录</category>
+      </categories>
+      <tags>
+        <tag>记录</tag>
       </tags>
   </entry>
 </search>
