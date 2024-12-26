@@ -42,26 +42,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux之putty远程工具</title>
-    <url>/Linux%E4%B9%8Bputty%E8%BF%9C%E7%A8%8B%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[<h1 id="Linux之Putty篇"><a href="#Linux之Putty篇" class="headerlink" title="Linux之Putty篇"></a>Linux之Putty篇</h1><p>如果你不知道在哪下载<a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">点我下载</a>选择你的系统版本 比如说windows-64位的就下对应的。<br>下载直接打开就行<br>在hostname输入你的服务器IP地址 默认22端口登录<br>我写192.168.1.1是演示的 不是真实这个是局域网路由的 不要跟着我写 按你的服务器ip写</p>
-<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/putty1.webp" alt="putty"></p>
-<span id="more"></span>
-
-
-<p>在打开之前先做好这几项<br>在connection里面 找到second between keepalive 调整为30<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/putty2.webp" alt="putty2"><br>然后放回首页点击save这样以后打开就不用输入你的服务器IP和其他选项<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/putty3.webp" alt="putty3"></p>
-<blockquote>
-<p>try</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linux创建SSH秘钥</title>
     <url>/Linux%E5%88%9B%E5%BB%BASSH%E7%A7%98%E9%92%A5/</url>
     <content><![CDATA[<h1 id="SSH-公钥创建"><a href="#SSH-公钥创建" class="headerlink" title="SSH 公钥创建"></a>SSH 公钥创建</h1><p>打开你的linux 输入</p>
@@ -90,6 +70,161 @@
       <tags>
         <tag>Linux</tag>
         <tag>SSH</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux之putty远程工具</title>
+    <url>/Linux%E4%B9%8Bputty%E8%BF%9C%E7%A8%8B%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[<h1 id="Linux之Putty篇"><a href="#Linux之Putty篇" class="headerlink" title="Linux之Putty篇"></a>Linux之Putty篇</h1><p>如果你不知道在哪下载<a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">点我下载</a>选择你的系统版本 比如说windows-64位的就下对应的。<br>下载直接打开就行<br>在hostname输入你的服务器IP地址 默认22端口登录<br>我写192.168.1.1是演示的 不是真实这个是局域网路由的 不要跟着我写 按你的服务器ip写</p>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/putty1.webp" alt="putty"></p>
+<span id="more"></span>
+
+
+<p>在打开之前先做好这几项<br>在connection里面 找到second between keepalive 调整为30<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/putty2.webp" alt="putty2"><br>然后放回首页点击save这样以后打开就不用输入你的服务器IP和其他选项<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/putty3.webp" alt="putty3"></p>
+<blockquote>
+<p>try</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>拥有一个安全自己操作的远程软件：RustDesk 完全私有化部署教程</title>
+    <url>/RustDesk-%E5%AE%8C%E5%85%A8%E7%A7%81%E6%9C%89%E5%8C%96%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在如今的远程办公和技术支持中，安全是首要考虑因素。然而，大部分主流的远程控制软件虽然安全，但其高级功能通常需要付费订阅，这不仅增加了成本，还可能将数据暴露在第三方服务器中。与其花费高额费用购买订阅，不如通过自建服务端，拥有完全掌控的远程解决方案。如果你动手能力强且能自行维护，这将是最佳选择。</p>
+<hr>
+<h2 id="RustDesk-介绍"><a href="#RustDesk-介绍" class="headerlink" title="RustDesk 介绍"></a>RustDesk 介绍</h2><p><strong>RustDesk</strong> 是一款开源的远程桌面软件，类似于 TeamViewer 和 AnyDesk，但它的特点是完全开源且自托管。RustDesk 允许用户在不同的设备和平台之间进行远程控制，支持 Windows、Linux、macOS、Android 和 iOS 等操作系统。</p>
+<p>  作为向日葵等商业软件的替代方案，它具备高性能、安全性和无需订阅等优点。本文将详细介绍 RustDesk 的特点、与向日葵的对比，并指导如何通过 Docker 搭建 RustDesk 服务端。 </p>
+<span id="more"></span>
+
+<hr>
+<h2 id="RustDesk-与向日葵的对比"><a href="#RustDesk-与向日葵的对比" class="headerlink" title="RustDesk 与向日葵的对比"></a>RustDesk 与向日葵的对比</h2><table>
+<thead>
+<tr>
+<th>特性</th>
+<th>RustDesk</th>
+<th>向日葵</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>开源</td>
+<td>是</td>
+<td>否</td>
+</tr>
+<tr>
+<td>部署方式</td>
+<td>支持自建服务端</td>
+<td>官方服务器或订阅</td>
+</tr>
+<tr>
+<td>数据隐私</td>
+<td>完全掌控</td>
+<td>依赖官方服务</td>
+</tr>
+<tr>
+<td>成本</td>
+<td>免费</td>
+<td>部分功能需订阅</td>
+</tr>
+<tr>
+<td>性能</td>
+<td>高效（P2P 优先，支持中继）</td>
+<td>视网络状况而定</td>
+</tr>
+</tbody></table>
+<p>RustDesk 的主要优势在于开源和私有化部署，适合需要高度安全和灵活控制的用户。</p>
+<hr>
+<h2 id="搭建-RustDesk-服务端（Docker-优先）"><a href="#搭建-RustDesk-服务端（Docker-优先）" class="headerlink" title="搭建 RustDesk 服务端（Docker 优先）"></a>搭建 RustDesk 服务端（Docker 优先）</h2><h3 id="1-环境准备"><a href="#1-环境准备" class="headerlink" title="1. 环境准备"></a>1. 环境准备</h3><h4 id="系统与工具"><a href="#系统与工具" class="headerlink" title="系统与工具"></a>系统与工具</h4><ul>
+<li>操作系统：Ubuntu / CentOS</li>
+<li>安装 Docker：</li>
+</ul>
+<p>Ubuntu：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update &amp;&amp; <span class="built_in">sudo</span> apt install -y docker.io docker-compose</span><br></pre></td></tr></tbody></table></figure>
+
+<p>CentOS：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> yum update -y &amp;&amp; <span class="built_in">sudo</span> yum install -y docker docker-compose</span><br></pre></td></tr></tbody></table></figure>
+
+<p>启动并设置 Docker 开机启动：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> systemctl start docker</span><br><span class="line"><span class="built_in">sudo</span> systemctl <span class="built_in">enable</span> docker</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="2-使用-Docker-部署-RustDesk-服务端"><a href="#2-使用-Docker-部署-RustDesk-服务端" class="headerlink" title="2. 使用 Docker 部署 RustDesk 服务端"></a>2. 使用 Docker 部署 RustDesk 服务端</h3><p>RustDesk 服务端包括 <code>hbbs</code>（信令服务器）和 <code>hbbr</code>（中继服务器），可以通过 Docker 一键部署。</p>
+<h4 id="拉取-RustDesk-Docker-镜像"><a href="#拉取-RustDesk-Docker-镜像" class="headerlink" title="拉取 RustDesk Docker 镜像"></a>拉取 RustDesk Docker 镜像</h4><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">docker pull rustdesk/rustdesk-server:latest</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="创建-Docker-容器"><a href="#创建-Docker-容器" class="headerlink" title="创建 Docker 容器"></a>创建 Docker 容器</h4><p>运行以下命令启动服务端：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">docker run -d \</span><br><span class="line">  --name rustdesk-server \</span><br><span class="line">  -p 21114:21114 \</span><br><span class="line">  -p 21115:21115 \</span><br><span class="line">  -p 21116:21116 \</span><br><span class="line">  -v $(<span class="built_in">pwd</span>)/data:/data \</span><br><span class="line">  rustdesk/rustdesk-server:latest</span><br></pre></td></tr></tbody></table></figure>
+
+<ul>
+<li><code>-p 21114:21114</code>：信令服务器（ID Server），用于设备注册和通信</li>
+<li><code>-p 21115:21115</code>：中继服务器（Relay Server），用于穿透 NAT 和中继数据传输</li>
+<li><code>-p 21116:21116</code>：API 服务器（File Transfer Server），用于文件传输和其他 API 调用</li>
+<li><code>-v $(pwd)/data:/data</code>：持久化存储数据</li>
+</ul>
+<h3 id="3-配置防火墙"><a href="#3-配置防火墙" class="headerlink" title="3. 配置防火墙"></a>3. 配置防火墙</h3><p>确保开放必要端口：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># Ubuntu</span></span><br><span class="line"><span class="built_in">sudo</span> ufw allow 21114/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 21115/tcp</span><br><span class="line"><span class="built_in">sudo</span> ufw allow 21116/tcp</span><br><span class="line"></span><br><span class="line"><span class="comment"># CentOS</span></span><br><span class="line"><span class="built_in">sudo</span> firewall-cmd --add-port=21114/tcp --permanent</span><br><span class="line"><span class="built_in">sudo</span> firewall-cmd --add-port=21115/tcp --permanent</span><br><span class="line"><span class="built_in">sudo</span> firewall-cmd --add-port=21116/tcp --permanent</span><br><span class="line"><span class="built_in">sudo</span> firewall-cmd --reload</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="4-获取秘钥与配置"><a href="#4-获取秘钥与配置" class="headerlink" title="4. 获取秘钥与配置"></a>4. 获取秘钥与配置</h3><p>RustDesk 服务端的秘钥存储在容器内 <code>/data</code> 目录下。</p>
+<p>进入容器查看秘钥：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">docker <span class="built_in">exec</span> -it rustdesk-server <span class="built_in">cat</span> /data/id_ed25519.pub</span><br></pre></td></tr></tbody></table></figure>
+
+<p>输出的公钥内容即为客户端连接时需要的秘钥。</p>
+<hr>
+<h2 id="安装客户端"><a href="#安装客户端" class="headerlink" title="安装客户端"></a>安装客户端</h2><p>你可以在 <a href="https://github.com/rustdesk/rustdesk/releases/tag/1.3.6">RustDesk 1.3.6 版本发布页面</a> 下载适用于各平台的 RustDesk 客户端安装包。</p>
+<hr>
+<h2 id="客户端配置详解"><a href="#客户端配置详解" class="headerlink" title="客户端配置详解"></a>客户端配置详解</h2><p>在 RustDesk 客户端中，需要配置以下内容：</p>
+<ol>
+<li><p><strong>ID Server（信令服务器）</strong>：</p>
+<ul>
+<li>端口：21114</li>
+<li>用途：负责设备注册和管理设备之间的连接。</li>
+<li>示例配置：填入你的服务器域名或 IP 地址，例如 <code>yourdomain.com</code>。</li>
+</ul>
+</li>
+<li><p><strong>Relay Server（中继服务器）</strong>：</p>
+<ul>
+<li>端口：21115</li>
+<li>用途：用于设备之间的中继通信，尤其是无法直接 P2P 连接时。</li>
+<li>示例配置：同样填写你的服务器域名或 IP 地址。</li>
+</ul>
+</li>
+<li><p><strong>File Transfer Server（API 服务器）</strong>：</p>
+<ul>
+<li>端口：21116</li>
+<li>用途：文件传输服务，支持远程桌面的文件操作。</li>
+<li>示例配置：填写与信令服务器相同的地址。</li>
+</ul>
+</li>
+<li><p><strong>Key（秘钥）</strong>：</p>
+<ul>
+<li>用途：确保客户端与服务端的连接安全。</li>
+<li>配置方式：将前面获取的公钥粘贴到「Key」字段中。</li>
+</ul>
+</li>
+</ol>
+<p>在 RustDesk 客户端的设置页面中，依次填写以上信息，完成配置。<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/202412261553881.png" alt="rustdesk-setting"></p>
+<hr>
+<h2 id="验证服务"><a href="#验证服务" class="headerlink" title="验证服务"></a>验证服务</h2><ol>
+<li>启动客户端并尝试连接目标设备。</li>
+<li>检查服务端日志，确保连接正常。</li>
+</ol>
+<p>查看 Docker 容器日志：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">docker logs rustdesk-server</span><br></pre></td></tr></tbody></table></figure>
+
+<hr>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>RustDesk 通过开源、可私有化部署的特点，为用户提供了安全高效的远程桌面解决方案。与向日葵相比，RustDesk 的免费和隐私优势尤为突出。通过 Docker 部署 RustDesk 服务端，并结合必要端口配置和秘钥管理，可以轻松搭建自己的远程桌面服务。<br>参考 <a href="https://rustdesk.com/">RustDesk 官方网站</a> 获取更多信息。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+        <category>网络工具</category>
+      </categories>
+      <tags>
+        <tag>RustDesk</tag>
+        <tag>远程桌面</tag>
+        <tag>自建服务</tag>
+        <tag>网络</tag>
       </tags>
   </entry>
   <entry>
@@ -477,9 +612,9 @@
         <category>科技</category>
       </categories>
       <tags>
+        <tag>网络</tag>
         <tag>记录</tag>
         <tag>科技史</tag>
-        <tag>网络</tag>
       </tags>
   </entry>
   <entry>
