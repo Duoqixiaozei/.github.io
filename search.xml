@@ -860,4 +860,114 @@ ESP8266 智能设备</p>
         <tag>记录</tag>
       </tags>
   </entry>
+  <entry>
+    <title>archlinux没有显示器无法调节亮度</title>
+    <url>/archlinux-boot-screen-issue/</url>
+    <content><![CDATA[<h2 id="如何解决-Thinkpad-笔记本亮度无法调节的问题"><a href="#如何解决-Thinkpad-笔记本亮度无法调节的问题" class="headerlink" title="如何解决 Thinkpad 笔记本亮度无法调节的问题"></a>如何解决 Thinkpad 笔记本亮度无法调节的问题</h2><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>在一些 Thinkpad 笔记本电脑上，尽管系统能够检测到亮度控制接口，但实际调节亮度的功能却无法正常工作。你可能会看到系统识别到亮度控制硬件，但调整亮度时并无任何反应，甚至出现闪屏或无法控制的情况。本文将为你提供一系列步骤，帮助解决这个问题。</p>
+<span id="more"></span>
+
+<hr>
+<h3 id="电脑配置"><a href="#电脑配置" class="headerlink" title="电脑配置"></a>电脑配置</h3><figure class="highlight nix"><table><tbody><tr><td class="code"><pre><span class="line">		 .o<span class="operator">+</span>`                   <span class="operator">-</span>-------- </span><br><span class="line">                `ooo<span class="symbol">/</span>                   <span class="params">OS:</span> Arch Linux x86_64 </span><br><span class="line">               `<span class="operator">+</span><span class="params">oooo:</span>                  <span class="params">Host:</span> <span class="number">20</span>H5A056CD ThinkPad E570 </span><br><span class="line">              `<span class="operator">+</span><span class="params">oooooo:</span>                 <span class="params">Kernel:</span> <span class="number">6.12</span>.<span class="number">7</span><span class="operator">-</span>arch1-<span class="number">1</span> </span><br><span class="line">             <span class="operator">-</span><span class="operator">+</span>oooooo<span class="operator">+</span>:                <span class="params">Uptime:</span> <span class="number">10</span> mins </span><br><span class="line">           `<span class="operator">/</span>:-:<span class="operator">++</span>oooo<span class="operator">+</span>:               <span class="params">Packages:</span> <span class="number">1542</span> (pacman) </span><br><span class="line">          `<span class="operator">/</span><span class="operator">++</span><span class="operator">++</span><span class="operator">/</span><span class="operator">++</span><span class="operator">++</span><span class="operator">++</span><span class="operator">+</span>:              <span class="params">Shell:</span> bash <span class="number">5.2</span>.<span class="number">37</span> </span><br><span class="line">         `<span class="operator">/</span><span class="operator">++</span><span class="operator">++</span><span class="operator">++</span><span class="operator">++</span><span class="operator">++</span><span class="operator">++</span><span class="operator">++</span>:             <span class="params">Resolution:</span> <span class="number">1920</span>x1080 </span><br><span class="line">        `<span class="operator">/</span><span class="operator">++</span><span class="operator">+</span>ooooooooooooo<span class="operator">/</span>`           <span class="params">DE:</span> Plasma <span class="number">6.2</span>.<span class="number">4</span> </span><br><span class="line">       .<span class="operator">/</span>ooosssso<span class="operator">++</span>osssssso<span class="operator">+</span>`          <span class="params">WM:</span> kwin </span><br><span class="line">      .oossssso-````<span class="operator">/</span>ossssss<span class="operator">+</span>`         <span class="params">Theme:</span> Breeze [GTK2<span class="operator">/</span><span class="number">3</span>] </span><br><span class="line">     <span class="operator">-</span>osssssso.      <span class="meta">:ssssssso</span>.        <span class="params">Icons:</span> breeze [GTK2<span class="operator">/</span><span class="number">3</span>] </span><br><span class="line">    <span class="meta">:osssssss</span><span class="symbol">/</span>        osssso<span class="operator">++</span><span class="operator">+</span>.       <span class="params">Terminal:</span> konsole </span><br><span class="line">   <span class="operator">/</span>ossssssss<span class="symbol">/</span>        <span class="operator">+</span>ssssooo<span class="symbol">/-</span>       <span class="params">CPU:</span> Intel i3-<span class="number">7100</span>U (<span class="number">4</span>) @ <span class="number">2.400</span>GHz </span><br><span class="line"> `<span class="operator">/</span>ossssso<span class="operator">+</span><span class="operator">/</span>:-        <span class="operator">-</span>:<span class="symbol">/+osssso+-</span>     <span class="params">GPU:</span> Intel HD Graphics <span class="number">620</span> </span><br><span class="line">`<span class="operator">+</span>sso<span class="operator">+</span>:-`                 `.-<span class="operator">/</span><span class="operator">+</span><span class="params">oso:</span>    <span class="params">GPU:</span> NVIDIA GeForce <span class="number">940</span>MX </span><br><span class="line"><span class="operator">++</span>:.                           `-<span class="operator">/</span><span class="operator">+</span><span class="symbol">/</span>   <span class="params">Memory:</span> <span class="number">2753</span>MiB <span class="symbol">/</span> <span class="number">7848</span>MiB </span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<hr>
+<h3 id="1-检查硬件信息"><a href="#1-检查硬件信息" class="headerlink" title="1. 检查硬件信息"></a>1. 检查硬件信息</h3><p>首先，查看系统日志，确认是否检测到了亮度控制接口。你可以使用以下命令查看 <code>Xorg</code> 的日志，查找与亮度相关的信息：</p>
+<figure class="highlight stata"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">cat</span> /<span class="keyword">var</span>/<span class="keyword">log</span>/Xorg.0.<span class="keyword">log</span> | grep -i <span class="string">"backlight"</span></span><br><span class="line"><span class="keyword">cat</span> /<span class="keyword">var</span>/<span class="keyword">log</span>/Xorg.0.<span class="keyword">log</span> | grep -i <span class="string">"synaptics"</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>如果日志中出现以下内容，说明系统确实已经识别了亮度控制接口：</p>
+<figure class="highlight angelscript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="string">[    39.909]</span> (--) <span class="built_in">int</span>el(<span class="number">0</span>): Found backlight control <span class="keyword">interface</span> <span class="symbol">thinkpad_screen</span> (<span class="symbol">type</span> '<span class="symbol">platform</span>') <span class="symbol">for</span> <span class="symbol">output</span> <span class="symbol">eDP1</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>出现这个显示是系统已经识别到了 <code>thinkpad_screen</code> 作为亮度控制接口，类型为 <code>platform</code>，并且为输出设备 <code>eDP1</code> 提供了控制。</p>
+<hr>
+<h3 id="2-可能的原因"><a href="#2-可能的原因" class="headerlink" title="2. 可能的原因"></a>2. 可能的原因</h3><p>尽管系统识别到了亮度控制接口，仍然可能会遇到无法调节亮度的情况。常见的原因包括：</p>
+<ol>
+<li><strong>驱动问题</strong> ：虽然系统检测到了硬件接口，但可能存在驱动没有正确加载，或者硬件兼容性问题，导致亮度调节无法生效。</li>
+<li><strong>ACPI 配置问题</strong> ：ACPI（高级配置和电源管理）与亮度控制的交互可能受到内核参数的影响。你当前的内核命令行包含了 <code>acpi_osi=Linux</code> 和 <code>acpi_backlight=vendor</code> 这两个参数，可能与亮度调节的功能产生冲突。不同的笔记本电脑可能需要不同的 ACPI 配置才能正常工作。</li>
+</ol>
+<hr>
+<h3 id="3-下一步检查"><a href="#3-下一步检查" class="headerlink" title="3. 下一步检查"></a>3. 下一步检查</h3><p>为了进一步解决问题，你可以尝试修改内核的启动参数，调整 ACPI 配置，确保亮度控制功能可以正常使用。按照以下步骤进行操作：</p>
+<h4 id="步骤-1：修改-GRUB-配置"><a href="#步骤-1：修改-GRUB-配置" class="headerlink" title="步骤 1：修改 GRUB 配置"></a>步骤 1：修改 GRUB 配置</h4><ul>
+<li><p>打开 GRUB 配置文件：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> nano /etc/default/grub</span><br></pre></td></tr></tbody></table></figure>
+
+<p>找到以下行：</p>
+<figure class="highlight ini"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">GRUB_CMDLINE_LINUX_DEFAULT</span>=<span class="string">"quiet splash"</span></span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>在这行的末尾添加 <code>acpi_backlight=video</code>，该参数强制使用标准的视频驱动程序来控制亮度，而不是依赖于其他硬件接口。修改后的行应如下所示：</p>
+</li>
+</ul>
+<figure class="highlight ini"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">GRUB_CMDLINE_LINUX_DEFAULT</span>=<span class="string">"quiet splash acpi_backlight=video"</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>这将会优先使用标准的 <code>video</code> 模式来处理亮度控制，从而避免硬件兼容性问题。</p>
+<hr>
+<h4 id="步骤-2：更新-GRUB-配置"><a href="#步骤-2：更新-GRUB-配置" class="headerlink" title="步骤 2：更新 GRUB 配置"></a>步骤 2：更新 GRUB 配置</h4><p>修改完成后，需要更新 GRUB 配置以使更改生效：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> grub-mkconfig -o /boot/grub/grub.cfg</span><br></pre></td></tr></tbody></table></figure>
+
+<hr>
+<h4 id="步骤-3：重启计算机"><a href="#步骤-3：重启计算机" class="headerlink" title="步骤 3：重启计算机"></a>步骤 3：重启计算机</h4><p>完成配置更新后，重启计算机以使新的内核参数生效：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> reboot</span><br></pre></td></tr></tbody></table></figure>
+
+<hr>
+]]></content>
+      <categories>
+        <category>archlinux</category>
+      </categories>
+      <tags>
+        <tag>archlinux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>archlinux开机进入系统显示白屏闪烁</title>
+    <url>/archlinux%E5%BC%80%E6%9C%BA%E8%BF%9B%E5%85%A5%E7%B3%BB%E7%BB%9F%E6%98%BE%E7%A4%BA%E7%99%BD%E5%B1%8F%E9%97%AA%E7%83%81/</url>
+    <content><![CDATA[<p>前几天我把我的archlinux，全部更新了一遍，没想到开机开机进入系统显示白屏闪烁 切换tty3显示：nouveau0000:01:00.8:xorg[875]:valldate:22</p>
+<figure class="highlight apache"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attribute">nouveau0000</span>:<span class="number">01</span>:<span class="number">00</span>.<span class="number">8</span>:xorg[<span class="number">875</span>]:valldate:<span class="number">22</span></span><br><span class="line"><span class="attribute">nouveau0000</span>:<span class="number">01</span>:<span class="number">00</span>.<span class="number">8</span>:xorg[<span class="number">875</span>]:valldating bo list</span><br></pre></td></tr></tbody></table></figure>
+
+<span id="more"></span>
+
+<h1 id="第一步-开机启动-进入grub时"><a href="#第一步-开机启动-进入grub时" class="headerlink" title="第一步 开机启动 进入grub时"></a>第一步 开机启动 进入grub时</h1><h2 id="1-进入-GRUB-菜单"><a href="#1-进入-GRUB-菜单" class="headerlink" title="1. 进入 GRUB 菜单"></a>1. 进入 GRUB 菜单</h2><ul>
+<li>重启你的电脑，当 GRUB 启动菜单出现时，使用上下箭头键选中你想启动的内核（通常是默认的启动项）。</li>
+<li>按下 <strong>e</strong> 键进行编辑。</li>
+</ul>
+<h2 id="2-禁用-Nouveau-驱动"><a href="#2-禁用-Nouveau-驱动" class="headerlink" title="2. 禁用 Nouveau 驱动"></a>2. 禁用 Nouveau 驱动</h2><ul>
+<li><p>在 GRUB 编辑界面中，找到以 <code>linux</code> 开头的那一行。这一行通常会包含启动内核的路径以及一些内核参数。<br>比如，类似这样的行：</p>
+<figure class="highlight routeros"><table><tbody><tr><td class="code"><pre><span class="line">linux   /boot/vmlinuz-linux <span class="attribute">root</span>=UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx rx quiet splash nouveau.<span class="attribute">modeset</span>=0</span><br></pre></td></tr></tbody></table></figure></li>
+</ul>
+<p>每个人的电脑不一样这个是参考</p>
+<p>rx在后面添加：</p>
+<figure class="highlight routeros"><table><tbody><tr><td class="code"><pre><span class="line">quiet splash nouveau.<span class="attribute">modeset</span>=0</span><br></pre></td></tr></tbody></table></figure>
+
+<p>将 <code>nouveau.modeset=0</code> 添加到这行的末尾，禁用 Nouveau 驱动。</p>
+<ul>
+<li>禁用 Nouveau 驱动的参数是 <code>nouveau.modeset=0</code>。</li>
+<li>例如，编辑后的行应该像这样：</li>
+</ul>
+<h2 id="3-启动"><a href="#3-启动" class="headerlink" title="3. 启动"></a>3. 启动</h2><ul>
+<li>修改完成后，按 <strong>Ctrl + X</strong> 或 <strong>F10</strong> 启动系统。此时系统将会在单用户模式下启动，并且 Nouveau 驱动将被禁用。</li>
+</ul>
+<h1 id="第二步-进入桌面后（或者进入系统后）"><a href="#第二步-进入桌面后（或者进入系统后）" class="headerlink" title="第二步 进入桌面后（或者进入系统后）"></a>第二步 进入桌面后（或者进入系统后）</h1><h2 id="1-禁用独立显卡的唤醒"><a href="#1-禁用独立显卡的唤醒" class="headerlink" title="1. 禁用独立显卡的唤醒"></a>1. <strong>禁用独立显卡的唤醒</strong></h2><ul>
+<li><p>编辑 <code>/etc/default/grub</code>：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> nano /etc/default/grub</span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>找到以下行:</p>
+<figure class="highlight ini"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">GRUB_CMDLINE_LINUX_DEFAULT</span>=<span class="string">"quiet splash"</span></span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>修改成</p>
+<figure class="highlight ini"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">GRUB_CMDLINE_LINUX_DEFAULT</span>=<span class="string">"quiet splash nouveau.modeset=0 acpi_backlight=vendor"</span></span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>更新 GRUB：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> grub-mkconfig -o /boot/grub/grub.cfg</span><br></pre></td></tr></tbody></table></figure></li>
+</ul>
+<h2 id="2-使用-NVIDIA-闭源驱动"><a href="#2-使用-NVIDIA-闭源驱动" class="headerlink" title="2. 使用 NVIDIA 闭源驱动"></a>2. <strong>使用 NVIDIA 闭源驱动</strong></h2><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> pacman -S nvidia nvidia-utils nvidia-settings</span><br><span class="line"><span class="built_in">sudo</span> mkinitcpio -P</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="3-重启"><a href="#3-重启" class="headerlink" title="3. 重启"></a>3. <strong>重启</strong></h2><p>完成上述步骤后，重启系统：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> reboot</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="4-确认-NVIDIA-驱动是否生效"><a href="#4-确认-NVIDIA-驱动是否生效" class="headerlink" title="4. 确认 NVIDIA 驱动是否生效"></a>4. <strong>确认 NVIDIA 驱动是否生效</strong></h2><p>重启后，运行以下命令确认 NVIDIA 驱动是否被加载：</p>
+<figure class="highlight ebnf"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attribute">nvidia-smi</span></span><br></pre></td></tr></tbody></table></figure>
+<blockquote>
+<p>正常加载后如果你的不能调整显示屏的亮度的话请看下一篇</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>archlinux</category>
+      </categories>
+      <tags>
+        <tag>archlinux</tag>
+      </tags>
+  </entry>
 </search>
