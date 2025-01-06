@@ -42,6 +42,26 @@
       </tags>
   </entry>
   <entry>
+    <title>Linux之putty远程工具</title>
+    <url>/Linux%E4%B9%8Bputty%E8%BF%9C%E7%A8%8B%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[<h1 id="Linux之Putty篇"><a href="#Linux之Putty篇" class="headerlink" title="Linux之Putty篇"></a>Linux之Putty篇</h1><p>如果你不知道在哪下载<a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">点我下载</a>选择你的系统版本 比如说windows-64位的就下对应的。<br>下载直接打开就行<br>在hostname输入你的服务器IP地址 默认22端口登录<br>我写192.168.1.1是演示的 不是真实这个是局域网路由的 不要跟着我写 按你的服务器ip写</p>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/putty1.webp" alt="putty"></p>
+<span id="more"></span>
+
+
+<p>在打开之前先做好这几项<br>在connection里面 找到second between keepalive 调整为30<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/putty2.webp" alt="putty2"><br>然后放回首页点击save这样以后打开就不用输入你的服务器IP和其他选项<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/putty3.webp" alt="putty3"></p>
+<blockquote>
+<p>try</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linux创建SSH秘钥</title>
     <url>/Linux%E5%88%9B%E5%BB%BASSH%E7%A7%98%E9%92%A5/</url>
     <content><![CDATA[<h1 id="SSH-公钥创建"><a href="#SSH-公钥创建" class="headerlink" title="SSH 公钥创建"></a>SSH 公钥创建</h1><p>打开你的linux 输入</p>
@@ -70,26 +90,6 @@
       <tags>
         <tag>Linux</tag>
         <tag>SSH</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux之putty远程工具</title>
-    <url>/Linux%E4%B9%8Bputty%E8%BF%9C%E7%A8%8B%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[<h1 id="Linux之Putty篇"><a href="#Linux之Putty篇" class="headerlink" title="Linux之Putty篇"></a>Linux之Putty篇</h1><p>如果你不知道在哪下载<a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">点我下载</a>选择你的系统版本 比如说windows-64位的就下对应的。<br>下载直接打开就行<br>在hostname输入你的服务器IP地址 默认22端口登录<br>我写192.168.1.1是演示的 不是真实这个是局域网路由的 不要跟着我写 按你的服务器ip写</p>
-<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/putty1.webp" alt="putty"></p>
-<span id="more"></span>
-
-
-<p>在打开之前先做好这几项<br>在connection里面 找到second between keepalive 调整为30<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/putty2.webp" alt="putty2"><br>然后放回首页点击save这样以后打开就不用输入你的服务器IP和其他选项<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/putty3.webp" alt="putty3"></p>
-<blockquote>
-<p>try</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -312,6 +312,122 @@
       </categories>
       <tags>
         <tag>vim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>archlinux没有显示器无法调节亮度</title>
+    <url>/archlinux-boot-screen-issue/</url>
+    <content><![CDATA[<h2 id="如何解决-Thinkpad-笔记本亮度无法调节的问题"><a href="#如何解决-Thinkpad-笔记本亮度无法调节的问题" class="headerlink" title="如何解决 Thinkpad 笔记本亮度无法调节的问题"></a>如何解决 Thinkpad 笔记本亮度无法调节的问题</h2><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>在一些 Thinkpad 笔记本电脑上，尽管系统能够检测到亮度控制接口，但实际调节亮度的功能却无法正常工作。你可能会看到系统识别到亮度控制硬件，但调整亮度时并无任何反应，甚至出现闪屏或无法控制的情况。本文将为你提供一系列步骤，帮助解决这个问题。</p>
+<span id="more"></span>
+
+<hr>
+<h3 id="电脑配置"><a href="#电脑配置" class="headerlink" title="电脑配置"></a>电脑配置</h3><figure class="highlight nix"><table><tbody><tr><td class="code"><pre><span class="line">		 .o<span class="operator">+</span>`                   <span class="operator">-</span>-------- </span><br><span class="line">                `ooo<span class="symbol">/</span>                   <span class="params">OS:</span> Arch Linux x86_64 </span><br><span class="line">               `<span class="operator">+</span><span class="params">oooo:</span>                  <span class="params">Host:</span> <span class="number">20</span>H5A056CD ThinkPad E570 </span><br><span class="line">              `<span class="operator">+</span><span class="params">oooooo:</span>                 <span class="params">Kernel:</span> <span class="number">6.12</span>.<span class="number">7</span><span class="operator">-</span>arch1-<span class="number">1</span> </span><br><span class="line">             <span class="operator">-</span><span class="operator">+</span>oooooo<span class="operator">+</span>:                <span class="params">Uptime:</span> <span class="number">10</span> mins </span><br><span class="line">           `<span class="operator">/</span>:-:<span class="operator">++</span>oooo<span class="operator">+</span>:               <span class="params">Packages:</span> <span class="number">1542</span> (pacman) </span><br><span class="line">          `<span class="operator">/</span><span class="operator">++</span><span class="operator">++</span><span class="operator">/</span><span class="operator">++</span><span class="operator">++</span><span class="operator">++</span><span class="operator">+</span>:              <span class="params">Shell:</span> bash <span class="number">5.2</span>.<span class="number">37</span> </span><br><span class="line">         `<span class="operator">/</span><span class="operator">++</span><span class="operator">++</span><span class="operator">++</span><span class="operator">++</span><span class="operator">++</span><span class="operator">++</span><span class="operator">++</span>:             <span class="params">Resolution:</span> <span class="number">1920</span>x1080 </span><br><span class="line">        `<span class="operator">/</span><span class="operator">++</span><span class="operator">+</span>ooooooooooooo<span class="operator">/</span>`           <span class="params">DE:</span> Plasma <span class="number">6.2</span>.<span class="number">4</span> </span><br><span class="line">       .<span class="operator">/</span>ooosssso<span class="operator">++</span>osssssso<span class="operator">+</span>`          <span class="params">WM:</span> kwin </span><br><span class="line">      .oossssso-````<span class="operator">/</span>ossssss<span class="operator">+</span>`         <span class="params">Theme:</span> Breeze [GTK2<span class="operator">/</span><span class="number">3</span>] </span><br><span class="line">     <span class="operator">-</span>osssssso.      <span class="meta">:ssssssso</span>.        <span class="params">Icons:</span> breeze [GTK2<span class="operator">/</span><span class="number">3</span>] </span><br><span class="line">    <span class="meta">:osssssss</span><span class="symbol">/</span>        osssso<span class="operator">++</span><span class="operator">+</span>.       <span class="params">Terminal:</span> konsole </span><br><span class="line">   <span class="operator">/</span>ossssssss<span class="symbol">/</span>        <span class="operator">+</span>ssssooo<span class="symbol">/-</span>       <span class="params">CPU:</span> Intel i3-<span class="number">7100</span>U (<span class="number">4</span>) @ <span class="number">2.400</span>GHz </span><br><span class="line"> `<span class="operator">/</span>ossssso<span class="operator">+</span><span class="operator">/</span>:-        <span class="operator">-</span>:<span class="symbol">/+osssso+-</span>     <span class="params">GPU:</span> Intel HD Graphics <span class="number">620</span> </span><br><span class="line">`<span class="operator">+</span>sso<span class="operator">+</span>:-`                 `.-<span class="operator">/</span><span class="operator">+</span><span class="params">oso:</span>    <span class="params">GPU:</span> NVIDIA GeForce <span class="number">940</span>MX </span><br><span class="line"><span class="operator">++</span>:.                           `-<span class="operator">/</span><span class="operator">+</span><span class="symbol">/</span>   <span class="params">Memory:</span> <span class="number">2753</span>MiB <span class="symbol">/</span> <span class="number">7848</span>MiB </span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<hr>
+<h3 id="1-检查硬件信息"><a href="#1-检查硬件信息" class="headerlink" title="1. 检查硬件信息"></a>1. 检查硬件信息</h3><p>首先，查看系统日志，确认是否检测到了亮度控制接口。你可以使用以下命令查看 <code>Xorg</code> 的日志，查找与亮度相关的信息：</p>
+<figure class="highlight stata"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">cat</span> /<span class="keyword">var</span>/<span class="keyword">log</span>/Xorg.0.<span class="keyword">log</span> | grep -i <span class="string">"backlight"</span></span><br><span class="line"><span class="keyword">cat</span> /<span class="keyword">var</span>/<span class="keyword">log</span>/Xorg.0.<span class="keyword">log</span> | grep -i <span class="string">"synaptics"</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>如果日志中出现以下内容，说明系统确实已经识别了亮度控制接口：</p>
+<figure class="highlight angelscript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="string">[    39.909]</span> (--) <span class="built_in">int</span>el(<span class="number">0</span>): Found backlight control <span class="keyword">interface</span> <span class="symbol">thinkpad_screen</span> (<span class="symbol">type</span> '<span class="symbol">platform</span>') <span class="symbol">for</span> <span class="symbol">output</span> <span class="symbol">eDP1</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>出现这个显示是系统已经识别到了 <code>thinkpad_screen</code> 作为亮度控制接口，类型为 <code>platform</code>，并且为输出设备 <code>eDP1</code> 提供了控制。</p>
+<hr>
+<h3 id="2-可能的原因"><a href="#2-可能的原因" class="headerlink" title="2. 可能的原因"></a>2. 可能的原因</h3><p>尽管系统识别到了亮度控制接口，仍然可能会遇到无法调节亮度的情况。常见的原因包括：</p>
+<ol>
+<li><strong>驱动问题</strong> ：虽然系统检测到了硬件接口，但可能存在驱动没有正确加载，或者硬件兼容性问题，导致亮度调节无法生效。</li>
+<li><strong>ACPI 配置问题</strong> ：ACPI（高级配置和电源管理）与亮度控制的交互可能受到内核参数的影响。你当前的内核命令行包含了 <code>acpi_osi=Linux</code> 和 <code>acpi_backlight=vendor</code> 这两个参数，可能与亮度调节的功能产生冲突。不同的笔记本电脑可能需要不同的 ACPI 配置才能正常工作。</li>
+</ol>
+<hr>
+<h3 id="3-下一步检查"><a href="#3-下一步检查" class="headerlink" title="3. 下一步检查"></a>3. 下一步检查</h3><p>为了进一步解决问题，你可以尝试修改内核的启动参数，调整 ACPI 配置，确保亮度控制功能可以正常使用。按照以下步骤进行操作：</p>
+<h4 id="步骤-1：修改-GRUB-配置"><a href="#步骤-1：修改-GRUB-配置" class="headerlink" title="步骤 1：修改 GRUB 配置"></a>步骤 1：修改 GRUB 配置</h4><ul>
+<li><p>打开 GRUB 配置文件：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> nano /etc/default/grub</span><br></pre></td></tr></tbody></table></figure>
+
+<p>找到以下行：</p>
+<figure class="highlight ini"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">GRUB_CMDLINE_LINUX_DEFAULT</span>=<span class="string">"quiet splash"</span></span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>在这行的末尾添加 <code>acpi_backlight=video</code>，该参数强制使用标准的视频驱动程序来控制亮度，而不是依赖于其他硬件接口。修改后的行应如下所示：</p>
+</li>
+</ul>
+<figure class="highlight ini"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">GRUB_CMDLINE_LINUX_DEFAULT</span>=<span class="string">"quiet splash acpi_backlight=video"</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>这将会优先使用标准的 <code>video</code> 模式来处理亮度控制，从而避免硬件兼容性问题。</p>
+<hr>
+<h4 id="步骤-2：更新-GRUB-配置"><a href="#步骤-2：更新-GRUB-配置" class="headerlink" title="步骤 2：更新 GRUB 配置"></a>步骤 2：更新 GRUB 配置</h4><p>修改完成后，需要更新 GRUB 配置以使更改生效：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> grub-mkconfig -o /boot/grub/grub.cfg</span><br></pre></td></tr></tbody></table></figure>
+
+<hr>
+<h4 id="步骤-3：重启计算机"><a href="#步骤-3：重启计算机" class="headerlink" title="步骤 3：重启计算机"></a>步骤 3：重启计算机</h4><p>完成配置更新后，重启计算机以使新的内核参数生效：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> reboot</span><br></pre></td></tr></tbody></table></figure>
+
+<hr>
+]]></content>
+      <categories>
+        <category>archlinux</category>
+      </categories>
+      <tags>
+        <tag>archlinux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>archlinux开机进入系统显示白屏闪烁</title>
+    <url>/archlinux%E5%BC%80%E6%9C%BA%E8%BF%9B%E5%85%A5%E7%B3%BB%E7%BB%9F%E6%98%BE%E7%A4%BA%E7%99%BD%E5%B1%8F%E9%97%AA%E7%83%81/</url>
+    <content><![CDATA[<p>前几天我把我的archlinux，全部更新了一遍，没想到开机开机进入系统显示白屏闪烁 切换tty3显示：nouveau0000:01:00.8:xorg[875]:valldate:22</p>
+<div style="display: flex; justify-content: center; align-items: center;">
+  <div style="width: 400px; height: 400px; overflow: hidden; border-radius: 0%; background-color: #f0f0f0">
+    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/202501061120422.webp" style="width: 100%; height: 100%; object-fit: cover;" alt="linux开机报错">
+  </div>
+</div>
+
+<figure class="highlight apache"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attribute">nouveau0000</span>:<span class="number">01</span>:<span class="number">00</span>.<span class="number">8</span>:xorg[<span class="number">875</span>]:valldate:<span class="number">22</span></span><br><span class="line"><span class="attribute">nouveau0000</span>:<span class="number">01</span>:<span class="number">00</span>.<span class="number">8</span>:xorg[<span class="number">875</span>]:valldating bo list</span><br></pre></td></tr></tbody></table></figure>
+
+<span id="more"></span>
+
+<h1 id="第一步-开机启动-进入grub时"><a href="#第一步-开机启动-进入grub时" class="headerlink" title="第一步 开机启动 进入grub时"></a>第一步 开机启动 进入grub时</h1><h2 id="1-进入-GRUB-菜单"><a href="#1-进入-GRUB-菜单" class="headerlink" title="1. 进入 GRUB 菜单"></a>1. 进入 GRUB 菜单</h2><ul>
+<li>重启你的电脑，当 GRUB 启动菜单出现时，使用上下箭头键选中你想启动的内核（通常是默认的启动项）。</li>
+<li>按下 <strong>e</strong> 键进行编辑。</li>
+</ul>
+<h2 id="2-禁用-Nouveau-驱动"><a href="#2-禁用-Nouveau-驱动" class="headerlink" title="2. 禁用 Nouveau 驱动"></a>2. 禁用 Nouveau 驱动</h2><ul>
+<li><p>在 GRUB 编辑界面中，找到以 <code>linux</code> 开头的那一行。这一行通常会包含启动内核的路径以及一些内核参数。<br>比如，类似这样的行：</p>
+<figure class="highlight routeros"><table><tbody><tr><td class="code"><pre><span class="line">linux   /boot/vmlinuz-linux <span class="attribute">root</span>=UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx rx quiet splash nouveau.<span class="attribute">modeset</span>=0</span><br></pre></td></tr></tbody></table></figure></li>
+</ul>
+<p>每个人的电脑不一样这个是参考</p>
+<p>rx在后面添加：</p>
+<figure class="highlight routeros"><table><tbody><tr><td class="code"><pre><span class="line">quiet splash nouveau.<span class="attribute">modeset</span>=0</span><br></pre></td></tr></tbody></table></figure>
+
+<p>将 <code>nouveau.modeset=0</code> 添加到这行的末尾，禁用 Nouveau 驱动。</p>
+<ul>
+<li>禁用 Nouveau 驱动的参数是 <code>nouveau.modeset=0</code>。</li>
+<li>例如，编辑后的行应该像这样：</li>
+</ul>
+<h2 id="3-启动"><a href="#3-启动" class="headerlink" title="3. 启动"></a>3. 启动</h2><ul>
+<li>修改完成后，按 <strong>Ctrl + X</strong> 或 <strong>F10</strong> 启动系统。此时系统将会在单用户模式下启动，并且 Nouveau 驱动将被禁用。</li>
+</ul>
+<h1 id="第二步-进入桌面后（或者进入系统后）"><a href="#第二步-进入桌面后（或者进入系统后）" class="headerlink" title="第二步 进入桌面后（或者进入系统后）"></a>第二步 进入桌面后（或者进入系统后）</h1><h2 id="1-禁用独立显卡的唤醒"><a href="#1-禁用独立显卡的唤醒" class="headerlink" title="1. 禁用独立显卡的唤醒"></a>1. <strong>禁用独立显卡的唤醒</strong></h2><ul>
+<li><p>编辑 <code>/etc/default/grub</code>：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> nano /etc/default/grub</span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>找到以下行:</p>
+<figure class="highlight ini"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">GRUB_CMDLINE_LINUX_DEFAULT</span>=<span class="string">"quiet splash"</span></span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>修改成</p>
+<figure class="highlight ini"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">GRUB_CMDLINE_LINUX_DEFAULT</span>=<span class="string">"quiet splash nouveau.modeset=0 acpi_backlight=vendor"</span></span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>更新 GRUB：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> grub-mkconfig -o /boot/grub/grub.cfg</span><br></pre></td></tr></tbody></table></figure></li>
+</ul>
+<h2 id="2-使用-NVIDIA-闭源驱动"><a href="#2-使用-NVIDIA-闭源驱动" class="headerlink" title="2. 使用 NVIDIA 闭源驱动"></a>2. <strong>使用 NVIDIA 闭源驱动</strong></h2><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> pacman -S nvidia nvidia-utils nvidia-settings</span><br><span class="line"><span class="built_in">sudo</span> mkinitcpio -P</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="3-重启"><a href="#3-重启" class="headerlink" title="3. 重启"></a>3. <strong>重启</strong></h2><p>完成上述步骤后，重启系统：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> reboot</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="4-确认-NVIDIA-驱动是否生效"><a href="#4-确认-NVIDIA-驱动是否生效" class="headerlink" title="4. 确认 NVIDIA 驱动是否生效"></a>4. <strong>确认 NVIDIA 驱动是否生效</strong></h2><p>重启后，运行以下命令确认 NVIDIA 驱动是否被加载：</p>
+<figure class="highlight ebnf"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attribute">nvidia-smi</span></span><br></pre></td></tr></tbody></table></figure>
+<blockquote>
+<p>正常加载后如果你的不能调整显示屏的亮度的话请看下一篇</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>archlinux</category>
+      </categories>
+      <tags>
+        <tag>archlinux</tag>
       </tags>
   </entry>
   <entry>
@@ -618,6 +734,106 @@
       </tags>
   </entry>
   <entry>
+    <title>国内也能用 Gemini 了！超详细教程</title>
+    <url>/%E5%9B%BD%E5%86%85%E4%B9%9F%E8%83%BD%E7%94%A8-Gemini-%E4%BA%86%EF%BC%81%E8%B6%85%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<h1 id="国内也能用上-Gemini-了！超详细教程，手把手教你"><a href="#国内也能用上-Gemini-了！超详细教程，手把手教你" class="headerlink" title="国内也能用上 Gemini 了！超详细教程，手把手教你"></a>国内也能用上 Gemini 了！超详细教程，手把手教你</h1><p> Google 的 Gemini 很厉害，但又苦于国内用不了？别担心，今天我就来教大家一个超简单的方法，让你在国内也能免费用上 Gemini！不用魔法，也不需要复杂的配置，跟着我的步骤，你也能轻松体验 Gemini 的强大功能。</p>
+<span id="more"></span>
+
+<p><strong>简单来说，我们要做什么？</strong></p>
+<p>其实，我们要做的就是搭建一个“桥梁”，让国内的网络可以连接到 Gemini 的 API，就像搭个梯子一样。这个“梯子”需要借助一个叫 Cloudflare 的工具，还有一些代码，但别怕，我都会一步一步教你。</p>
+<p><strong>准备工作，先来个“装备清单”：</strong></p>
+<ol>
+<li><strong>Gemini API 密钥：</strong> 这是你使用 Gemini 的“通行证”。你需要去 Google AI Studio 申请一个。<ul>
+<li>打开 <a href="https://aistuidio.google.com/">aistuidio.google.com</a>，登录你的 Google 账号。</li>
+<li>在 Google AI Studio 中，创建一个新的 API 密钥。记住，即使你不在支持的地区，也可以用 VPN 申请！</li>
+</ul>
+</li>
+<li><strong>Cloudflare 账号：</strong> 你需要注册一个 Cloudflare 账号，它是我们搭建“梯子”的重要工具。<ul>
+<li>打开 <a href="https://cloudflare.com/">cloudflare.com</a> ，注册一个账号，过程很简单。</li>
+</ul>
+</li>
+<li><strong>Github 账号：</strong> 你需要一个 Github 账号，用来“复制”一些代码。<ul>
+<li>如果你还没有，去 <a href="https://github.com/">github.com</a> 注册一个吧。</li>
+</ul>
+</li>
+<li><strong>Chatbox 软件：</strong> 这是一个可以让你和 Gemini “聊天”的工具，就像微信一样。<ul>
+<li>去 <a href="https://github.com/Bin-Huang/chatbox">github.com/Bin-Huang/chatbox</a> 下载并安装它。</li>
+</ul>
+</li>
+</ol>
+<p><strong>第一步：搭建“梯子”——部署 Cloudflare Worker</strong></p>
+<ol>
+<li><strong>“复制”代码：</strong><ul>
+<li>打开 <a href="https://github.com/PublicAffairs/openai-gemini">github.com/PublicAffairs/openai-gemini</a> 这个链接，这是“梯子”的代码来源。</li>
+<li>点击右上角的 “Fork” 按钮，把这个代码“复制”到你的 Github 账号里。</li>
+</ul>
+</li>
+<li><strong>“提取”代码：</strong><ul>
+<li>在你 Github 的“复制”项目里，找到 <code>src/worker.mjs</code> 这个文件。</li>
+<li>复制这个文件里的所有代码。</li>
+</ul>
+</li>
+<li><strong>“搭建”梯子：</strong><ul>
+<li>登录你的 Cloudflare 账号，找到 “Workers &amp; Pages” 页面。</li>
+<li>点击 “创建 Worker” 按钮，就像新建一个文件一样。</li>
+<li>把你刚才复制的代码粘贴到代码编辑器里。</li>
+</ul>
+</li>
+<li><strong>“配置”通行证：</strong><ul>
+<li>在代码编辑器下方，找到 “设置” 选项卡，点击 “环境变量”。</li>
+<li>添加一个叫 <code>GOOGLE_API_KEY</code> 的环境变量，把你的 Gemini API 密钥填进去。</li>
+</ul>
+</li>
+<li><strong>“架好”梯子：</strong><ul>
+<li>点击 “保存并部署” 按钮，你的 Cloudflare Worker 就会被部署，就像搭好了一个梯子一样。</li>
+<li>复制你的 Worker 的网址，比如 <code>https://your-worker-name.your-cloudflare-subdomain.workers.dev</code>，这个网址很重要，后面要用到！</li>
+</ul>
+</li>
+</ol>
+<p><strong>第二步：让 Chatbox 和 Gemini “连上线”</strong></p>
+<ol>
+<li><strong>打开 Chatbox：</strong> 启动你安装的 Chatbox 软件。</li>
+<li><strong>添加 Gemini 模型：</strong><ul>
+<li>在 Chatbox 的设置里，找到“模型”或者“自定义模型”的选项。</li>
+<li>点击“添加模型”或类似的按钮。</li>
+</ul>
+</li>
+<li><strong>“告诉”Chatbox 怎么连：</strong><ul>
+<li><strong>模型名称：</strong> 可以随便起，比如 “Gemini-Cloudflare”。</li>
+<li><strong>API 类型：</strong> 选择 <code>OpenAI</code>。</li>
+<li><strong>API Base URL：</strong> 把你刚才复制的 Cloudflare Worker 网址粘贴到这里，并在末尾加上 <code>/v1</code>，比如 <code>https://your-worker-name.your-cloudflare-subdomain.workers.dev/v1</code>。</li>
+<li><strong>API Key：</strong> 这里不需要填，因为 Gemini 的密钥已经配置在 Cloudflare Worker 里了。</li>
+<li><strong>模型名称：</strong> 填入 <code>gemini-1.5-pro-latest</code> 或者 <code>models/gemini-1.5-pro-latest</code>。</li>
+</ul>
+</li>
+<li><strong>测试 “连接”：</strong><ul>
+<li>点击 “测试连接” 或类似的按钮，确保 Chatbox 可以成功连接到你的 Gemini 代理。</li>
+</ul>
+</li>
+</ol>
+<p><strong>第三步：开始和 Gemini “聊天”</strong></p>
+<ol>
+<li><strong>选择 Gemini：</strong> 在 Chatbox 里，选择你刚刚添加的 <code>Gemini-Cloudflare</code> 模型。</li>
+<li><strong>开始对话：</strong> 现在，你可以像使用 OpenAI 一样，和 Gemini 模型进行对话了！</li>
+</ol>
+<p><strong>温馨提示：</strong></p>
+<ul>
+<li><strong>模型选择：</strong> 你可以使用 <code>gemini-1.5-pro-latest</code> 模型，或者其他 Gemini 模型。</li>
+<li><strong>API 限制：</strong> Gemini API 可能有使用次数限制，注意查看 Google AI Studio 的文档。</li>
+<li><strong>Cloudflare Worker 限制：</strong> Cloudflare Worker 也有一些限制，比如运行时间限制，如果你的请求太多可能会遇到问题。</li>
+<li><strong><code>openai-gemini</code> 项目：</strong> 这个项目还在开发中，可能会有一些小问题，请关注它的更新。</li>
+</ul>
+<p><strong>总结一下：</strong></p>
+<p>通过以上步骤，你已经成功搭建了一个“桥梁”，让国内的网络可以连接到 Gemini 的 API，并用 Chatbox 和 Gemini “聊上了天”！是不是很简单？快去试试吧，体验一下 Gemini 的强大吧！</p>
+]]></content>
+      <categories>
+        <category>Gemini</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>域名取消绑定后为什么输入IP网址还是会自动跳转域名？</title>
     <url>/%E5%9F%9F%E5%90%8D%E5%8F%96%E6%B6%88%E7%BB%91%E5%AE%9A%E5%90%8E%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BE%93%E5%85%A5IP%E7%BD%91%E5%9D%80%E8%BF%98%E6%98%AF%E4%BC%9A%E8%87%AA%E5%8A%A8%E8%B7%B3%E8%BD%AC%E5%9F%9F%E5%90%8D%EF%BC%9F/</url>
     <content><![CDATA[<p><strong>域名取消绑定后为什么输入IP网址还是会自动跳转域名</strong></p>
@@ -858,220 +1074,6 @@ ESP8266 智能设备</p>
       </categories>
       <tags>
         <tag>记录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>archlinux没有显示器无法调节亮度</title>
-    <url>/archlinux-boot-screen-issue/</url>
-    <content><![CDATA[<h2 id="如何解决-Thinkpad-笔记本亮度无法调节的问题"><a href="#如何解决-Thinkpad-笔记本亮度无法调节的问题" class="headerlink" title="如何解决 Thinkpad 笔记本亮度无法调节的问题"></a>如何解决 Thinkpad 笔记本亮度无法调节的问题</h2><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>在一些 Thinkpad 笔记本电脑上，尽管系统能够检测到亮度控制接口，但实际调节亮度的功能却无法正常工作。你可能会看到系统识别到亮度控制硬件，但调整亮度时并无任何反应，甚至出现闪屏或无法控制的情况。本文将为你提供一系列步骤，帮助解决这个问题。</p>
-<span id="more"></span>
-
-<hr>
-<h3 id="电脑配置"><a href="#电脑配置" class="headerlink" title="电脑配置"></a>电脑配置</h3><figure class="highlight nix"><table><tbody><tr><td class="code"><pre><span class="line">		 .o<span class="operator">+</span>`                   <span class="operator">-</span>-------- </span><br><span class="line">                `ooo<span class="symbol">/</span>                   <span class="params">OS:</span> Arch Linux x86_64 </span><br><span class="line">               `<span class="operator">+</span><span class="params">oooo:</span>                  <span class="params">Host:</span> <span class="number">20</span>H5A056CD ThinkPad E570 </span><br><span class="line">              `<span class="operator">+</span><span class="params">oooooo:</span>                 <span class="params">Kernel:</span> <span class="number">6.12</span>.<span class="number">7</span><span class="operator">-</span>arch1-<span class="number">1</span> </span><br><span class="line">             <span class="operator">-</span><span class="operator">+</span>oooooo<span class="operator">+</span>:                <span class="params">Uptime:</span> <span class="number">10</span> mins </span><br><span class="line">           `<span class="operator">/</span>:-:<span class="operator">++</span>oooo<span class="operator">+</span>:               <span class="params">Packages:</span> <span class="number">1542</span> (pacman) </span><br><span class="line">          `<span class="operator">/</span><span class="operator">++</span><span class="operator">++</span><span class="operator">/</span><span class="operator">++</span><span class="operator">++</span><span class="operator">++</span><span class="operator">+</span>:              <span class="params">Shell:</span> bash <span class="number">5.2</span>.<span class="number">37</span> </span><br><span class="line">         `<span class="operator">/</span><span class="operator">++</span><span class="operator">++</span><span class="operator">++</span><span class="operator">++</span><span class="operator">++</span><span class="operator">++</span><span class="operator">++</span>:             <span class="params">Resolution:</span> <span class="number">1920</span>x1080 </span><br><span class="line">        `<span class="operator">/</span><span class="operator">++</span><span class="operator">+</span>ooooooooooooo<span class="operator">/</span>`           <span class="params">DE:</span> Plasma <span class="number">6.2</span>.<span class="number">4</span> </span><br><span class="line">       .<span class="operator">/</span>ooosssso<span class="operator">++</span>osssssso<span class="operator">+</span>`          <span class="params">WM:</span> kwin </span><br><span class="line">      .oossssso-````<span class="operator">/</span>ossssss<span class="operator">+</span>`         <span class="params">Theme:</span> Breeze [GTK2<span class="operator">/</span><span class="number">3</span>] </span><br><span class="line">     <span class="operator">-</span>osssssso.      <span class="meta">:ssssssso</span>.        <span class="params">Icons:</span> breeze [GTK2<span class="operator">/</span><span class="number">3</span>] </span><br><span class="line">    <span class="meta">:osssssss</span><span class="symbol">/</span>        osssso<span class="operator">++</span><span class="operator">+</span>.       <span class="params">Terminal:</span> konsole </span><br><span class="line">   <span class="operator">/</span>ossssssss<span class="symbol">/</span>        <span class="operator">+</span>ssssooo<span class="symbol">/-</span>       <span class="params">CPU:</span> Intel i3-<span class="number">7100</span>U (<span class="number">4</span>) @ <span class="number">2.400</span>GHz </span><br><span class="line"> `<span class="operator">/</span>ossssso<span class="operator">+</span><span class="operator">/</span>:-        <span class="operator">-</span>:<span class="symbol">/+osssso+-</span>     <span class="params">GPU:</span> Intel HD Graphics <span class="number">620</span> </span><br><span class="line">`<span class="operator">+</span>sso<span class="operator">+</span>:-`                 `.-<span class="operator">/</span><span class="operator">+</span><span class="params">oso:</span>    <span class="params">GPU:</span> NVIDIA GeForce <span class="number">940</span>MX </span><br><span class="line"><span class="operator">++</span>:.                           `-<span class="operator">/</span><span class="operator">+</span><span class="symbol">/</span>   <span class="params">Memory:</span> <span class="number">2753</span>MiB <span class="symbol">/</span> <span class="number">7848</span>MiB </span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
-
-<hr>
-<h3 id="1-检查硬件信息"><a href="#1-检查硬件信息" class="headerlink" title="1. 检查硬件信息"></a>1. 检查硬件信息</h3><p>首先，查看系统日志，确认是否检测到了亮度控制接口。你可以使用以下命令查看 <code>Xorg</code> 的日志，查找与亮度相关的信息：</p>
-<figure class="highlight stata"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">cat</span> /<span class="keyword">var</span>/<span class="keyword">log</span>/Xorg.0.<span class="keyword">log</span> | grep -i <span class="string">"backlight"</span></span><br><span class="line"><span class="keyword">cat</span> /<span class="keyword">var</span>/<span class="keyword">log</span>/Xorg.0.<span class="keyword">log</span> | grep -i <span class="string">"synaptics"</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>如果日志中出现以下内容，说明系统确实已经识别了亮度控制接口：</p>
-<figure class="highlight angelscript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="string">[    39.909]</span> (--) <span class="built_in">int</span>el(<span class="number">0</span>): Found backlight control <span class="keyword">interface</span> <span class="symbol">thinkpad_screen</span> (<span class="symbol">type</span> '<span class="symbol">platform</span>') <span class="symbol">for</span> <span class="symbol">output</span> <span class="symbol">eDP1</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>出现这个显示是系统已经识别到了 <code>thinkpad_screen</code> 作为亮度控制接口，类型为 <code>platform</code>，并且为输出设备 <code>eDP1</code> 提供了控制。</p>
-<hr>
-<h3 id="2-可能的原因"><a href="#2-可能的原因" class="headerlink" title="2. 可能的原因"></a>2. 可能的原因</h3><p>尽管系统识别到了亮度控制接口，仍然可能会遇到无法调节亮度的情况。常见的原因包括：</p>
-<ol>
-<li><strong>驱动问题</strong> ：虽然系统检测到了硬件接口，但可能存在驱动没有正确加载，或者硬件兼容性问题，导致亮度调节无法生效。</li>
-<li><strong>ACPI 配置问题</strong> ：ACPI（高级配置和电源管理）与亮度控制的交互可能受到内核参数的影响。你当前的内核命令行包含了 <code>acpi_osi=Linux</code> 和 <code>acpi_backlight=vendor</code> 这两个参数，可能与亮度调节的功能产生冲突。不同的笔记本电脑可能需要不同的 ACPI 配置才能正常工作。</li>
-</ol>
-<hr>
-<h3 id="3-下一步检查"><a href="#3-下一步检查" class="headerlink" title="3. 下一步检查"></a>3. 下一步检查</h3><p>为了进一步解决问题，你可以尝试修改内核的启动参数，调整 ACPI 配置，确保亮度控制功能可以正常使用。按照以下步骤进行操作：</p>
-<h4 id="步骤-1：修改-GRUB-配置"><a href="#步骤-1：修改-GRUB-配置" class="headerlink" title="步骤 1：修改 GRUB 配置"></a>步骤 1：修改 GRUB 配置</h4><ul>
-<li><p>打开 GRUB 配置文件：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> nano /etc/default/grub</span><br></pre></td></tr></tbody></table></figure>
-
-<p>找到以下行：</p>
-<figure class="highlight ini"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">GRUB_CMDLINE_LINUX_DEFAULT</span>=<span class="string">"quiet splash"</span></span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>在这行的末尾添加 <code>acpi_backlight=video</code>，该参数强制使用标准的视频驱动程序来控制亮度，而不是依赖于其他硬件接口。修改后的行应如下所示：</p>
-</li>
-</ul>
-<figure class="highlight ini"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">GRUB_CMDLINE_LINUX_DEFAULT</span>=<span class="string">"quiet splash acpi_backlight=video"</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>这将会优先使用标准的 <code>video</code> 模式来处理亮度控制，从而避免硬件兼容性问题。</p>
-<hr>
-<h4 id="步骤-2：更新-GRUB-配置"><a href="#步骤-2：更新-GRUB-配置" class="headerlink" title="步骤 2：更新 GRUB 配置"></a>步骤 2：更新 GRUB 配置</h4><p>修改完成后，需要更新 GRUB 配置以使更改生效：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> grub-mkconfig -o /boot/grub/grub.cfg</span><br></pre></td></tr></tbody></table></figure>
-
-<hr>
-<h4 id="步骤-3：重启计算机"><a href="#步骤-3：重启计算机" class="headerlink" title="步骤 3：重启计算机"></a>步骤 3：重启计算机</h4><p>完成配置更新后，重启计算机以使新的内核参数生效：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> reboot</span><br></pre></td></tr></tbody></table></figure>
-
-<hr>
-]]></content>
-      <categories>
-        <category>archlinux</category>
-      </categories>
-      <tags>
-        <tag>archlinux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>archlinux开机进入系统显示白屏闪烁</title>
-    <url>/archlinux%E5%BC%80%E6%9C%BA%E8%BF%9B%E5%85%A5%E7%B3%BB%E7%BB%9F%E6%98%BE%E7%A4%BA%E7%99%BD%E5%B1%8F%E9%97%AA%E7%83%81/</url>
-    <content><![CDATA[<p>前几天我把我的archlinux，全部更新了一遍，没想到开机开机进入系统显示白屏闪烁 切换tty3显示：nouveau0000:01:00.8:xorg[875]:valldate:22</p>
-<div style="display: flex; justify-content: center; align-items: center;">
-  <div style="width: 400px; height: 400px; overflow: hidden; border-radius: 0%; background-color: #f0f0f0">
-    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/202501061120422.webp" style="width: 100%; height: 100%; object-fit: cover;" alt="linux开机报错">
-  </div>
-</div>
-
-<figure class="highlight apache"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attribute">nouveau0000</span>:<span class="number">01</span>:<span class="number">00</span>.<span class="number">8</span>:xorg[<span class="number">875</span>]:valldate:<span class="number">22</span></span><br><span class="line"><span class="attribute">nouveau0000</span>:<span class="number">01</span>:<span class="number">00</span>.<span class="number">8</span>:xorg[<span class="number">875</span>]:valldating bo list</span><br></pre></td></tr></tbody></table></figure>
-
-<span id="more"></span>
-
-<h1 id="第一步-开机启动-进入grub时"><a href="#第一步-开机启动-进入grub时" class="headerlink" title="第一步 开机启动 进入grub时"></a>第一步 开机启动 进入grub时</h1><h2 id="1-进入-GRUB-菜单"><a href="#1-进入-GRUB-菜单" class="headerlink" title="1. 进入 GRUB 菜单"></a>1. 进入 GRUB 菜单</h2><ul>
-<li>重启你的电脑，当 GRUB 启动菜单出现时，使用上下箭头键选中你想启动的内核（通常是默认的启动项）。</li>
-<li>按下 <strong>e</strong> 键进行编辑。</li>
-</ul>
-<h2 id="2-禁用-Nouveau-驱动"><a href="#2-禁用-Nouveau-驱动" class="headerlink" title="2. 禁用 Nouveau 驱动"></a>2. 禁用 Nouveau 驱动</h2><ul>
-<li><p>在 GRUB 编辑界面中，找到以 <code>linux</code> 开头的那一行。这一行通常会包含启动内核的路径以及一些内核参数。<br>比如，类似这样的行：</p>
-<figure class="highlight routeros"><table><tbody><tr><td class="code"><pre><span class="line">linux   /boot/vmlinuz-linux <span class="attribute">root</span>=UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx rx quiet splash nouveau.<span class="attribute">modeset</span>=0</span><br></pre></td></tr></tbody></table></figure></li>
-</ul>
-<p>每个人的电脑不一样这个是参考</p>
-<p>rx在后面添加：</p>
-<figure class="highlight routeros"><table><tbody><tr><td class="code"><pre><span class="line">quiet splash nouveau.<span class="attribute">modeset</span>=0</span><br></pre></td></tr></tbody></table></figure>
-
-<p>将 <code>nouveau.modeset=0</code> 添加到这行的末尾，禁用 Nouveau 驱动。</p>
-<ul>
-<li>禁用 Nouveau 驱动的参数是 <code>nouveau.modeset=0</code>。</li>
-<li>例如，编辑后的行应该像这样：</li>
-</ul>
-<h2 id="3-启动"><a href="#3-启动" class="headerlink" title="3. 启动"></a>3. 启动</h2><ul>
-<li>修改完成后，按 <strong>Ctrl + X</strong> 或 <strong>F10</strong> 启动系统。此时系统将会在单用户模式下启动，并且 Nouveau 驱动将被禁用。</li>
-</ul>
-<h1 id="第二步-进入桌面后（或者进入系统后）"><a href="#第二步-进入桌面后（或者进入系统后）" class="headerlink" title="第二步 进入桌面后（或者进入系统后）"></a>第二步 进入桌面后（或者进入系统后）</h1><h2 id="1-禁用独立显卡的唤醒"><a href="#1-禁用独立显卡的唤醒" class="headerlink" title="1. 禁用独立显卡的唤醒"></a>1. <strong>禁用独立显卡的唤醒</strong></h2><ul>
-<li><p>编辑 <code>/etc/default/grub</code>：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> nano /etc/default/grub</span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>找到以下行:</p>
-<figure class="highlight ini"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">GRUB_CMDLINE_LINUX_DEFAULT</span>=<span class="string">"quiet splash"</span></span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>修改成</p>
-<figure class="highlight ini"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">GRUB_CMDLINE_LINUX_DEFAULT</span>=<span class="string">"quiet splash nouveau.modeset=0 acpi_backlight=vendor"</span></span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>更新 GRUB：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> grub-mkconfig -o /boot/grub/grub.cfg</span><br></pre></td></tr></tbody></table></figure></li>
-</ul>
-<h2 id="2-使用-NVIDIA-闭源驱动"><a href="#2-使用-NVIDIA-闭源驱动" class="headerlink" title="2. 使用 NVIDIA 闭源驱动"></a>2. <strong>使用 NVIDIA 闭源驱动</strong></h2><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> pacman -S nvidia nvidia-utils nvidia-settings</span><br><span class="line"><span class="built_in">sudo</span> mkinitcpio -P</span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="3-重启"><a href="#3-重启" class="headerlink" title="3. 重启"></a>3. <strong>重启</strong></h2><p>完成上述步骤后，重启系统：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> reboot</span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="4-确认-NVIDIA-驱动是否生效"><a href="#4-确认-NVIDIA-驱动是否生效" class="headerlink" title="4. 确认 NVIDIA 驱动是否生效"></a>4. <strong>确认 NVIDIA 驱动是否生效</strong></h2><p>重启后，运行以下命令确认 NVIDIA 驱动是否被加载：</p>
-<figure class="highlight ebnf"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attribute">nvidia-smi</span></span><br></pre></td></tr></tbody></table></figure>
-<blockquote>
-<p>正常加载后如果你的不能调整显示屏的亮度的话请看下一篇</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>archlinux</category>
-      </categories>
-      <tags>
-        <tag>archlinux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>国内也能用 Gemini 了！超详细教程</title>
-    <url>/%E5%9B%BD%E5%86%85%E4%B9%9F%E8%83%BD%E7%94%A8-Gemini-%E4%BA%86%EF%BC%81%E8%B6%85%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<h1 id="国内也能用上-Gemini-了！超详细教程，手把手教你"><a href="#国内也能用上-Gemini-了！超详细教程，手把手教你" class="headerlink" title="国内也能用上 Gemini 了！超详细教程，手把手教你"></a>国内也能用上 Gemini 了！超详细教程，手把手教你</h1><p>大家好！是不是早就听说 Google 的 Gemini 很厉害，但又苦于国内用不了？别担心，今天我就来教大家一个超简单的方法，让你在国内也能免费用上 Gemini！不用魔法，也不需要复杂的配置，跟着我的步骤，你也能轻松体验 Gemini 的强大功能。</p>
-<p><strong>简单来说，我们要做什么？</strong></p>
-<p>其实，我们要做的就是搭建一个“桥梁”，让国内的网络可以连接到 Gemini 的 API，就像搭个梯子一样。这个“梯子”需要借助一个叫 Cloudflare 的工具，还有一些代码，但别怕，我都会一步一步教你。</p>
-<p><strong>准备工作，先来个“装备清单”：</strong></p>
-<ol>
-<li><strong>Gemini API 密钥：</strong> 这是你使用 Gemini 的“通行证”。你需要去 Google AI Studio 申请一个。<ul>
-<li>打开 <a href="https://aistuidio.google.com/">aistuidio.google.com</a>，登录你的 Google 账号。</li>
-<li>在 Google AI Studio 中，创建一个新的 API 密钥。记住，即使你不在支持的地区，也可以用 VPN 申请！</li>
-</ul>
-</li>
-<li><strong>Cloudflare 账号：</strong> 你需要注册一个 Cloudflare 账号，它是我们搭建“梯子”的重要工具。<ul>
-<li>打开 <a href="https://cloudflare.com/">cloudflare.com</a> ，注册一个账号，过程很简单。</li>
-</ul>
-</li>
-<li><strong>Github 账号：</strong> 你需要一个 Github 账号，用来“复制”一些代码。<ul>
-<li>如果你还没有，去 <a href="https://github.com/">github.com</a> 注册一个吧。</li>
-</ul>
-</li>
-<li><strong>Chatbox 软件：</strong> 这是一个可以让你和 Gemini “聊天”的工具，就像微信一样。<ul>
-<li>去 <a href="https://github.com/Bin-Huang/chatbox">github.com/Bin-Huang/chatbox</a> 下载并安装它。</li>
-</ul>
-</li>
-</ol>
-<p><strong>第一步：搭建“梯子”——部署 Cloudflare Worker</strong></p>
-<ol>
-<li><strong>“复制”代码：</strong><ul>
-<li>打开 <a href="https://github.com/PublicAffairs/openai-gemini">github.com/PublicAffairs/openai-gemini</a> 这个链接，这是“梯子”的代码来源。</li>
-<li>点击右上角的 “Fork” 按钮，把这个代码“复制”到你的 Github 账号里。</li>
-</ul>
-</li>
-<li><strong>“提取”代码：</strong><ul>
-<li>在你 Github 的“复制”项目里，找到 <code>src/worker.mjs</code> 这个文件。</li>
-<li>复制这个文件里的所有代码。</li>
-</ul>
-</li>
-<li><strong>“搭建”梯子：</strong><ul>
-<li>登录你的 Cloudflare 账号，找到 “Workers &amp; Pages” 页面。</li>
-<li>点击 “创建 Worker” 按钮，就像新建一个文件一样。</li>
-<li>把你刚才复制的代码粘贴到代码编辑器里。</li>
-</ul>
-</li>
-<li><strong>“配置”通行证：</strong><ul>
-<li>在代码编辑器下方，找到 “设置” 选项卡，点击 “环境变量”。</li>
-<li>添加一个叫 <code>GOOGLE_API_KEY</code> 的环境变量，把你的 Gemini API 密钥填进去。</li>
-</ul>
-</li>
-<li><strong>“架好”梯子：</strong><ul>
-<li>点击 “保存并部署” 按钮，你的 Cloudflare Worker 就会被部署，就像搭好了一个梯子一样。</li>
-<li>复制你的 Worker 的网址，比如 <code>https://your-worker-name.your-cloudflare-subdomain.workers.dev</code>，这个网址很重要，后面要用到！</li>
-</ul>
-</li>
-</ol>
-<p><strong>第二步：让 Chatbox 和 Gemini “连上线”</strong></p>
-<ol>
-<li><strong>打开 Chatbox：</strong> 启动你安装的 Chatbox 软件。</li>
-<li><strong>添加 Gemini 模型：</strong><ul>
-<li>在 Chatbox 的设置里，找到“模型”或者“自定义模型”的选项。</li>
-<li>点击“添加模型”或类似的按钮。</li>
-</ul>
-</li>
-<li><strong>“告诉”Chatbox 怎么连：</strong><ul>
-<li><strong>模型名称：</strong> 可以随便起，比如 “Gemini-Cloudflare”。</li>
-<li><strong>API 类型：</strong> 选择 <code>OpenAI</code>。</li>
-<li><strong>API Base URL：</strong> 把你刚才复制的 Cloudflare Worker 网址粘贴到这里，并在末尾加上 <code>/v1</code>，比如 <code>https://your-worker-name.your-cloudflare-subdomain.workers.dev/v1</code>。</li>
-<li><strong>API Key：</strong> 这里不需要填，因为 Gemini 的密钥已经配置在 Cloudflare Worker 里了。</li>
-<li><strong>模型名称：</strong> 填入 <code>gemini-1.5-pro-latest</code> 或者 <code>models/gemini-1.5-pro-latest</code>。</li>
-</ul>
-</li>
-<li><strong>测试 “连接”：</strong><ul>
-<li>点击 “测试连接” 或类似的按钮，确保 Chatbox 可以成功连接到你的 Gemini 代理。</li>
-</ul>
-</li>
-</ol>
-<p><strong>第三步：开始和 Gemini “聊天”</strong></p>
-<ol>
-<li><strong>选择 Gemini：</strong> 在 Chatbox 里，选择你刚刚添加的 <code>Gemini-Cloudflare</code> 模型。</li>
-<li><strong>开始对话：</strong> 现在，你可以像使用 OpenAI 一样，和 Gemini 模型进行对话了！</li>
-</ol>
-<p><strong>温馨提示：</strong></p>
-<ul>
-<li><strong>模型选择：</strong> 你可以使用 <code>gemini-1.5-pro-latest</code> 模型，或者其他 Gemini 模型。</li>
-<li><strong>API 限制：</strong> Gemini API 可能有使用次数限制，注意查看 Google AI Studio 的文档。</li>
-<li><strong>Cloudflare Worker 限制：</strong> Cloudflare Worker 也有一些限制，比如运行时间限制，如果你的请求太多可能会遇到问题。</li>
-<li><strong><code>openai-gemini</code> 项目：</strong> 这个项目还在开发中，可能会有一些小问题，请关注它的更新。</li>
-</ul>
-<p><strong>总结一下：</strong></p>
-<p>通过以上步骤，你已经成功搭建了一个“桥梁”，让国内的网络可以连接到 Gemini 的 API，并用 Chatbox 和 Gemini “聊上了天”！是不是很简单？快去试试吧，体验一下 Gemini 的强大吧！</p>
-]]></content>
-      <categories>
-        <category>Gemini</category>
-      </categories>
-      <tags>
-        <tag>AI</tag>
       </tags>
   </entry>
 </search>
