@@ -23,20 +23,20 @@
     var CONFIG = {"hostname":"www.pw0n.xyz","root":"/","scheme":"Pisces","version":"7.8.0","sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":true,"lazyload":false,"pangu":true,"comments":{"style":"gitalk","active":null,"storage":true,"lazyload":false},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Linux之Putty篇如果你不知道在哪下载点我下载选择你的系统版本 比如说windows-64位的就下对应的。下载直接打开就行在hostname输入你的服务器IP地址 默认22端口登录我写192.168.1.1是演示的 不是真实这个是局域网路由的 不要跟着我写 按你的服务器ip写">
+  <meta name="description" content="国内也能用上 Gemini 了！超详细教程，手把手教你大家好！是不是早就听说 Google 的 Gemini 很厉害，但又苦于国内用不了？别担心，今天我就来教大家一个超简单的方法，让你在国内也能免费用上 Gemini！不用魔法，也不需要复杂的配置，跟着我的步骤，你也能轻松体验 Gemini 的强大功能。 简单来说，我们要做什么？ 其实，我们要做的就是搭建一个“桥梁”，让国内的网络可以连接到 Gem">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux之putty远程工具">
-<meta property="og:url" content="https://www.pw0n.xyz/Linux%E4%B9%8Bputty%E8%BF%9C%E7%A8%8B%E5%B7%A5%E5%85%B7/index.html">
+<meta property="og:title" content="国内也能用 Gemini 了！超详细教程">
+<meta property="og:url" content="https://www.pw0n.xyz/%E5%9B%BD%E5%86%85%E4%B9%9F%E8%83%BD%E7%94%A8-Gemini-%E4%BA%86%EF%BC%81%E8%B6%85%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/index.html">
 <meta property="og:site_name" content="PW0N&#39;s Blog">
-<meta property="og:description" content="Linux之Putty篇如果你不知道在哪下载点我下载选择你的系统版本 比如说windows-64位的就下对应的。下载直接打开就行在hostname输入你的服务器IP地址 默认22端口登录我写192.168.1.1是演示的 不是真实这个是局域网路由的 不要跟着我写 按你的服务器ip写">
+<meta property="og:description" content="国内也能用上 Gemini 了！超详细教程，手把手教你大家好！是不是早就听说 Google 的 Gemini 很厉害，但又苦于国内用不了？别担心，今天我就来教大家一个超简单的方法，让你在国内也能免费用上 Gemini！不用魔法，也不需要复杂的配置，跟着我的步骤，你也能轻松体验 Gemini 的强大功能。 简单来说，我们要做什么？ 其实，我们要做的就是搭建一个“桥梁”，让国内的网络可以连接到 Gem">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-07-19T13:36:03.000Z">
-<meta property="article:modified_time" content="2024-12-12T03:27:25.928Z">
+<meta property="article:published_time" content="2025-01-06T06:37:36.000Z">
+<meta property="article:modified_time" content="2025-01-06T06:44:33.684Z">
 <meta property="article:author" content="PW0N">
-<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="AI">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://www.pw0n.xyz/Linux%E4%B9%8Bputty%E8%BF%9C%E7%A8%8B%E5%B7%A5%E5%85%B7/">
+<link rel="canonical" href="https://www.pw0n.xyz/%E5%9B%BD%E5%86%85%E4%B9%9F%E8%83%BD%E7%94%A8-Gemini-%E4%BA%86%EF%BC%81%E8%B6%85%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/">
 
 
 <script id="page-configurations">
@@ -62,7 +62,7 @@
   padding: 1px 4px;
 }
 </style>
-  <title>Linux之putty远程工具 | PW0N's Blog</title>
+  <title>国内也能用 Gemini 了！超详细教程 | PW0N's Blog</title>
   
 
 
@@ -230,7 +230,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.pw0n.xyz/Linux%E4%B9%8Bputty%E8%BF%9C%E7%A8%8B%E5%B7%A5%E5%85%B7/">
+    <link itemprop="mainEntityOfPage" href="https://www.pw0n.xyz/%E5%9B%BD%E5%86%85%E4%B9%9F%E8%83%BD%E7%94%A8-Gemini-%E4%BA%86%EF%BC%81%E8%B6%85%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -245,7 +245,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Linux之putty远程工具
+          国内也能用 Gemini 了！超详细教程
         </h1>
 
         <div class="post-meta">
@@ -254,23 +254,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2024-07-19 13:36:03" itemprop="dateCreated datePublished" datetime="2024-07-19T13:36:03+00:00">2024-07-19</time>
+              <time title="创建时间：2025-01-06 06:37:36 / 修改时间：06:44:33" itemprop="dateCreated datePublished" datetime="2025-01-06T06:37:36+00:00">2025-01-06</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-12-12 03:27:25" itemprop="dateModified" datetime="2024-12-12T03:27:25+00:00">2024-12-12</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
+                  <a href="/categories/Gemini/" itemprop="url" rel="index"><span itemprop="name">Gemini</span></a>
                 </span>
             </span>
 
@@ -285,15 +279,93 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="Linux之Putty篇"><a href="#Linux之Putty篇" class="headerlink" title="Linux之Putty篇"></a>Linux之Putty篇</h1><p>如果你不知道在哪下载<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">点我下载</a>选择你的系统版本 比如说windows-64位的就下对应的。<br>下载直接打开就行<br>在hostname输入你的服务器IP地址 默认22端口登录<br>我写192.168.1.1是演示的 不是真实这个是局域网路由的 不要跟着我写 按你的服务器ip写</p>
-<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/putty1.webp" alt="putty"></p>
-<span id="more"></span>
-
-
-<p>在打开之前先做好这几项<br>在connection里面 找到second between keepalive 调整为30<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/putty2.webp" alt="putty2"><br>然后放回首页点击save这样以后打开就不用输入你的服务器IP和其他选项<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/putty3.webp" alt="putty3"></p>
-<blockquote>
-<p>try</p>
-</blockquote>
+        <h1 id="国内也能用上-Gemini-了！超详细教程，手把手教你"><a href="#国内也能用上-Gemini-了！超详细教程，手把手教你" class="headerlink" title="国内也能用上 Gemini 了！超详细教程，手把手教你"></a>国内也能用上 Gemini 了！超详细教程，手把手教你</h1><p>大家好！是不是早就听说 Google 的 Gemini 很厉害，但又苦于国内用不了？别担心，今天我就来教大家一个超简单的方法，让你在国内也能免费用上 Gemini！不用魔法，也不需要复杂的配置，跟着我的步骤，你也能轻松体验 Gemini 的强大功能。</p>
+<p><strong>简单来说，我们要做什么？</strong></p>
+<p>其实，我们要做的就是搭建一个“桥梁”，让国内的网络可以连接到 Gemini 的 API，就像搭个梯子一样。这个“梯子”需要借助一个叫 Cloudflare 的工具，还有一些代码，但别怕，我都会一步一步教你。</p>
+<p><strong>准备工作，先来个“装备清单”：</strong></p>
+<ol>
+<li><strong>Gemini API 密钥：</strong> 这是你使用 Gemini 的“通行证”。你需要去 Google AI Studio 申请一个。<ul>
+<li>打开 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://aistuidio.google.com/">aistuidio.google.com</a>，登录你的 Google 账号。</li>
+<li>在 Google AI Studio 中，创建一个新的 API 密钥。记住，即使你不在支持的地区，也可以用 VPN 申请！</li>
+</ul>
+</li>
+<li><strong>Cloudflare 账号：</strong> 你需要注册一个 Cloudflare 账号，它是我们搭建“梯子”的重要工具。<ul>
+<li>打开 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://cloudflare.com/">cloudflare.com</a> ，注册一个账号，过程很简单。</li>
+</ul>
+</li>
+<li><strong>Github 账号：</strong> 你需要一个 Github 账号，用来“复制”一些代码。<ul>
+<li>如果你还没有，去 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/">github.com</a> 注册一个吧。</li>
+</ul>
+</li>
+<li><strong>Chatbox 软件：</strong> 这是一个可以让你和 Gemini “聊天”的工具，就像微信一样。<ul>
+<li>去 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Bin-Huang/chatbox">github.com/Bin-Huang/chatbox</a> 下载并安装它。</li>
+</ul>
+</li>
+</ol>
+<p><strong>第一步：搭建“梯子”——部署 Cloudflare Worker</strong></p>
+<ol>
+<li><strong>“复制”代码：</strong><ul>
+<li>打开 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/PublicAffairs/openai-gemini">github.com/PublicAffairs/openai-gemini</a> 这个链接，这是“梯子”的代码来源。</li>
+<li>点击右上角的 “Fork” 按钮，把这个代码“复制”到你的 Github 账号里。</li>
+</ul>
+</li>
+<li><strong>“提取”代码：</strong><ul>
+<li>在你 Github 的“复制”项目里，找到 <code>src/worker.mjs</code> 这个文件。</li>
+<li>复制这个文件里的所有代码。</li>
+</ul>
+</li>
+<li><strong>“搭建”梯子：</strong><ul>
+<li>登录你的 Cloudflare 账号，找到 “Workers &amp; Pages” 页面。</li>
+<li>点击 “创建 Worker” 按钮，就像新建一个文件一样。</li>
+<li>把你刚才复制的代码粘贴到代码编辑器里。</li>
+</ul>
+</li>
+<li><strong>“配置”通行证：</strong><ul>
+<li>在代码编辑器下方，找到 “设置” 选项卡，点击 “环境变量”。</li>
+<li>添加一个叫 <code>GOOGLE_API_KEY</code> 的环境变量，把你的 Gemini API 密钥填进去。</li>
+</ul>
+</li>
+<li><strong>“架好”梯子：</strong><ul>
+<li>点击 “保存并部署” 按钮，你的 Cloudflare Worker 就会被部署，就像搭好了一个梯子一样。</li>
+<li>复制你的 Worker 的网址，比如 <code>https://your-worker-name.your-cloudflare-subdomain.workers.dev</code>，这个网址很重要，后面要用到！</li>
+</ul>
+</li>
+</ol>
+<p><strong>第二步：让 Chatbox 和 Gemini “连上线”</strong></p>
+<ol>
+<li><strong>打开 Chatbox：</strong> 启动你安装的 Chatbox 软件。</li>
+<li><strong>添加 Gemini 模型：</strong><ul>
+<li>在 Chatbox 的设置里，找到“模型”或者“自定义模型”的选项。</li>
+<li>点击“添加模型”或类似的按钮。</li>
+</ul>
+</li>
+<li><strong>“告诉”Chatbox 怎么连：</strong><ul>
+<li><strong>模型名称：</strong> 可以随便起，比如 “Gemini-Cloudflare”。</li>
+<li><strong>API 类型：</strong> 选择 <code>OpenAI</code>。</li>
+<li><strong>API Base URL：</strong> 把你刚才复制的 Cloudflare Worker 网址粘贴到这里，并在末尾加上 <code>/v1</code>，比如 <code>https://your-worker-name.your-cloudflare-subdomain.workers.dev/v1</code>。</li>
+<li><strong>API Key：</strong> 这里不需要填，因为 Gemini 的密钥已经配置在 Cloudflare Worker 里了。</li>
+<li><strong>模型名称：</strong> 填入 <code>gemini-1.5-pro-latest</code> 或者 <code>models/gemini-1.5-pro-latest</code>。</li>
+</ul>
+</li>
+<li><strong>测试 “连接”：</strong><ul>
+<li>点击 “测试连接” 或类似的按钮，确保 Chatbox 可以成功连接到你的 Gemini 代理。</li>
+</ul>
+</li>
+</ol>
+<p><strong>第三步：开始和 Gemini “聊天”</strong></p>
+<ol>
+<li><strong>选择 Gemini：</strong> 在 Chatbox 里，选择你刚刚添加的 <code>Gemini-Cloudflare</code> 模型。</li>
+<li><strong>开始对话：</strong> 现在，你可以像使用 OpenAI 一样，和 Gemini 模型进行对话了！</li>
+</ol>
+<p><strong>温馨提示：</strong></p>
+<ul>
+<li><strong>模型选择：</strong> 你可以使用 <code>gemini-1.5-pro-latest</code> 模型，或者其他 Gemini 模型。</li>
+<li><strong>API 限制：</strong> Gemini API 可能有使用次数限制，注意查看 Google AI Studio 的文档。</li>
+<li><strong>Cloudflare Worker 限制：</strong> Cloudflare Worker 也有一些限制，比如运行时间限制，如果你的请求太多可能会遇到问题。</li>
+<li><strong><code>openai-gemini</code> 项目：</strong> 这个项目还在开发中，可能会有一些小问题，请关注它的更新。</li>
+</ul>
+<p><strong>总结一下：</strong></p>
+<p>通过以上步骤，你已经成功搭建了一个“桥梁”，让国内的网络可以连接到 Gemini 的 API，并用 Chatbox 和 Gemini “聊上了天”！是不是很简单？快去试试吧，体验一下 Gemini 的强大吧！</p>
 
     </div>
 
@@ -322,7 +394,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Linux/" rel="tag"># Linux</a>
+              <a href="/tags/AI/" rel="tag"># AI</a>
           </div>
 
         
@@ -331,13 +403,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/Linux%E5%88%9B%E5%BB%BASSH%E7%A7%98%E9%92%A5/" rel="prev" title="Linux创建SSH秘钥">
-      <i class="fa fa-chevron-left"></i> Linux创建SSH秘钥
+    <a href="/archlinux-boot-screen-issue/" rel="prev" title="archlinux没有显示器无法调节亮度">
+      <i class="fa fa-chevron-left"></i> archlinux没有显示器无法调节亮度
     </a></div>
-      <div class="post-nav-item">
-    <a href="/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8B%E6%88%91%E5%85%A5%E5%9D%91linux/" rel="next" title="记录一下我入坑Linux">
-      记录一下我入坑Linux <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -398,7 +467,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Linux%E4%B9%8BPutty%E7%AF%87"><span class="nav-number">1.</span> <span class="nav-text">Linux之Putty篇</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9B%BD%E5%86%85%E4%B9%9F%E8%83%BD%E7%94%A8%E4%B8%8A-Gemini-%E4%BA%86%EF%BC%81%E8%B6%85%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B%EF%BC%8C%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0"><span class="nav-number">1.</span> <span class="nav-text">国内也能用上 Gemini 了！超详细教程，手把手教你</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -617,7 +686,7 @@ window.addEventListener('pjax:success', () => {
       quicklink({
         timeout : 3000,
         priority: true,
-        ignores : [uri => uri.includes('#'),uri => uri === 'https://www.pw0n.xyz/Linux%E4%B9%8Bputty%E8%BF%9C%E7%A8%8B%E5%B7%A5%E5%85%B7/',]
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://www.pw0n.xyz/%E5%9B%BD%E5%86%85%E4%B9%9F%E8%83%BD%E7%94%A8-Gemini-%E4%BA%86%EF%BC%81%E8%B6%85%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/',]
       });
       });
   </script>
@@ -642,7 +711,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'duoqixiaozei.github.io',
       owner       : 'duoqixiaozei',
       admin       : ['duoqixiaozei'],
-      id          : '28ce7587c079363ae97a5ded8a6cf9a2',
+      id          : '0e547dc84a69ca82762ec18eb06118b2',
         language: 'zh-CN',
       distractionFreeMode: true
     });
