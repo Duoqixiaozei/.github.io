@@ -736,95 +736,108 @@
   <entry>
     <title>国内也能用 Gemini 了！超详细教程</title>
     <url>/%E5%9B%BD%E5%86%85%E4%B9%9F%E8%83%BD%E7%94%A8-Gemini-%E4%BA%86%EF%BC%81%E8%B6%85%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<h1 id="国内也能用上-Gemini-了！超详细教程，手把手教你"><a href="#国内也能用上-Gemini-了！超详细教程，手把手教你" class="headerlink" title="国内也能用上 Gemini 了！超详细教程，手把手教你"></a>国内也能用上 Gemini 了！超详细教程，手把手教你</h1><p> Google 的 Gemini 很厉害，但又苦于国内用不了？别担心，今天我就来教大家一个超简单的方法，让你在国内也能免费用上 Gemini！不用魔法，也不需要复杂的配置，跟着我的步骤，你也能轻松体验 Gemini 的强大功能。</p>
-<span id="more"></span>
-
-<p><strong>简单来说，我们要做什么？</strong></p>
-<p>其实，我们要做的就是搭建一个“桥梁”，让国内的网络可以连接到 Gemini 的 API，就像搭个梯子一样。这个“梯子”需要借助一个叫 Cloudflare 的工具，还有一些代码，但别怕，我都会一步一步教你。</p>
-<p><strong>准备工作，先来个“装备清单”：</strong></p>
-<ol>
-<li><strong>Gemini API 密钥：</strong> 这是你使用 Gemini 的“通行证”。你需要去 Google AI Studio 申请一个。<ul>
-<li>打开 <a href="https://aistuidio.google.com/">aistuidio.google.com</a>，登录你的 Google 账号。</li>
-<li>在 Google AI Studio 中，创建一个新的 API 密钥。记住，即使你不在支持的地区，也可以用 VPN 申请！</li>
+    <content><![CDATA[<p><strong>使用 Cloudflare Workers 搭建 Gemini API 代理，并通过 Chatbox 使用 Gemini</strong></p>
+<p>本教程将指导你如何利用 Cloudflare Workers 搭建一个将 Google Gemini API 转换为 OpenAI API 兼容格式的代理，然后使用开源的 Chatbox 连接 Gemini 模型。</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol>
+<li><strong>Google Gemini API 密钥:</strong><ul>
+<li>访问 <a href="https://aistuidio.google.com/">aistuidio.google.com</a> 并登录你的 Google 账号。</li>
+<li>在 Google AI Studio 中创建新的 API 密钥。请注意，即使你不在支持的地区，也可以通过 VPN 获取。</li>
 </ul>
 </li>
-<li><strong>Cloudflare 账号：</strong> 你需要注册一个 Cloudflare 账号，它是我们搭建“梯子”的重要工具。<ul>
-<li>打开 <a href="https://cloudflare.com/">cloudflare.com</a> ，注册一个账号，过程很简单。</li>
+<li><strong>Cloudflare 账号:</strong><ul>
+<li>你需要一个 Cloudflare 账号。如果你还没有，请在 <a href="https://cloudflare.com/">cloudflare.com</a> 注册一个。</li>
 </ul>
 </li>
-<li><strong>Github 账号：</strong> 你需要一个 Github 账号，用来“复制”一些代码。<ul>
-<li>如果你还没有，去 <a href="https://github.com/">github.com</a> 注册一个吧。</li>
+<li><strong>Github 账号:</strong><ul>
+<li>你需要一个 Github 账号，以便fork项目</li>
 </ul>
 </li>
-<li><strong>Chatbox 软件：</strong> 这是一个可以让你和 Gemini “聊天”的工具，就像微信一样。<ul>
-<li>去 <a href="https://github.com/Bin-Huang/chatbox">github.com/Bin-Huang/chatbox</a> 下载并安装它。</li>
+<li><strong>Chatbox:</strong><ul>
+<li>下载并安装 <a href="https://github.com/Bin-Huang/chatbox">Chatbox</a> 。这是一个开源的聊天客户端，支持多种 AI 模型。</li>
 </ul>
 </li>
 </ol>
-<p><strong>第一步：搭建“梯子”——部署 Cloudflare Worker</strong></p>
-<ol>
-<li><strong>“复制”代码：</strong><ul>
-<li>打开 <a href="https://github.com/PublicAffairs/openai-gemini">github.com/PublicAffairs/openai-gemini</a> 这个链接，这是“梯子”的代码来源。</li>
-<li>点击右上角的 “Fork” 按钮，把这个代码“复制”到你的 Github 账号里。</li>
+<h2 id="步骤一：获取gemini-API"><a href="#步骤一：获取gemini-API" class="headerlink" title="步骤一：获取gemini API"></a>步骤一：获取gemini API</h2><ul>
+<li>访问 <a href="https://aistuidio.google.com/">aistuidio.google.com</a>，登录你自己的谷歌账号</li>
+<li>点击右上角<strong>Get API key</strong><br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/yyyy/MM/dd/googleapi.webp" alt="Get API key"></li>
+<li>点击<strong>秘钥创建</strong>这样你就获得一个秘钥，复制秘钥<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/yyyy/MM/dd/%E5%A4%8D%E5%88%B6AI%E7%A7%98%E9%92%A5.webp" alt="复制秘钥"></li>
 </ul>
-</li>
-<li><strong>“提取”代码：</strong><ul>
-<li>在你 Github 的“复制”项目里，找到 <code>src/worker.mjs</code> 这个文件。</li>
-<li>复制这个文件里的所有代码。</li>
-</ul>
-</li>
-<li><strong>“搭建”梯子：</strong><ul>
-<li>登录你的 Cloudflare 账号，找到 “Workers &amp; Pages” 页面。</li>
-<li>点击 “创建 Worker” 按钮，就像新建一个文件一样。</li>
-<li>把你刚才复制的代码粘贴到代码编辑器里。</li>
-</ul>
-</li>
-<li><strong>“配置”通行证：</strong><ul>
-<li>在代码编辑器下方，找到 “设置” 选项卡，点击 “环境变量”。</li>
-<li>添加一个叫 <code>GOOGLE_API_KEY</code> 的环境变量，把你的 Gemini API 密钥填进去。</li>
-</ul>
-</li>
-<li><strong>“架好”梯子：</strong><ul>
-<li>点击 “保存并部署” 按钮，你的 Cloudflare Worker 就会被部署，就像搭好了一个梯子一样。</li>
-<li>复制你的 Worker 的网址，比如 <code>https://your-worker-name.your-cloudflare-subdomain.workers.dev</code>，这个网址很重要，后面要用到！</li>
-</ul>
-</li>
-</ol>
-<p><strong>第二步：让 Chatbox 和 Gemini “连上线”</strong></p>
-<ol>
-<li><strong>打开 Chatbox：</strong> 启动你安装的 Chatbox 软件。</li>
-<li><strong>添加 Gemini 模型：</strong><ul>
-<li>在 Chatbox 的设置里，找到“模型”或者“自定义模型”的选项。</li>
-<li>点击“添加模型”或类似的按钮。</li>
-</ul>
-</li>
-<li><strong>“告诉”Chatbox 怎么连：</strong><ul>
-<li><strong>模型名称：</strong> 可以随便起，比如 “Gemini-Cloudflare”。</li>
-<li><strong>API 类型：</strong> 选择 <code>OpenAI</code>。</li>
-<li><strong>API Base URL：</strong> 把你刚才复制的 Cloudflare Worker 网址粘贴到这里，并在末尾加上 <code>/v1</code>，比如 <code>https://your-worker-name.your-cloudflare-subdomain.workers.dev/v1</code>。</li>
-<li><strong>API Key：</strong> 这里不需要填，因为 Gemini 的密钥已经配置在 Cloudflare Worker 里了。</li>
-<li><strong>模型名称：</strong> 填入 <code>gemini-1.5-pro-latest</code> 或者 <code>models/gemini-1.5-pro-latest</code>。</li>
-</ul>
-</li>
-<li><strong>测试 “连接”：</strong><ul>
-<li>点击 “测试连接” 或类似的按钮，确保 Chatbox 可以成功连接到你的 Gemini 代理。</li>
-</ul>
-</li>
-</ol>
-<p><strong>第三步：开始和 Gemini “聊天”</strong></p>
-<ol>
-<li><strong>选择 Gemini：</strong> 在 Chatbox 里，选择你刚刚添加的 <code>Gemini-Cloudflare</code> 模型。</li>
-<li><strong>开始对话：</strong> 现在，你可以像使用 OpenAI 一样，和 Gemini 模型进行对话了！</li>
-</ol>
-<p><strong>温馨提示：</strong></p>
+<h2 id="步骤二：部署-Cloudflare-Worker"><a href="#步骤二：部署-Cloudflare-Worker" class="headerlink" title="步骤二：部署 Cloudflare Worker"></a>步骤二：部署 Cloudflare Worker</h2><ol>
+<li><p><strong>Deploy<code>openai-gemini</code> 项目:</strong></p>
 <ul>
-<li><strong>模型选择：</strong> 你可以使用 <code>gemini-1.5-pro-latest</code> 模型，或者其他 Gemini 模型。</li>
-<li><strong>API 限制：</strong> Gemini API 可能有使用次数限制，注意查看 Google AI Studio 的文档。</li>
-<li><strong>Cloudflare Worker 限制：</strong> Cloudflare Worker 也有一些限制，比如运行时间限制，如果你的请求太多可能会遇到问题。</li>
-<li><strong><code>openai-gemini</code> 项目：</strong> 这个项目还在开发中，可能会有一些小问题，请关注它的更新。</li>
+<li>访问 <a href="https://github.com/PublicAffairs/openai-gemini">https://github.com/PublicAffairs/openai-gemini</a></li>
+<li>点击下面的 “Deploy with worker” 按钮，项目会自动部署 。<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/yyyy/MM/dd/github%E9%A1%B5%E9%9D%A2.webp" alt="github项目"></li>
+<li>点击 I have a account（在此之前你必须有cloudflare账号和域名dns绑定到cloudflare）<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/yyyy/MM/dd/cloudflare%E8%B4%A6%E5%8F%B7.webp" alt="cloudflare账号"></li>
 </ul>
-<p><strong>总结一下：</strong></p>
-<p>通过以上步骤，你已经成功搭建了一个“桥梁”，让国内的网络可以连接到 Gemini 的 API，并用 Chatbox 和 Gemini “聊上了天”！是不是很简单？快去试试吧，体验一下 Gemini 的强大吧！</p>
+</li>
+<li><p><strong>填写cloudflare woker token和api</strong></p>
+<ul>
+<li>点击这按顺序点击这两个，先点击<strong>Worker Dashboard</strong>，登录号你的cloudflare在你的左侧会显示你的账户ID点击复制填写在<strong>Account ID</strong>。</li>
+<li>点击<strong>My profile</strong>在<strong>用户API令牌</strong>点击<strong>创建令牌</strong>选择<strong>编辑cloudflare worker使用模版</strong><br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/yyyy/MM/dd/%E5%88%9B%E5%BB%BA%E7%A7%98%E9%92%A5.webp" alt="创建api令牌"><br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/yyyy/MM/dd/%E5%88%9B%E5%BB%BAworkerAI%E7%A7%98%E9%92%A5.webp" alt="使用cloudflarewoker模版"></li>
+<li>在账户资源中选择<strong>包括</strong>和<strong>所有账户</strong>还有下面的区域资源也是一样选择<strong>包括</strong>和<strong>包括所有区域</strong>（账户资源可以选择你所需要的域名为了方便我就选择所有账户以便后面可以选择域名）</li>
+<li><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/yyyy/MM/dd/%E7%BC%96%E8%BE%91.webp" alt="编辑cloudflareworker"></li>
+<li>点击<strong>Connect Account</strong>这里之后会跳转到github，登录github会自动action。<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/yyyy/MM/dd/%E5%A1%AB%E5%86%99.webp" alt="Connect Account"></li>
+</ul>
+</li>
+<li><p><strong>回到cloudflare账号</strong></p>
+<ul>
+<li>登录你的 Cloudflare 账号，进入 “Workers &amp; Pages” 页面。</li>
+<li>找到gemini的项目</li>
+<li>找到<strong>设置</strong>里面在<strong>域和路由</strong>点击<strong>添加</strong>点击<strong>自定域</strong>输入你的域名（比如你的域名123.com 你可以在123.com添加你喜欢的前缀比如chat.123.com）<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/yyyy/MM/dd/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D.webp" alt="设置域名"><br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/yyyy/MM/dd/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D.webp" alt="自定域"></li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="步骤三：配置-Chatbox"><a href="#步骤三：配置-Chatbox" class="headerlink" title="步骤三：配置 Chatbox"></a>步骤三：配置 Chatbox</h2><ol>
+<li><p><strong>下载对应系统的chatbox（以Windows为例子）</strong></p>
+<ul>
+<li><a href="https://github.com/Bin-Huang/chatbox">Chatbox</a>点击这个跳转到github之后可以点击<strong>release</strong>选择对应的下载版本<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/yyyy/MM/dd/chatbox-%E5%AF%B9%E5%BA%94%E7%9A%84%E5%AE%89%E8%A3%85%E5%8C%85.webp" alt="下载对应版本"></li>
+</ul>
+</li>
+<li><p><strong>添加自定义模型:</strong></p>
+<ul>
+<li>在 Chatbox 的设置中，找到 “模型” 或 “自定义模型” 的选项。</li>
+<li>点击 “添加模型” 或类似按钮。</li>
+</ul>
+</li>
+<li><p><strong>配置模型参数:</strong></p>
+<ul>
+<li><strong>模型名称:</strong> 例如 <code>Gemini-Cloudflare</code>。</li>
+<li><strong>API 类型:</strong> 选择 <code>OpenAI</code>。</li>
+<li><strong>API Base URL:</strong> 将你的 Cloudflare Worker 的 URL 粘贴到这里（就是设置自定义的域名）<code>，例如 </code>chat.123.com。</li>
+<li><strong>API Key:</strong>  回到第一步骤复制你的gemini的api并填写。</li>
+<li><strong>模型名称:</strong>  设置为 <code>gemini-1.5-pro-latest</code> 或者 <code>models/gemini-1.5-pro-latest</code></li>
+</ul>
+</li>
+<li><p><strong>测试连接:</strong></p>
+</li>
+</ol>
+<h2 id="步骤四：开始使用-Gemini"><a href="#步骤四：开始使用-Gemini" class="headerlink" title="步骤四：开始使用 Gemini"></a>步骤四：开始使用 Gemini</h2><ol>
+<li><strong>选择模型：</strong><ul>
+<li>在 Chatbox 中，选择你刚刚添加的 <code>Gemini-Cloudflare</code> 模型。</li>
+</ul>
+</li>
+<li><strong>开始聊天：</strong><ul>
+<li>现在你可以像使用 OpenAI 模型一样，与 Gemini 模型进行对话了。</li>
+</ul>
+</li>
+</ol>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
+<li><strong>模型选择：</strong> 你可以使用 <code>gemini-1.5-pro-latest</code> 模型，或者其他 Gemini 模型。</li>
+<li><strong>API 限制:</strong>  Gemini API 可能存在使用限制，请参考 Google AI Studio 的文档。</li>
+<li><strong>Cloudflare Worker 限制：</strong> Cloudflare Worker 有一些资源限制，例如执行时间限制。如果你的请求量过大，可能会遇到问题。</li>
+<li><strong><code>openai-gemini</code> 项目:</strong>  这个项目还在开发中，可能存在一些 bug 或不兼容的问题。请关注项目的更新。</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>通过本教程，你已经成功地使用 Cloudflare Workers 搭建了 Gemini API 的代理，并使用 Chatbox 连接了 Gemini 模型。现在你可以享受免费的 Gemini API 服务了。</p>
+<p><strong>补充说明:</strong></p>
+<ul>
+<li>这个教程是基于你提供的 Github 项目链接以及你的需求编写的。</li>
+<li>请确保你的 Cloudflare Worker URL 是正确的，并且你的 Gemini API 密钥也是有效的。</li>
+<li>如果遇到任何问题，请仔细检查你的配置，并参考相关文档。</li>
+<li>由于 <code>openai-gemini</code> 项目处于活跃开发中，请关注项目更新，以获得最新的功能和修复。</li>
+<li>请注意，使用 Gemini API 需遵守 Google 的服务条款。</li>
+<li>请注意，使用 Cloudflare Workers 需遵守 Cloudflare 的服务条款。</li>
+</ul>
 ]]></content>
       <categories>
         <category>Gemini</category>
