@@ -1041,6 +1041,224 @@
       </tags>
   </entry>
   <entry>
+    <title>用域名和cloudflare创建无限邮箱</title>
+    <url>/%E7%94%A8%E5%9F%9F%E5%90%8D%E5%92%8Ccloudflare%E5%88%9B%E5%BB%BA%E6%97%A0%E9%99%90%E9%82%AE%E7%AE%B1/</url>
+    <content><![CDATA[<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><ul>
+<li><strong>域名：</strong> 你需要一个已经拥有的域名。</li>
+<li><strong>Cloudflare 账号：</strong> 如果没有，请前往 <a href="https://www.cloudflare.com/">Cloudflare 官网</a> 注册一个。</li>
+<li><strong>官方文档：</strong> <a href="https://temp-mail-docs.awsl.uk/">https://temp-mail-docs.awsl.uk/</a></li>
+<li><strong>域名接入 Cloudflare：</strong> 如果你还不清楚如何将域名接入 Cloudflare，请参考这篇教程： <a href="https://pw0n.xyz/">点击这里</a> (请注意，此链接可能需要替换为实际可用的教程链接)</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="Cloudflare-电子邮件设置"><a href="#Cloudflare-电子邮件设置" class="headerlink" title="Cloudflare 电子邮件设置"></a>Cloudflare 电子邮件设置</h2><ol>
+<li><strong>开始使用电子邮件路由：</strong> 在 Cloudflare 控制台中，找到你的域名，点击 <strong>电子邮件</strong>，然后选择 <strong>电子邮件路由</strong> 开始使用。</li>
+<li><strong>自定义域名前缀和验证邮箱：</strong><ul>
+<li>为你的域名设置一个前缀。</li>
+<li>在下方输入<strong>你的真实邮箱地址</strong>（QQ 邮箱或 163 邮箱等，确保能接收到邮件）。</li>
+<li>点击 <strong>验证邮箱</strong>。</li>
+</ul>
+</li>
+<li><strong>验证邮箱：</strong> 前往你填写的邮箱，找到 Cloudflare 发来的邮件，点击邮件中的链接完成验证。</li>
+<li><strong>启用电子邮件路由：</strong> 返回 Cloudflare，点击 <strong>继续</strong>，在电子邮件路由入门指南页面，点击 <strong>添加记录并启用</strong>。</li>
+<li><strong>编辑路由规则：</strong> 点击 <strong>编辑</strong>，打开 <strong>状态</strong>，然后点击 <strong>路由规则</strong>。</li>
+</ol>
+<h2 id="创建-D1-数据库"><a href="#创建-D1-数据库" class="headerlink" title="创建 D1 数据库"></a>创建 D1 数据库</h2><ol>
+<li><strong>进入 D1 数据库：</strong> 在 Cloudflare 主页，点击 <strong>存储和数据库</strong>，然后选择 <strong>D1 SQL 数据库</strong>。</li>
+<li><strong>创建数据库：</strong> 点击 <strong>创建</strong>，输入一个你喜欢的名字，然后点击 <strong>创建</strong>。</li>
+<li><strong>执行 SQL 脚本：</strong><ul>
+<li>复制以下 SQL 代码：<figure class="highlight sql"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE TABLE</span> IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> raw_mails (</span><br><span class="line">    id <span class="type">INTEGER</span> <span class="keyword">PRIMARY KEY</span>,</span><br><span class="line">    message_id TEXT,</span><br><span class="line">    source TEXT,</span><br><span class="line">    address TEXT,</span><br><span class="line">    raw TEXT,</span><br><span class="line">    created_at DATETIME <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> INDEX IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> idx_raw_mails_address <span class="keyword">ON</span> raw_mails(address);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE TABLE</span> IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> address (</span><br><span class="line">    id <span class="type">INTEGER</span> <span class="keyword">PRIMARY KEY</span> AUTOINCREMENT,</span><br><span class="line">    name TEXT <span class="keyword">UNIQUE</span>,</span><br><span class="line">    created_at DATETIME <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span>,</span><br><span class="line">    updated_at DATETIME <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> INDEX IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> idx_address_name <span class="keyword">ON</span> address(name);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE TABLE</span> IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> auto_reply_mails (</span><br><span class="line">    id <span class="type">INTEGER</span> <span class="keyword">PRIMARY KEY</span>,</span><br><span class="line">    source_prefix TEXT,</span><br><span class="line">    name TEXT,</span><br><span class="line">    address TEXT <span class="keyword">UNIQUE</span>,</span><br><span class="line">    subject TEXT,</span><br><span class="line">    message TEXT,</span><br><span class="line">    enabled <span class="type">INTEGER</span> <span class="keyword">DEFAULT</span> <span class="number">1</span>,</span><br><span class="line">    created_at DATETIME <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> INDEX IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> idx_auto_reply_mails_address <span class="keyword">ON</span> auto_reply_mails(address);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE TABLE</span> IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> address_sender (</span><br><span class="line">    id <span class="type">INTEGER</span> <span class="keyword">PRIMARY KEY</span>,</span><br><span class="line">    address TEXT <span class="keyword">UNIQUE</span>,</span><br><span class="line">    balance <span class="type">INTEGER</span> <span class="keyword">DEFAULT</span> <span class="number">0</span>,</span><br><span class="line">    enabled <span class="type">INTEGER</span> <span class="keyword">DEFAULT</span> <span class="number">1</span>,</span><br><span class="line">    created_at DATETIME <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> INDEX IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> idx_address_sender_address <span class="keyword">ON</span> address_sender(address);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE TABLE</span> IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> sendbox (</span><br><span class="line">    id <span class="type">INTEGER</span> <span class="keyword">PRIMARY KEY</span>,</span><br><span class="line">    address TEXT,</span><br><span class="line">    raw TEXT,</span><br><span class="line">    created_at DATETIME <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> INDEX IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> idx_sendbox_address <span class="keyword">ON</span> sendbox(address);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE TABLE</span> IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> settings (</span><br><span class="line">    key TEXT <span class="keyword">PRIMARY KEY</span>,</span><br><span class="line">    <span class="keyword">value</span> TEXT,</span><br><span class="line">    created_at DATETIME <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span>,</span><br><span class="line">    updated_at DATETIME <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE TABLE</span> IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> users (</span><br><span class="line">    id <span class="type">INTEGER</span> <span class="keyword">PRIMARY KEY</span>,</span><br><span class="line">    user_email TEXT <span class="keyword">UNIQUE</span> <span class="keyword">NOT NULL</span>,</span><br><span class="line">    password TEXT <span class="keyword">NOT NULL</span>,</span><br><span class="line">    user_info TEXT,</span><br><span class="line">    created_at DATETIME <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span>,</span><br><span class="line">    updated_at DATETIME <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> INDEX IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> idx_users_user_email <span class="keyword">ON</span> users(user_email);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE TABLE</span> IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> users_address (</span><br><span class="line">    id <span class="type">INTEGER</span> <span class="keyword">PRIMARY KEY</span>,</span><br><span class="line">    user_id <span class="type">INTEGER</span>,</span><br><span class="line">    address_id <span class="type">INTEGER</span> <span class="keyword">UNIQUE</span>,</span><br><span class="line">    created_at DATETIME <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> INDEX IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> idx_users_address_user_id <span class="keyword">ON</span> users_address(user_id);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> INDEX IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> idx_users_address_address_id <span class="keyword">ON</span> users_address(address_id);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE TABLE</span> IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> user_roles (</span><br><span class="line">    id <span class="type">INTEGER</span> <span class="keyword">PRIMARY KEY</span>,</span><br><span class="line">    user_id <span class="type">INTEGER</span> <span class="keyword">UNIQUE</span> <span class="keyword">NOT NULL</span>,</span><br><span class="line">    role_text TEXT,</span><br><span class="line">    created_at DATETIME <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span>,</span><br><span class="line">    updated_at DATETIME <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> INDEX IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> idx_user_roles_user_id <span class="keyword">ON</span> user_roles(user_id);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE TABLE</span> IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> user_passkeys (</span><br><span class="line">    id <span class="type">INTEGER</span> <span class="keyword">PRIMARY KEY</span>,</span><br><span class="line">    user_id <span class="type">INTEGER</span> <span class="keyword">NOT NULL</span>,</span><br><span class="line">    passkey_name TEXT <span class="keyword">NOT NULL</span>,</span><br><span class="line">    passkey_id TEXT <span class="keyword">NOT NULL</span>,</span><br><span class="line">    passkey TEXT <span class="keyword">NOT NULL</span>,</span><br><span class="line">    counter <span class="type">INTEGER</span> <span class="keyword">DEFAULT</span> <span class="number">0</span>,</span><br><span class="line">    created_at DATETIME <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span>,</span><br><span class="line">    updated_at DATETIME <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> INDEX IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> idx_user_passkeys_user_id <span class="keyword">ON</span> user_passkeys(user_id);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">UNIQUE</span> INDEX IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> idx_user_passkeys_user_id_passkey_id <span class="keyword">ON</span> user_passkeys(user_id, passkey_id);</span><br></pre></td></tr></tbody></table></figure></li>
+<li>在 D1 数据库的 <strong>控制台</strong> 中，将代码粘贴到输入框中。</li>
+<li>点击 <strong>执行</strong>。</li>
+</ul>
+</li>
+</ol>
+<h2 id="部署-Worker"><a href="#部署-Worker" class="headerlink" title="部署 Worker"></a>部署 Worker</h2><ol>
+<li><p><strong>创建 Worker：</strong> 在 Cloudflare 主页，点击 <strong>Workers 和 Pages</strong>，然后选择 <strong>创建 Worker</strong>。</p>
+</li>
+<li><p><strong>命名 Worker：</strong> 随意给你的 Worker 起一个名字，然后点击 <strong>部署</strong>。</p>
+</li>
+<li><p><strong>设置兼容性标志：</strong></p>
+<ul>
+<li>找到你刚才部署的 Worker，点击进入。</li>
+<li>点击 <strong>设置</strong>，找到 <strong>兼容性标志</strong>。</li>
+<li>点击编辑标志，输入 <strong>nodejs_compat</strong>。</li>
+</ul>
+</li>
+<li><p><strong>编辑代码：</strong></p>
+<ul>
+<li><p>点击 <strong>编辑代码</strong>。</p>
+</li>
+<li><p>下载 <code>worker.js</code> 代码：<a href="https://github.com/dreamhunter2333/cloudflare_temp_email/releases/latest/download/worker.js">worker.js</a></p>
+</li>
+<li><p>将下载的代码复制粘贴到代码编辑器中，然后点击 <strong>部署</strong>。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>绑定 D1 数据库：</strong></p>
+<ul>
+<li>返回 Worker 设置页面。</li>
+<li>点击 <strong>D1 数据库</strong>，然后选择 <strong>绑定</strong>。</li>
+<li>在 <strong>变量名称</strong> 中输入 <strong>DB</strong>。</li>
+<li>在 <strong>D1 数据库</strong> 中选择你创建的数据库。</li>
+</ul>
+</li>
+<li><p><strong>设置自定义域：</strong></p>
+<ul>
+<li>在 <strong>域和路由</strong> 中选择 <strong>自定义域</strong>。</li>
+<li>输入你想要的 API 域名 (例如 <code>api.你的域名.com</code>)。</li>
+</ul>
+</li>
+<li><p><strong>配置环境变量：</strong></p>
+<ul>
+<li>在 Worker 设置页面，找到 <strong>环境变量</strong>。</li>
+<li>根据下表配置环境变量：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>类型</th>
+<th>值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ADMIN_PASSWORDS</td>
+<td>JSON</td>
+<td><code>["your_password", "your_password_two"]</code></td>
+<td>admin 控制台密码，不配置则不允许访问控制台。可以配置多个密码，也可以只配置一个。</td>
+</tr>
+<tr>
+<td>ADMIN_USER_ROLE</td>
+<td>纯文本</td>
+<td><code>admin</code></td>
+<td>admin 角色配置，只有用户角色等于 <code>ADMIN_USER_ROLE</code> 的用户才能访问 admin 控制台。</td>
+</tr>
+<tr>
+<td>DEFAULT_DOMAINS</td>
+<td>JSON</td>
+<td><code>[""]</code></td>
+<td>未登录用户可用的域名列表，默认为空。如果你想让未登录用户也可以使用域名，可以添加你的域名，例如 <code>["你的域名.com"]</code>，可以添加多个域名。</td>
+</tr>
+<tr>
+<td>DOMAINS</td>
+<td>JSON</td>
+<td><code>["你的域名.com"]</code></td>
+<td>用于配置你的域名，例如 <code>["你的域名.com"]</code>，请确保配置的域名已经接入 Cloudflare。</td>
+</tr>
+<tr>
+<td>ENABLE_AUTO_REPLY</td>
+<td>纯文本</td>
+<td><code>false</code></td>
+<td>是否允许自动回复邮件，默认 <code>false</code>。</td>
+</tr>
+<tr>
+<td>ENABLE_USER_CREATE_EMAIL</td>
+<td>纯文本</td>
+<td><code>true</code></td>
+<td>是否允许用户随机创建邮箱账户，默认 <code>true</code>。</td>
+</tr>
+<tr>
+<td>ENABLE_USER_DELETE_EMAIL</td>
+<td>纯文本</td>
+<td><code>true</code></td>
+<td>是否允许用户删除邮件，默认 <code>true</code>。设置为 <code>false</code> 则不允许用户删除邮件。</td>
+</tr>
+<tr>
+<td>JWT_SECRET</td>
+<td>纯文本</td>
+<td>自己生成一个</td>
+<td>用于生成 JWT 的密钥，前往 <a href="https://www.librechat.ai/toolkit/creds_generator">https://www.librechat.ai/toolkit/creds_generator</a> 生成并复制 <strong>JWT_SECRET</strong> 的值。</td>
+</tr>
+<tr>
+<td>NO_LIMIT_SEND_ROLE</td>
+<td>纯文本</td>
+<td><code>admin</code></td>
+<td>可以无限发送邮件的角色，设置为 <code>admin</code> 则只有 <code>admin</code> 角色的用户可以无限发送邮件。</td>
+</tr>
+<tr>
+<td>USER_ROLES</td>
+<td>JSON</td>
+<td><code>[{"domains":["xx.com"],"prefix":"","role":"vip"},{"domains":["xx.com"],"prefix":"","role":"admin"}]</code></td>
+<td>设置系统角色，示例中创建了 <code>vip</code> 和 <code>admin</code> 两个角色。请从这里复制，避免格式错误。</td>
+</tr>
+<tr>
+<td>RESEND_TOKEN</td>
+<td>纯文本</td>
+<td><code>re_xxxx</code></td>
+<td>去 <a href="https://resend.com/"><code>https://resend.com</code></a> 注册并添加域名获取 api 秘钥填写，用来发送邮件，可自己选择。</td>
+</tr>
+</tbody></table>
+</li>
+</ol>
+<h2 id="部署-KV-缓存"><a href="#部署-KV-缓存" class="headerlink" title="部署 KV 缓存"></a>部署 KV 缓存</h2><ol>
+<li><strong>创建 KV 命名空间：</strong> 在 Cloudflare 主页，点击 <strong>存储和数据库</strong>，然后选择 <strong>KV</strong>。</li>
+<li><strong>创建命名空间：</strong> 点击 <strong>创建</strong>，随意输入一个名字，然后点击 <strong>添加</strong>。</li>
+<li><strong>绑定 KV 命名空间：</strong><ul>
+<li>返回 <strong>Workers 和 Pages</strong>，找到你创建的 Worker。</li>
+<li>点击 <strong>设置</strong>，然后选择 <strong>绑定</strong>。</li>
+<li>点击 <strong>KV 命名空间</strong>，在 <strong>变量名称</strong> 中输入 <strong>KV</strong>（注意大写）。</li>
+<li>在 <strong>命名空间</strong> 中选择你创建的 KV 命名空间。</li>
+</ul>
+</li>
+</ol>
+<h2 id="部署路由转发"><a href="#部署路由转发" class="headerlink" title="部署路由转发"></a>部署路由转发</h2><ol>
+<li><strong>进入电子邮件路由：</strong> 在 Cloudflare 主页，点击你的域名，然后选择 <strong>电子邮件</strong>，再选择 <strong>电子邮件路由</strong>。</li>
+<li><strong>编辑路由规则：</strong><ul>
+<li>找到 <strong>路由规则</strong> 部分，点击 <strong>catch-all</strong> 规则。</li>
+<li>在 <strong>操作</strong> 中选择 <strong>发送到 Workers</strong>。</li>
+<li>在 <strong>编辑位置</strong> 中选择你创建的 Worker。</li>
+<li>点击 <strong>保存</strong>。</li>
+</ul>
+</li>
+</ol>
+<h2 id="创建页面前端"><a href="#创建页面前端" class="headerlink" title="创建页面前端"></a>创建页面前端</h2><ol>
+<li><p><strong>下载前端代码：</strong> <a href="https://github.com/dreamhunter2333/cloudflare_temp_email/releases/latest/download/frontend.zip">前端代码</a></p>
+</li>
+<li><p><strong>解压前端代码：</strong> 解压下载的 <code>frontend.zip</code> 文件。</p>
+</li>
+<li><p><strong>编辑 index 文件：</strong></p>
+<ul>
+<li>打开解压后的文件夹，进入 <code>assets</code> 文件夹。</li>
+<li>找到 <code>index-xxxx</code> 文件 (xxxx 是随机数，每个人不一样)，使用文本编辑器打开。</li>
+<li>按下 <code>Ctrl + F</code> (或 <code>Cmd + F</code>)，搜索 <code>https://temp-email-aps-</code>。</li>
+<li>将找到的链接替换成你刚刚创建的 API 域名 (例如 <code>https://api.你的域名.com</code>)，保存文件。</li>
+</ul>
+</li>
+<li><p><strong>创建 Pages 项目：</strong></p>
+<ul>
+<li>在 Cloudflare 主页，点击 <strong>Workers 和 Pages</strong>，然后选择 <strong>Pages</strong>。</li>
+<li>点击 <strong>创建项目</strong>，然后选择 <strong>上传资产</strong>。</li>
+<li>随便起一个项目名，然后点击 <strong>从计算机选择</strong>。</li>
+</ul>
+</li>
+<li><p><strong>上传前端代码：</strong> 选择你解压的文件夹，将所有文件上传。</p>
+</li>
+<li><p><strong>设置自定义域：</strong></p>
+<ul>
+<li>点击 <strong>自定义域</strong>，将你的邮箱前端域名指向 Pages 项目 (例如 <code>mail.你的域名.com</code>)。</li>
+</ul>
+</li>
+<li><p><strong>访问前端：</strong> 等待几分钟，然后在浏览器中输入 <code>mail.你的域名.com</code>，查看是否成功部署。</p>
+</li>
+</ol>
+<h2 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h2><p>恭喜！你已经成功搭建了一个基于 Cloudflare 的无限邮箱服务。</p>
+<p><strong>注意：</strong></p>
+<ul>
+<li>请将示例中的 “你的域名.com”、”api.你的域名.com” 和 “mail.你的域名.com” 替换成你自己的实际域名。</li>
+<li>请确保你的域名已经正确接入 Cloudflare。</li>
+</ul>
+<p>希望这个教程对你有帮助！</p>
+]]></content>
+      <categories>
+        <category>创建邮箱</category>
+      </categories>
+      <tags>
+        <tag>邮箱</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>记录一下我入坑Linux</title>
     <url>/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8B%E6%88%91%E5%85%A5%E5%9D%91linux/</url>
     <content><![CDATA[<h1 id="重生之Linux初体验"><a href="#重生之Linux初体验" class="headerlink" title="重生之Linux初体验"></a>重生之Linux初体验</h1><p>你们是什么时候入坑Linux的？是为了学习，还是为了建站？<br>我第一次接触Linux是在很久以前，那时还是个小屁孩。听了一位B站UP主讲解Linux后，我对它产生了浓厚的兴趣。然后，我读了《鸟哥的私房菜》开始自学，但很快因为命令行的枯燥和与Windows的差异，我停了下来。Linux那时对我来说太复杂了，尤其是没有Windows那种鼠标点击的便捷操作。毕竟，谁不想轻轻松松地“点点点”就搞定一切呢？</p>
