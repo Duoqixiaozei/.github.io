@@ -1309,4 +1309,61 @@ ESP8266 智能设备</p>
         <tag>记录</tag>
       </tags>
   </entry>
+  <entry>
+    <title>域名注册与 Cloudflare 托管教程</title>
+    <url>/%E5%9F%9F%E5%90%8D%E6%B3%A8%E5%86%8C%E4%B8%8E-Cloudflare-%E6%89%98%E7%AE%A1%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<h1 id="域名注册与-Cloudflare-托管教程"><a href="#域名注册与-Cloudflare-托管教程" class="headerlink" title="域名注册与 Cloudflare 托管教程"></a>域名注册与 Cloudflare 托管教程</h1><p>本指南将引导你完成域名注册，以及使用 Cloudflare 进行域名托管的步骤。</p>
+<h1 id="注册域名"><a href="#注册域名" class="headerlink" title="注册域名"></a>注册域名</h1><h2 id="推荐服务商：NameSilo"><a href="#推荐服务商：NameSilo" class="headerlink" title="推荐服务商：NameSilo"></a>推荐服务商：NameSilo</h2><p>我们推荐使用 NameSilo 进行域名注册，它操作简便且价格合理。<a href="https://www.namesilo.com/?rid=e401749ou">点击这里</a> 直接访问 NameSilo 官网。</p>
+<h2 id="域名后缀选择"><a href="#域名后缀选择" class="headerlink" title="域名后缀选择"></a>域名后缀选择</h2><ul>
+<li><strong>.com：</strong> 推荐用于正式网站，更具专业性。</li>
+<li><strong>.xyz / .site：</strong> 适合个人博客、学生项目等，价格相对较低。</li>
+</ul>
+<p>请根据你的需求选择合适的域名后缀。</p>
+<h1 id="NameSilo-用户注册"><a href="#NameSilo-用户注册" class="headerlink" title="NameSilo 用户注册"></a>NameSilo 用户注册</h1><h3 id="注册注意事项"><a href="#注册注意事项" class="headerlink" title="注册注意事项"></a>注册注意事项</h3><ul>
+<li><strong>邮箱：</strong> 请使用你常用的有效邮箱进行注册，以便接收重要通知。</li>
+<li><strong>用户名：</strong> 注册时设置的用户名请务必牢记。</li>
+</ul>
+<h2 id="填写个人信息"><a href="#填写个人信息" class="headerlink" title="填写个人信息"></a>填写个人信息</h2><ol>
+<li>注册完成后，你需要填写个人信息。</li>
+<li>访问 <a href="https://www.meiguodizhi.com/">美国地址生成器</a> 或直接复制此网址：<code>https://www.meiguodizhi.com</code>。</li>
+<li>在 NameSilo 网站，点击 <strong>Account Settings</strong>，按照生成器提供的身份信息填写。</li>
+</ol>
+<h2 id="配置-DNS-服务器"><a href="#配置-DNS-服务器" class="headerlink" title="配置 DNS 服务器"></a>配置 DNS 服务器</h2><ol>
+<li>填写完个人信息后，点击 <strong>Dashboard</strong>。</li>
+<li>如果你已购买域名，会看到 <strong>Active Domains</strong>，点击 <strong>Manage</strong>。</li>
+<li>点击你的域名，找到 <strong>nameserver</strong>，点击 <strong>Edit</strong>。</li>
+<li><strong>删除所有已有的 nameserver</strong>，并保持此页面打开，我们稍后会用到。</li>
+</ol>
+<h1 id="Cloudflare-托管域名"><a href="#Cloudflare-托管域名" class="headerlink" title="Cloudflare 托管域名"></a>Cloudflare 托管域名</h1><h2 id="添加域名到-Cloudflare"><a href="#添加域名到-Cloudflare" class="headerlink" title="添加域名到 Cloudflare"></a>添加域名到 Cloudflare</h2><ol>
+<li>访问 Cloudflare 官网，点击 <strong>添加域</strong>。</li>
+<li>输入你购买的域名，例如 <code>123.xyz</code>。</li>
+<li>选择 <strong>免费计划</strong> (如果你有特殊需求，也可以考虑其他付费计划)。</li>
+</ol>
+<h2 id="获取-Cloudflare-DNS-服务器"><a href="#获取-Cloudflare-DNS-服务器" class="headerlink" title="获取 Cloudflare DNS 服务器"></a>获取 Cloudflare DNS 服务器</h2><p>Cloudflare 会提供两个 DNS 服务器地址，例如：</p>
+<figure class="highlight stylus"><table><tbody><tr><td class="code"><pre><span class="line">poppy<span class="selector-class">.ns</span><span class="selector-class">.cloudflare</span>.com</span><br></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight stylus"><table><tbody><tr><td class="code"><pre><span class="line">ray<span class="selector-class">.ns</span><span class="selector-class">.cloudflare</span>.com</span><br></pre></td></tr></tbody></table></figure>
+
+<p>请复制这两个地址。</p>
+<h2 id="配置-NameSilo-DNS-服务器"><a href="#配置-NameSilo-DNS-服务器" class="headerlink" title="配置 NameSilo DNS 服务器"></a>配置 NameSilo DNS 服务器</h2><ol>
+<li>返回到之前在 NameSilo 保留的 <strong>nameserver</strong> 编辑页面。</li>
+<li>将 Cloudflare 提供的 DNS 服务器地址粘贴到 NameSilo 的 nameserver 中。</li>
+<li>保存更改。</li>
+</ol>
+<h2 id="检查-Cloudflare-配置"><a href="#检查-Cloudflare-配置" class="headerlink" title="检查 Cloudflare 配置"></a>检查 Cloudflare 配置</h2><ol>
+<li>返回 Cloudflare 页面，点击 <strong>检查</strong> 按钮。</li>
+<li>通常情况下，配置会在 5 分钟内生效。</li>
+<li>如果配置未生效，请稍后或隔天再进行检查。</li>
+</ol>
+<h2 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h2><p>一旦配置生效，你就可以使用你的域名了。</p>
+]]></content>
+      <categories>
+        <category>cloudflare</category>
+      </categories>
+      <tags>
+        <tag>cloudflare</tag>
+        <tag>域名注册</tag>
+        <tag>建站</tag>
+      </tags>
+  </entry>
 </search>
