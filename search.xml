@@ -1366,4 +1366,139 @@ ESP8266 智能设备</p>
         <tag>建站</tag>
       </tags>
   </entry>
+  <entry>
+    <title>解决MediaCreationTool报错(0X80072F8F-0X20000)方法</title>
+    <url>/%E8%A7%A3%E5%86%B3MediaCreationTool%E6%8A%A5%E9%94%99-0X80072F8F-0X20000-%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="Windows-7-升级-Win10：解决-MediaCreationTool-报错-0X80072F8F-0X20000-方法"><a href="#Windows-7-升级-Win10：解决-MediaCreationTool-报错-0X80072F8F-0X20000-方法" class="headerlink" title="Windows 7 升级 Win10：解决 MediaCreationTool 报错 (0X80072F8F-0X20000)方法"></a>Windows 7 升级 Win10：解决 MediaCreationTool 报错 (0X80072F8F-0X20000)方法</h1><p><strong>问题：</strong></p>
+<p>当您尝试使用 MediaCreationTool 工具（版本 22H2）将老旧的 Windows 7 系统升级到 Windows 10 时，可能会遇到错误代码 <code>0X80072F8F-0X20000</code>。</p>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/fix-dir/G/blog/2025/01/22/16-29-01-9b2c68f58b7f2b135672e29617993f1a-MediaCreationTool_22H2%E6%8A%A5%E9%94%99-1584da.webp" alt="MediaCreationTool22H2报错"></p>
+<span id="more"></span>
+
+<p><strong>原因：</strong></p>
+<p>这个错误通常是因为 Windows 7 系统缺少必要的 TLS（安全传输层协议）支持，导致 MediaCreationTool 工具无法正常连接到服务器。</p>
+<p><strong>解决方案：</strong></p>
+<p>以下步骤将帮助您解决此问题，顺利升级到 Windows 10：</p>
+<h2 id="步骤一：添加-TLS-注册表信息"><a href="#步骤一：添加-TLS-注册表信息" class="headerlink" title="步骤一：添加 TLS 注册表信息"></a><strong>步骤一：添加 TLS 注册表信息</strong></h2><ol>
+<li><p><strong>创建注册表文件：</strong></p>
+<ul>
+<li><p>在您的电脑桌面，新建一个文本文档（.txt 文件）。</p>
+</li>
+<li><p>将下面的代码复制粘贴到这个文本文档中：</p>
+  <figure class="highlight moonscript"><table><tbody><tr><td class="code"><pre><span class="line">Windows Registry Editor Version <span class="number">5.00</span></span><br><span class="line"></span><br><span class="line">[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp]</span><br><span class="line"><span class="string">"DefaultSecureProtocols"</span>=<span class="name">dword</span>:<span class="number">00000</span>a00</span><br><span class="line">[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp]</span><br><span class="line"><span class="string">"DefaultSecureProtocols"</span>=<span class="name">dword</span>:<span class="number">00000</span>a00</span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>保存这个文本文档，并将其重命名为 <code>tls.reg</code> （注意：将文件扩展名从 .txt 改为 .reg）。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>运行注册表文件：</strong></p>
+<ul>
+<li>双击 <code>tls.reg</code> 文件，系统会弹出提示。</li>
+<li>点击 “是”  确认导入注册表信息。</li>
+</ul>
+<p> <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/fix-dir/G/blog/2025/01/22/16-34-16-b7d35e68512cfc78139cf7733ff657ff-%E6%8F%90%E7%A4%BA%E7%A1%AE%E5%AE%9A-9d22ff.webp" alt="点击是"></p>
+</li>
+</ol>
+<h2 id="步骤二：安装-Windows-7-补丁"><a href="#步骤二：安装-Windows-7-补丁" class="headerlink" title="步骤二：安装 Windows 7 补丁"></a><strong>步骤二：安装 Windows 7 补丁</strong></h2><ol>
+<li><p><strong>下载补丁：</strong></p>
+<ul>
+<li>打开浏览器，访问 <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=kb3140245">Microsoft Update Catalog</a> 下载补丁。</li>
+<li>您也可以直接复制 <code>https://www.catalog.update.microsoft.com/Search.aspx?q=kb3140245</code> 到浏览器地址栏进行搜索。</li>
+</ul>
+</li>
+<li><p><strong>选择并安装补丁：</strong></p>
+<ul>
+<li>在搜索结果中，找到与您 Windows 7 系统版本（32 位或 64 位）相对应的补丁，点击下载。</li>
+<li>下载完成后，运行安装程序，按照提示完成补丁安装。</li>
+</ul>
+<p> <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/fix-dir/G/blog/2025/01/22/16-34-16-3014eb6daccb31541f16aff0b1406304-%E4%B8%8B%E8%BD%BD%E5%AF%B9%E5%BA%94%E7%B3%BB%E7%BB%9F%E8%A1%A5%E4%B8%81-3096f5.webp" alt="选择对应补丁"></p>
+</li>
+</ol>
+<p><strong>完成！</strong></p>
+<p>完成以上步骤后，请重新运行 MediaCreationTool 工具，尝试升级到 Windows 10。</p>
+<p><strong>温馨提示：</strong></p>
+<ul>
+<li>确保您的电脑已连接到互联网，以便 MediaCreationTool 工具能够正常下载文件。</li>
+<li>如果问题仍然存在，请检查您的系统时间和日期设置是否正确。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Windows</category>
+        <category>系统升级</category>
+        <category>故障排除</category>
+      </categories>
+      <tags>
+        <tag>MediaCreationTool</tag>
+        <tag>Windows 7</tag>
+        <tag>Windows 10</tag>
+        <tag>系统升级</tag>
+        <tag>错误代码</tag>
+        <tag>0X80072F8F</tag>
+        <tag>TLS</tag>
+        <tag>注册表</tag>
+        <tag>补丁</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>申请Adsense“低质量内容”被拒绝</title>
+    <url>/%E7%94%B3%E8%AF%B7Adsense%E2%80%9C%E4%BD%8E%E8%B4%A8%E9%87%8F%E5%86%85%E5%AE%B9%E2%80%9D%E8%A2%AB%E6%8B%92%E7%BB%9D/</url>
+    <content><![CDATA[<h1 id="AdSense-审核卡住了？别慌！我来告诉你问题可能出在哪"><a href="#AdSense-审核卡住了？别慌！我来告诉你问题可能出在哪" class="headerlink" title="AdSense 审核卡住了？别慌！我来告诉你问题可能出在哪"></a>AdSense 审核卡住了？别慌！我来告诉你问题可能出在哪</h1><p><strong>申请 Adsense 总是因为“低质量内容”被拒绝</strong></p>
+<p>今天早上，我收到了 AdSense 的邮件，结果是：被拒了！理由是“Low value content（低质量内容）”。<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/fix-dir/G/blog/2025/01/22/17-55-10-39c399568001e87cd323ab052c2a47d0-adsense--refuse-a248af.webp" alt="adsens-refuse"></p>
+<span id="more"></span>
+
+<p><strong>又被拒了，我反思了一下：</strong></p>
+<p>这已经不是我第一次因为“低质量内容”被 AdSense 拒绝了。这次虽然有 Discover 带来的流量，但 AdSense 还是不让我过。我得好好想想，我的网站到底哪里有问题。</p>
+<p><strong>1. 有流量不代表内容好：</strong></p>
+<p>Discover 带来的流量是挺多的，但这不代表我的内容就符合 AdSense 的要求。AdSense 更看重内容是不是有深度、是不是原创、是不是有价值，光有流量没用。</p>
+<p><strong>2. 内容不够深入：</strong></p>
+<p>我承认，为了快点有流量，我有点急了。有些文章为了多写点，就写得比较简单，只是把信息罗列出来，没有自己的想法和分析。</p>
+<p><strong>3. 内容有点抄袭：</strong></p>
+<p>为了快点把网站填满，我参考了一些别人的文章，导致内容有点抄袭，不够原创。这肯定不符合 AdSense 的要求。</p>
+<p><strong>4. 网站体验不好：</strong></p>
+<p>网站的排版、图片质量啥的也需要优化。虽然内容能看，但在用户体验上还是差了点。</p>
+<p><strong>我打算这么做：</strong></p>
+<p>这次被拒让我明白，AdSense 不会因为你有流量就让你过关。接下来，我打算这样做：</p>
+<ul>
+<li><strong>深入研究：</strong> 把网站的主题好好研究一下，写出有深度、有价值的内容。</li>
+<li><strong>坚持原创：</strong> 坚持写原创内容，加入自己的想法和见解。</li>
+<li><strong>优化排版：</strong> 把网站排版优化一下，让大家看起来更舒服。</li>
+<li><strong>持续更新：</strong> 经常更新内容，让网站保持活跃。</li>
+<li><strong>学习别人：</strong> 看看其他成功通过 AdSense 审核的网站，学学他们的经验。</li>
+</ul>
+<p><strong>怎么回事，大家都这样？</strong></p>
+<p>说实话，这还是我第一个被拒绝的网站。之前几个网站申请 AdSense 都挺顺利的，一个星期就搞定了。我感觉这个网站跟之前的网站差不多，主题、插件、页面布局都差不多。</p>
+<p>于是，我就去论坛看看有没有解决方法。</p>
+<p><strong>可能的原因：</strong></p>
+<ul>
+<li><strong>AdSense 政策变了：</strong> 可能是 Google AdSense 最近改了审核标准，对内容质量要求更高了。</li>
+<li><strong>算法调整：</strong> AdSense 的审核算法可能调整了，导致以前能通过的网站现在被拒绝了。</li>
+<li><strong>内容太像了：</strong> 可能是因为大家都在做差不多的网站，内容太像了，AdSense 不喜欢。</li>
+<li><strong>网站不好用：</strong> 可能是网站的用户体验不好，AdSense 觉得网站没什么价值。</li>
+</ul>
+<p><strong>难道是网站不够规范？</strong></p>
+<p>在国外论坛中，我看到网友分享了他的经验。他修改内容，而是检查了网站的附属页面，比如隐私条款、Cookies 协议、GDPR 这些。<br>结果，他把这些页面完善后，再申请 AdSense 就通过了。这让我觉得，可能不是内容不行，而是网站不够规范。</p>
+<p><strong>官方论坛没啥用？</strong></p>
+<p>我又去 AdSense 官方论坛看了看，但没找到啥有用的方法。比如官方说的“内容质量”问题，我觉得我的网站肯定没问题。</p>
+<p>首先，我的文章没语法错误，都是 AI 生成草稿，然后我再改的，还用了语法检查工具。</p>
+<p>其次，我对自己的文章还是挺有信心的，因为我都是找竞争小的关键词，填补搜索市场的空白。如果内容不好，也不可能被 Google Discover 推荐。</p>
+<p><strong>我打算最后试一次：</strong></p>
+<p>所以，接下来我打算再更新几篇文章，然后把网站的必备页面完善好，再重新申请 AdSense 试试。如果你也遇到了类似的问题，不妨试试这个方法。</p>
+]]></content>
+      <categories>
+        <category>Google AdSense</category>
+        <category>网站运营</category>
+        <category>内容创作</category>
+        <category>问题解决</category>
+        <category>经验分享</category>
+      </categories>
+      <tags>
+        <tag>Google AdSense</tag>
+        <tag>低质量内容</tag>
+        <tag>网站审核</tag>
+        <tag>官方论坛</tag>
+        <tag>网站规范</tag>
+        <tag>内容创作</tag>
+        <tag>网站运营</tag>
+        <tag>审核策略</tag>
+        <tag>网站页面</tag>
+      </tags>
+  </entry>
 </search>
