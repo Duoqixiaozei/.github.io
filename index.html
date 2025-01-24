@@ -153,6 +153,11 @@
     <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
 
   </li>
+        <li class="menu-item menu-item-nav">
+
+    <a href="/nav/" rel="section"><i class="fa fa-compass fa-fw"></i>导航</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
@@ -522,7 +527,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2025-01-15 08:23:46 / 修改时间：08:57:15" itemprop="dateCreated datePublished" datetime="2025-01-15T08:23:46+00:00">2025-01-15</time>
+              <time title="创建时间：2025-01-15 08:23:46 / 修改时间：09:17:05" itemprop="dateCreated datePublished" datetime="2025-01-15T08:23:46+00:00">2025-01-15</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -611,7 +616,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2025-01-07 03:23:48" itemprop="dateModified" datetime="2025-01-07T03:23:48+00:00">2025-01-07</time>
+                <time title="修改时间：2025-01-15 09:17:05" itemprop="dateModified" datetime="2025-01-15T09:17:05+00:00">2025-01-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -697,7 +702,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2025-01-03 03:18:06" itemprop="dateModified" datetime="2025-01-03T03:18:06+00:00">2025-01-03</time>
+                <time title="修改时间：2025-01-15 09:17:05" itemprop="dateModified" datetime="2025-01-15T09:17:05+00:00">2025-01-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -781,7 +786,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2025-01-06 05:53:14" itemprop="dateModified" datetime="2025-01-06T05:53:14+00:00">2025-01-06</time>
+                <time title="修改时间：2025-01-15 09:17:05" itemprop="dateModified" datetime="2025-01-15T09:17:05+00:00">2025-01-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -864,10 +869,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2024-12-26 07:24:31 / 修改时间：07:57:18" itemprop="dateCreated datePublished" datetime="2024-12-26T07:24:31+00:00">2024-12-26</time>
+              <time title="创建时间：2024-12-26 07:24:31" itemprop="dateCreated datePublished" datetime="2024-12-26T07:24:31+00:00">2024-12-26</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-01-15 09:17:05" itemprop="dateModified" datetime="2025-01-15T09:17:05+00:00">2025-01-15</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -1234,7 +1245,6 @@
 
   
   <script src="/lib/anime.min.js"></script>
-  <script src="/lib/pjax/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
@@ -1252,70 +1262,11 @@
 
 <script src="/js/next-boot.js"></script>
 
-  <script>
-var pjax = new Pjax({
-  selectors: [
-    'head title',
-    '#page-configurations',
-    '.content-wrap',
-    '.post-toc-wrap',
-    '.languages',
-    '#pjax'
-  ],
-  switches: {
-    '.post-toc-wrap': Pjax.switches.innerHTML
-  },
-  analytics: false,
-  cacheBust: false,
-  scrollTo : !CONFIG.bookmark.enable
-});
-
-window.addEventListener('pjax:success', () => {
-  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
-    var code = element.text || element.textContent || element.innerHTML || '';
-    var parent = element.parentNode;
-    parent.removeChild(element);
-    var script = document.createElement('script');
-    if (element.id) {
-      script.id = element.id;
-    }
-    if (element.className) {
-      script.className = element.className;
-    }
-    if (element.type) {
-      script.type = element.type;
-    }
-    if (element.src) {
-      script.src = element.src;
-      // Force synchronous loading of peripheral JS.
-      script.async = false;
-    }
-    if (element.dataset.pjax !== undefined) {
-      script.dataset.pjax = '';
-    }
-    if (code !== '') {
-      script.appendChild(document.createTextNode(code));
-    }
-    parent.appendChild(script);
-  });
-  NexT.boot.refresh();
-  // Define Motion Sequence & Bootstrap Motion.
-  if (CONFIG.motion.enable) {
-    NexT.motion.integrator
-      .init()
-      .add(NexT.motion.middleWares.subMenu)
-      .add(NexT.motion.middleWares.postList)
-      .bootstrap();
-  }
-  NexT.utils.updateSidebarPosition();
-});
-</script>
-
 
 
 
   
-  <script data-pjax>
+  <script>
     (function(){
       var canonicalURL, curProtocol;
       //Get the <link> tag
@@ -1359,7 +1310,6 @@ window.addEventListener('pjax:success', () => {
 
 
 
-    <div id="pjax">
   
 
   
@@ -1376,7 +1326,6 @@ window.addEventListener('pjax:success', () => {
       new needShareButton('#needsharebutton-postbottom', pbOptions);
   </script>
 
-    </div>
 
         <style>
             [bg-lazy] {
