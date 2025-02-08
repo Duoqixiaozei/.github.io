@@ -1501,4 +1501,20 @@ ESP8266 智能设备</p>
         <tag>记录</tag>
       </tags>
   </entry>
+  <entry>
+    <title>无人机使用WIFI更新固件的时候，显示没有足够的空间报错no enough space</title>
+    <url>/FPV-falied/</url>
+    <content><![CDATA[<h1 id="无人机使用WIFI更新固件的时候，显示没有足够的空间报错no-enough-space"><a href="#无人机使用WIFI更新固件的时候，显示没有足够的空间报错no-enough-space" class="headerlink" title="无人机使用WIFI更新固件的时候，显示没有足够的空间报错no enough space"></a>无人机使用WIFI更新固件的时候，显示没有足够的空间报错no enough space</h1><p>我们正常刷新的固件的时候会显示 no enough space 或者 failed above<br>解决上面的问题可以使用一下</p>
+<span id="more"></span>
+
+<h1 id="使用清除缓存的固件"><a href="#使用清除缓存的固件" class="headerlink" title="使用清除缓存的固件"></a>使用清除缓存的固件</h1><p>固件地址：<a href="https://pan.quark.cn/s/907bf201873a#/list/share">https://pan.quark.cn/s/907bf201873a#/list/share</a><br>点击链接复制 下载清除缓存固件<br>然后再次连接上我们的遥控器的WIFI选着刚才下载的<code>清楚缓存固件</code><br>然后在重新刷写，刷写好了之后，重新开机</p>
+<h1 id="刷写你需要的固件"><a href="#刷写你需要的固件" class="headerlink" title="刷写你需要的固件"></a>刷写你需要的固件</h1><p>下载对应的FPV radio固件 然后刷写就好了 此方法也适合降级刷写！</p>
+]]></content>
+      <categories>
+        <category>FPV</category>
+      </categories>
+      <tags>
+        <tag>FPV</tag>
+      </tags>
+  </entry>
 </search>

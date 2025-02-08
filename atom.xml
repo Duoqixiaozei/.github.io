@@ -6,7 +6,7 @@
   <link href="https://www.pw0n.xyz/atom.xml" rel="self"/>
   
   <link href="https://www.pw0n.xyz/"/>
-  <updated>2025-01-22T09:57:06.457Z</updated>
+  <updated>2025-02-08T07:26:00.728Z</updated>
   <id>https://www.pw0n.xyz/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>无人机使用WIFI更新固件的时候，显示没有足够的空间报错no enough space</title>
+    <link href="https://www.pw0n.xyz/FPV-falied/"/>
+    <id>https://www.pw0n.xyz/FPV-falied/</id>
+    <published>2025-02-08T07:17:08.000Z</published>
+    <updated>2025-02-08T07:26:00.728Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="无人机使用WIFI更新固件的时候，显示没有足够的空间报错no-enough-space"><a href="#无人机使用WIFI更新固件的时候，显示没有足够的空间报错no-enough-space" class="headerlink" title="无人机使用WIFI更新固件的时候，显示没有足够的空间报错no enough space"></a>无人机使用WIFI更新固件的时候，显示没有足够的空间报错no enough space</h1><p>我们正常刷新的固件的时候会显示 no enough space 或者 failed above<br>解决上面的问题可以使用一下</p><span id="more"></span><h1 id="使用清除缓存的固件"><a href="#使用清除缓存的固件" class="headerlink" title="使用清除缓存的固件"></a>使用清除缓存的固件</h1><p>固件地址：<a href="https://pan.quark.cn/s/907bf201873a#/list/share">https://pan.quark.cn/s/907bf201873a#/list/share</a><br>点击链接复制 下载清除缓存固件<br>然后再次连接上我们的遥控器的WIFI选着刚才下载的<code>清楚缓存固件</code><br>然后在重新刷写，刷写好了之后，重新开机</p><h1 id="刷写你需要的固件"><a href="#刷写你需要的固件" class="headerlink" title="刷写你需要的固件"></a>刷写你需要的固件</h1><p>下载对应的FPV radio固件 然后刷写就好了 此方法也适合降级刷写！</p>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;无人机使用WIFI更新固件的时候，显示没有足够的空间报错no-enough-space&quot;&gt;&lt;a href=&quot;#无人机使用WIFI更新固件的时候，显示没有足够的空间报错no-enough-space&quot; class=&quot;headerlink&quot; title=&quot;无人机使用WIFI更新固件的时候，显示没有足够的空间报错no enough space&quot;&gt;&lt;/a&gt;无人机使用WIFI更新固件的时候，显示没有足够的空间报错no enough space&lt;/h1&gt;&lt;p&gt;我们正常刷新的固件的时候会显示 no enough space 或者 failed above&lt;br&gt;解决上面的问题可以使用一下&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="FPV" scheme="https://www.pw0n.xyz/categories/FPV/"/>
+    
+    
+    <category term="FPV" scheme="https://www.pw0n.xyz/tags/FPV/"/>
+    
+  </entry>
   
   <entry>
     <title>申请Adsense“低质量内容”被拒绝</title>
@@ -517,28 +538,6 @@
     <category term="Linux" scheme="https://www.pw0n.xyz/tags/Linux/"/>
     
     <category term="SSH" scheme="https://www.pw0n.xyz/tags/SSH/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VIM编辑器那些坑（二）</title>
-    <link href="https://www.pw0n.xyz/VIM%E7%BC%96%E8%BE%91%E5%99%A8%E9%82%A3%E4%BA%9B%E5%9D%91%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
-    <id>https://www.pw0n.xyz/VIM%E7%BC%96%E8%BE%91%E5%99%A8%E9%82%A3%E4%BA%9B%E5%9D%91%EF%BC%88%E4%BA%8C%EF%BC%89/</id>
-    <published>2024-07-17T14:25:05.000Z</published>
-    <updated>2024-12-12T03:27:25.928Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="VIM编辑器那些坑-二"><a href="#VIM编辑器那些坑-二" class="headerlink" title="VIM编辑器那些坑(二)"></a>VIM编辑器那些坑(二)</h1><h2 id="VIM界外复制！！！😕"><a href="#VIM界外复制！！！😕" class="headerlink" title="VIM界外复制！！！😕"></a>VIM界外复制！！！😕</h2><p>遇到从外界复制你是不是以为ctrl+v ，然而vim并不会粘贴，那么要怎么粘贴呢？<br>我们先从外面复制文字 然后 打开vim 在命令模式下 输入:+p这要就能复制到你的内容了<br>如果你用的是Putty或者是Xshell,你可以直接从外界复制，然后到vim点击右键直接复制。</p><h2 id="VIM界内复制和粘贴"><a href="#VIM界内复制和粘贴" class="headerlink" title="VIM界内复制和粘贴"></a>VIM界内复制和粘贴</h2><span id="more"></span><p>命令模式下 直接输入yy是复制一行 我们直接输入p 就可以往下面粘贴<br>小写p是往下面粘贴 大写P是往上面复制<br>yw在当前行复制 在输入p直接在该行粘贴</p><h2 id="VIM删除该行"><a href="#VIM删除该行" class="headerlink" title="VIM删除该行"></a>VIM删除该行</h2><p>dd命令就可以删除<br>怎么删除你想要的行呢？ 输入：1,3 d 这就是表示你要从第一行到第三行删除</p><p>很多人都不知道键盘还有个home键和end键都没用过 这个无论是linux windows mac 都能使用在编辑器下 home就是跳到你该行第一位 end就相反跳到最后一位</p><blockquote><p>学太多反而害了你</p></blockquote>]]></content>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;VIM编辑器那些坑-二&quot;&gt;&lt;a href=&quot;#VIM编辑器那些坑-二&quot; class=&quot;headerlink&quot; title=&quot;VIM编辑器那些坑(二)&quot;&gt;&lt;/a&gt;VIM编辑器那些坑(二)&lt;/h1&gt;&lt;h2 id=&quot;VIM界外复制！！！😕&quot;&gt;&lt;a href=&quot;#VIM界外复制！！！😕&quot; class=&quot;headerlink&quot; title=&quot;VIM界外复制！！！😕&quot;&gt;&lt;/a&gt;VIM界外复制！！！😕&lt;/h2&gt;&lt;p&gt;遇到从外界复制你是不是以为ctrl+v ，然而vim并不会粘贴，那么要怎么粘贴呢？&lt;br&gt;我们先从外面复制文字 然后 打开vim 在命令模式下 输入:+p这要就能复制到你的内容了&lt;br&gt;如果你用的是Putty或者是Xshell,你可以直接从外界复制，然后到vim点击右键直接复制。&lt;/p&gt;
-&lt;h2 id=&quot;VIM界内复制和粘贴&quot;&gt;&lt;a href=&quot;#VIM界内复制和粘贴&quot; class=&quot;headerlink&quot; title=&quot;VIM界内复制和粘贴&quot;&gt;&lt;/a&gt;VIM界内复制和粘贴&lt;/h2&gt;</summary>
-    
-    
-    
-    <category term="VIM" scheme="https://www.pw0n.xyz/categories/VIM/"/>
-    
-    
-    <category term="vim" scheme="https://www.pw0n.xyz/tags/vim/"/>
     
   </entry>
   
