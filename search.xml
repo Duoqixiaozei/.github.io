@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>FPV穿越机遥控器使用WIFI更新固件的时候，显示没有足够的空间报错no enough space</title>
+    <url>/FPV-falied/</url>
+    <content><![CDATA[<h1 id="我们正常刷新的固件的时候会显示-no-enough-space-或者-failed-above"><a href="#我们正常刷新的固件的时候会显示-no-enough-space-或者-failed-above" class="headerlink" title="我们正常刷新的固件的时候会显示 no enough space 或者 failed above"></a>我们正常刷新的固件的时候会显示 no enough space 或者 failed above</h1><p>解决上面的问题可以使用一下</p>
+<span id="more"></span>
+
+<h1 id="使用清除缓存的固件"><a href="#使用清除缓存的固件" class="headerlink" title="使用清除缓存的固件"></a>使用清除缓存的固件</h1><p>固件地址：<a href="https://pan.quark.cn/s/907bf201873a#/list/share">https://pan.quark.cn/s/907bf201873a#/list/share</a><br>点击链接复制 下载清除缓存固件<br>然后再次连接上我们的遥控器的WIFI选着刚才下载的<code>清楚缓存固件</code><br>然后在重新刷写，刷写好了之后，重新开机</p>
+<h1 id="刷写你需要的固件"><a href="#刷写你需要的固件" class="headerlink" title="刷写你需要的固件"></a>刷写你需要的固件</h1><p>下载对应的FPV radio固件 然后刷写就好了 此方法也适合降级刷写！</p>
+]]></content>
+      <categories>
+        <category>FPV</category>
+        <category>FPV报错</category>
+      </categories>
+      <tags>
+        <tag>FPV</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>如何使用Google Cloud中的SSH远程连接服务器：详细教程</title>
     <url>/Google-Cloud-SSH%E8%BF%9C%E7%A8%8B%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<p>打开这个网址<a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html</a><br>找到puttygen.exe (a RSA and DSA key generation utility)，找不到可以直接Ctrl + F 输入puttygen.exe (a RSA and DSA key generation utility)<br>会自动跳转到你找的信息，比如我的是chrome浏览器搜索到是有橙色来提醒找到的目标 找你对应的电脑架构类型下载 x86就下载x86的</p>
@@ -1502,19 +1519,97 @@ ESP8266 智能设备</p>
       </tags>
   </entry>
   <entry>
-    <title>无人机使用WIFI更新固件的时候，显示没有足够的空间报错no enough space</title>
-    <url>/FPV-falied/</url>
-    <content><![CDATA[<h1 id="无人机使用WIFI更新固件的时候，显示没有足够的空间报错no-enough-space"><a href="#无人机使用WIFI更新固件的时候，显示没有足够的空间报错no-enough-space" class="headerlink" title="无人机使用WIFI更新固件的时候，显示没有足够的空间报错no enough space"></a>无人机使用WIFI更新固件的时候，显示没有足够的空间报错no enough space</h1><p>我们正常刷新的固件的时候会显示 no enough space 或者 failed above<br>解决上面的问题可以使用一下</p>
-<span id="more"></span>
-
-<h1 id="使用清除缓存的固件"><a href="#使用清除缓存的固件" class="headerlink" title="使用清除缓存的固件"></a>使用清除缓存的固件</h1><p>固件地址：<a href="https://pan.quark.cn/s/907bf201873a#/list/share">https://pan.quark.cn/s/907bf201873a#/list/share</a><br>点击链接复制 下载清除缓存固件<br>然后再次连接上我们的遥控器的WIFI选着刚才下载的<code>清楚缓存固件</code><br>然后在重新刷写，刷写好了之后，重新开机</p>
-<h1 id="刷写你需要的固件"><a href="#刷写你需要的固件" class="headerlink" title="刷写你需要的固件"></a>刷写你需要的固件</h1><p>下载对应的FPV radio固件 然后刷写就好了 此方法也适合降级刷写！</p>
+    <title>内地小白香港办卡指南：汇丰与中银实战攻略</title>
+    <url>/hk-bank/</url>
+    <content><![CDATA[<h1 id="行前准备"><a href="#行前准备" class="headerlink" title="行前准备"></a>行前准备</h1><ul>
+<li><strong>必备证件：</strong><ul>
+<li>港澳通行证</li>
+<li>身份证</li>
+<li>过关小票（务必保留）</li>
+<li>入境记录 PDF（线上预约中银时需用到，微信小程序“移民局12367”查询）</li>
+<li>护照（如需开通美股账户）</li>
+</ul>
+</li>
+<li><strong>现金：</strong> 港币 100-500 元</li>
+<li><strong>网络准备：</strong><ul>
+<li>提前在内地购买香港跨境流量，并开启手机数据漫游。</li>
+<li>若手机无法使用 Google Play，可提前下载 Apkpure，用于下载香港银行 App。</li>
+<li>银行营业厅内一般有免费 Wi-Fi。</li>
+</ul>
+</li>
+<li><strong>银行 App 预下载（可选）：</strong><ul>
+<li>汇丰银行：香港汇丰流动理财</li>
+<li>中国银行：BOCHK 中银香港</li>
+</ul>
+</li>
+<li><strong>银行预约（强烈建议）：</strong><ul>
+<li>汇丰银行预约链接：<a href="https://www.eticketing.hsbc.com.hk/mobile/Selector/Booking/SC/12"><br>https://www.eticketing.hsbc.com.hk/mobile/Selector/Booking/SC/12</a></li>
+<li>中国银行预约链接：<br><a href="https://transaction.bochk.com/whk/form/openAccount/input.action?lang=zh_HK">https://transaction.bochk.com/whk/form/openAccount/input.action?lang=zh_HK</a></li>
+<li><strong>重要提示：</strong> 务必提前线上预约，避免现场长时间等待。</li>
+</ul>
+</li>
+</ul>
+<h1 id="赴港流程"><a href="#赴港流程" class="headerlink" title="赴港流程"></a>赴港流程</h1><ol>
+<li><strong>跨境网络设置：</strong><ul>
+<li>在内地购买香港跨境流量，并开启数据漫游。</li>
+<li>以OPPO手机为例：移动网络-国际上网。<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/fix-dir%2Fblog%2F1%2F2025%2F02%2F25%2F14-56-43-599f8f1cd2cb93cd4063f79d39db18b6-setting-1-895bc7.webp" alt="setting"><br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/fix-dir%2Fblog%2F1%2F2025%2F02%2F25%2F14-56-43-1ff2c02de2c1d9795e00f105a81d7568-setting-2-f805c3.webp" alt="setting2"><br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/fix-dir%2Fblog%2F1%2F2025%2F02%2F25%2F14-56-43-75a5aaf18a8bffe987dd241a8001b6b9-setting-3-52612c.webp" alt="setting3"></li>
+</ul>
+</li>
+<li><strong>交通方式：</strong><ul>
+<li>选择高铁、深圳福田口岸或其他口岸前往香港。</li>
+</ul>
+</li>
+<li><strong>过关：</strong><ul>
+<li>刷港澳通行证过关，并保留过关小票。<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/fix-dir%2Fblog%2F1%2F2025%2F02%2F25%2F15-14-10-f4d51246405ca856e0a12c623b6fdf63-id-ticket-7d6544.webp" alt="id-ticket"></li>
+</ul>
+</li>
+<li><strong>取款：</strong><ul>
+<li>抵达西九龙或落马洲后，寻找中国银行 ATM 取款机。</li>
+<li>建议一次性取出所需港币（推荐 400 元，可获得多张 100 元面额），避免多次手续费。</li>
+</ul>
+</li>
+</ol>
+<h1 id="银行办理"><a href="#银行办理" class="headerlink" title="银行办理"></a>银行办理</h1><h2 id="汇丰银行（线下办理）"><a href="#汇丰银行（线下办理）" class="headerlink" title="汇丰银行（线下办理）"></a>汇丰银行（线下办理）</h2><ul>
+<li><strong>推荐支行：</strong> 红磡支行（办理速度较快）</li>
+<li><strong>办理流程：</strong><ul>
+<li>线上预约者，凭二维码在前台取号。</li>
+<li>等待叫号，注意粤语、英语、中文三种语言。</li>
+<li>向银行工作人员出示港澳通行证、身份证、过关小票。</li>
+<li>如需开通理财账户，提供券商 App 三个月交易记录或支付宝基金购买记录。</li>
+<li>如需开通美股账户，则需要提供护照。</li>
+<li>如实回答银行工作人员提问，填写相关表格。</li>
+<li>填写通讯地址（可用拼音或英文）。</li>
+<li>在柜员机选择无卡存款，向自己的银行账户转账 100 港币激活银行卡。</li>
+</ul>
+</li>
+</ul>
+<h2 id="中国银行（线上办理）"><a href="#中国银行（线上办理）" class="headerlink" title="中国银行（线上办理）"></a>中国银行（线上办理）</h2><ul>
+<li><strong>网络要求：</strong> 必须使用香港本地网络，不可使用 VPN。</li>
+<li><strong>办理流程：</strong><ul>
+<li>下载并打开 BOCHK 中银香港 App。</li>
+<li>点击“开户”，填写个人资料，拍摄身份证。</li>
+<li>上传入境记录 PDF（通过微信小程序“移民局 12367”查询并保存）。</li>
+<li>按照app提示操作，即可快速完成线上开户。</li>
+</ul>
+</li>
+</ul>
+<h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><ul>
+<li>务必提前预约，避免现场长时间等待。</li>
+<li>跨境流量与漫游：务必提前购买香港流量，并开启数据漫游，避免高额漫游费用。</li>
+<li>取款注意事项：一次性取完所需现金，避免多次手续费。</li>
+<li>汇丰填写地址，可以使用拼音，或者英文。</li>
+<li>中国银行线上开户，需要香港本地的网络。</li>
+</ul>
 ]]></content>
       <categories>
-        <category>FPV</category>
+        <category>香港开卡</category>
+        <category>记录</category>
       </categories>
       <tags>
-        <tag>FPV</tag>
+        <tag>记录</tag>
+        <tag>HK</tag>
+        <tag>香港中国银行</tag>
+        <tag>香港汇丰银行</tag>
       </tags>
   </entry>
 </search>
