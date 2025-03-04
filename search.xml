@@ -631,7 +631,7 @@
   <entry>
     <title>内地小白香港办卡指南：汇丰与中银实战攻略</title>
     <url>/hk-bank/</url>
-    <content><![CDATA[<h1 id="行前准备"><a href="#行前准备" class="headerlink" title="行前准备"></a>行前准备</h1><ul>
+    <content><![CDATA[<h1 id="📋-行前准备清单"><a href="#📋-行前准备清单" class="headerlink" title="📋 行前准备清单"></a>📋 行前准备清单</h1><ul>
 <li><p><strong>必备证件：</strong></p>
 <ul>
 <li>港澳通行证</li>
@@ -651,50 +651,69 @@
 </ul>
 </li>
 <li><p><strong>银行 App 预下载（可选）：</strong></p>
-<ul>
-<li>汇丰银行：香港汇丰流动理财</li>
-<li>中国银行：BOCHK 中银香港<span id="more"></span></li>
-</ul>
+<span id="more"></span>
+<table>
+<thead>
+<tr>
+<th>银行</th>
+<th>应用名称</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>汇丰银行</td>
+<td>香港汇丰流动理财</td>
+</tr>
+<tr>
+<td>中国银行</td>
+<td>bochk中银香港</td>
+</tr>
+</tbody></table>
 </li>
 <li><p><strong>银行预约（强烈建议）：</strong></p>
 <ul>
-<li>汇丰银行预约链接：<a href="https://www.eticketing.hsbc.com.hk/mobile/Selector/Booking/SC/12"><br>https://www.eticketing.hsbc.com.hk/mobile/Selector/Booking/SC/12</a></li>
+<li>汇丰银行预约链接:<br><a href="https://www.eticketing.hsbc.com.hk/mobile/Selector/Booking/SC/12">https://www.eticketing.hsbc.com.hk/mobile/Selector/Booking/SC/12</a></li>
 <li>中国银行预约链接：<br><a href="https://transaction.bochk.com/whk/form/openAccount/input.action?lang=zh_HK">https://transaction.bochk.com/whk/form/openAccount/input.action?lang=zh_HK</a></li>
 <li><strong>重要提示：</strong> 务必提前线上预约，避免现场长时间等待。</li>
 </ul>
 </li>
 </ul>
-<h1 id="赴港流程"><a href="#赴港流程" class="headerlink" title="赴港流程"></a>赴港流程</h1><ol>
-<li><strong>跨境网络设置：</strong><ul>
+<h1 id="🚄赴港流程"><a href="#🚄赴港流程" class="headerlink" title="🚄赴港流程"></a>🚄赴港流程</h1><ol>
+<li><p><strong>跨境网络设置：</strong></p>
+<ul>
 <li>在内地购买香港跨境流量，并开启数据漫游。</li>
-<li>以OPPO手机为例：移动网络-国际上网。<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/fix-dir%2Fblog%2F1%2F2025%2F02%2F25%2F14-56-43-599f8f1cd2cb93cd4063f79d39db18b6-setting-1-895bc7.webp" alt="setting"><br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/fix-dir%2Fblog%2F1%2F2025%2F02%2F25%2F14-56-43-1ff2c02de2c1d9795e00f105a81d7568-setting-2-f805c3.webp" alt="setting2"><br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/fix-dir%2Fblog%2F1%2F2025%2F02%2F25%2F14-56-43-75a5aaf18a8bffe987dd241a8001b6b9-setting-3-52612c.webp" alt="setting3"></li>
+<li><strong>以OPPO手机</strong>为例：移动网络-国际上网。<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/fix-dir%2Fblog%2F1%2F2025%2F02%2F25%2F14-56-43-599f8f1cd2cb93cd4063f79d39db18b6-setting-1-895bc7.webp" alt="setting" width="30%" height="30%">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/fix-dir%2Fblog%2F1%2F2025%2F02%2F25%2F14-56-43-1ff2c02de2c1d9795e00f105a81d7568-setting-2-f805c3.webp" alt="setting 2" width="30%" height="30%">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/fix-dir%2Fblog%2F1%2F2025%2F02%2F25%2F14-56-43-75a5aaf18a8bffe987dd241a8001b6b9-setting-3-52612c.webp" alt="setting3" width="30%" height="30%"></li>
 </ul>
 </li>
-<li><strong>交通方式：</strong><ul>
+<li><p><strong>交通方式：</strong></p>
+<ul>
 <li>选择高铁、深圳福田口岸或其他口岸前往香港。</li>
 </ul>
 </li>
-<li><strong>过关：</strong><ul>
-<li>刷港澳通行证过关，并保留过关小票。<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/fix-dir%2Fblog%2F1%2F2025%2F02%2F25%2F15-14-10-f4d51246405ca856e0a12c623b6fdf63-id-ticket-7d6544.webp" alt="id-ticket"></li>
+<li><p><strong>过关：</strong></p>
+<ul>
+<li>刷港澳通行证过关，并保留过关小票。<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/fix-dir%2Fblog%2F1%2F2025%2F02%2F25%2F15-14-10-f4d51246405ca856e0a12c623b6fdf63-id-ticket-7d6544.webp" alt="ticket" width="30%" height="30%"></li>
 </ul>
 </li>
-<li><strong>取款：</strong><ul>
+<li><p><strong>取款：</strong></p>
+<ul>
 <li>抵达西九龙或落马洲后，寻找中国银行 ATM 取款机。</li>
 <li>建议一次性取出所需港币（推荐 400 元，可获得多张 100 元面额），避免多次手续费。</li>
 </ul>
 </li>
 </ol>
-<h1 id="银行办理"><a href="#银行办理" class="headerlink" title="银行办理"></a>银行办理</h1><h2 id="汇丰银行（线下办理）"><a href="#汇丰银行（线下办理）" class="headerlink" title="汇丰银行（线下办理）"></a>汇丰银行（线下办理）</h2><ul>
+<h1 id="🏦银行办理"><a href="#🏦银行办理" class="headerlink" title="🏦银行办理"></a>🏦银行办理</h1><h2 id="汇丰银行（线下办理）"><a href="#汇丰银行（线下办理）" class="headerlink" title="汇丰银行（线下办理）"></a>汇丰银行（线下办理）</h2><ul>
 <li><strong>推荐支行：</strong> 红磡支行（办理速度较快）</li>
 <li><strong>办理流程：</strong><ul>
 <li>线上预约者，凭二维码在前台取号。</li>
 <li>等待叫号，注意粤语、英语、中文三种语言。</li>
 <li>向银行工作人员出示港澳通行证、身份证、过关小票。</li>
 <li>如需开通理财账户，提供券商 App 三个月交易记录或支付宝基金购买记录。</li>
-<li>如需开通美股账户，则需要提供护照。</li>
+<li>如需开通美股账户，则需要提供护照。（如何用汇丰理财来购买请看我的文章）</li>
 <li>如实回答银行工作人员提问，填写相关表格。</li>
 <li>填写通讯地址（可用拼音或英文）。</li>
-<li>在柜员机选择无卡存款，向自己的银行账户转账 100 港币激活银行卡。</li>
+<li>在柜员机选择无卡存款,有卡的话直接插入然后存钱，向自己的银行账户转账 100 港币激活银行卡。</li>
 </ul>
 </li>
 </ul>
@@ -705,16 +724,25 @@
 <li>点击“开户”，填写个人资料，拍摄身份证。</li>
 <li>上传入境记录 PDF（通过微信小程序“移民局 12367”查询并保存）。</li>
 <li>按照app提示操作，即可快速完成线上开户。</li>
+<li>线上开户，特别注意平邮寄送，如果着急并且觉得找不到邮件的话可以找中国银行香港客服寻求挂号信寄出（注意挂号信和DHL都有另外收费客服会发给你，一般是你到了之后充值卡里才会扣）</li>
+</ul>
+</li>
+<li><strong>平邮寄件：</strong><ul>
+<li>线上申请的开户的，记得问一下你附近的邮政局，拨打电话11185转人工，然后和客服说一下你在中银填的地址信息，和客服沟通留意一下带你的邮件就行，一般他们会和你附近的网点拨打电话并通知你。</li>
+<li>可以从微信公众号搜索 <strong>中国邮政局微邮局</strong> -<strong>微服务</strong>-<strong>查询 |寄件| 资费</strong>-<strong>查询服务</strong>-<strong>网点查询</strong>，找最附近的网点询问一下是否能接收到香港的平邮，如果不行询问一下哪些网点可以接收到香港平邮，如果可以或者得到了该网点的电话可以和他们说留意一下你的地址然后到件可以拨打电话或者发短信给你去自取。（你不打的话 不在家或者家里没有信箱会被退回！！！）</li>
 </ul>
 </li>
 </ul>
-<h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><ul>
+<h1 id="⚠️注意事项"><a href="#⚠️注意事项" class="headerlink" title="⚠️注意事项"></a>⚠️注意事项</h1><ul>
 <li>务必提前预约，避免现场长时间等待。</li>
 <li>跨境流量与漫游：务必提前购买香港流量，并开启数据漫游，避免高额漫游费用。</li>
 <li>取款注意事项：一次性取完所需现金，避免多次手续费。</li>
 <li>汇丰填写地址，可以使用拼音，或者英文。</li>
 <li>中国银行线上开户，需要香港本地的网络。</li>
 </ul>
+<blockquote>
+<p>🔔 <strong>下期预告</strong>：揭秘香港银行卡无损入金技巧！关注获取最新跨境金融攻略</p>
+</blockquote>
 ]]></content>
       <categories>
         <category>香港开卡</category>
@@ -1805,6 +1833,56 @@ ESP8266 智能设备</p>
       </categories>
       <tags>
         <tag>记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>中银跨境转账零手续费攻略（内地→香港）</title>
+    <url>/hsbc-investment/</url>
+    <content><![CDATA[<h1 id="🌟-前期准备清单"><a href="#🌟-前期准备清单" class="headerlink" title="🌟 前期准备清单"></a>🌟 前期准备清单</h1><p>在开始操作前，请确认你已备齐以下”装备”：<br>1️⃣ <strong>香港中银账户</strong><br>✅ 已完成开户<br>✅ 调整好转账额度（建议提前联系银行确认）</p>
+<p>2️⃣ <strong>内地中国银行账户</strong>（没有以下全部条件要去柜台开通哦！）<br>✅ 必须为一类账户<br>✅ 已开通”活期一本通”功能（二/三类卡需升级为一类账户）</p>
+<span id="more"></span>
+
+<hr>
+<h1 id="💱-购汇操作指南"><a href="#💱-购汇操作指南" class="headerlink" title="💱 购汇操作指南"></a>💱 购汇操作指南</h1><h2 id="📱-手机银行操作步骤（以港币为例）"><a href="#📱-手机银行操作步骤（以港币为例）" class="headerlink" title="📱 手机银行操作步骤（以港币为例）"></a>📱 手机银行操作步骤（以港币为例）</h2><ol>
+<li>打开APP搜索栏输入【购汇】</li>
+<li>选择【港币】或其他目标币种</li>
+<li>输入需要兑换的金额</li>
+<li><strong>关键选择</strong> → 务必勾选【现汇】（非现钞！）</li>
+</ol>
+<p>❗ 常见问题解决：<br>若提示”<strong>没有活期一本通账户</strong>“，请携带身份证至柜台办理。以深圳为例，30分钟即可完成开通。<br><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="https://cdn.jsdelivr.net/gh/duoqixiaozei/img@master/fix-dir%2Fblog%2F1%2F2025%2F03%2F04%2F15-37-10-0d88d4f44a08b3591d95d53be66a01c1-no-huoqiyibentong-191b05.webp" alt="没有活期一本通" width="305" height="30%"></p>
+<hr>
+<h1 id="🌐-跨境汇款全流程"><a href="#🌐-跨境汇款全流程" class="headerlink" title="🌐 跨境汇款全流程"></a>🌐 跨境汇款全流程</h1><h2 id="📍-填写注意事项（重点！）"><a href="#📍-填写注意事项（重点！）" class="headerlink" title="📍 填写注意事项（重点！）"></a>📍 填写注意事项（重点！）</h2><ol>
+<li><p><strong>入口选择</strong><br>进入【跨境汇款】→ 点击右上角【切换入口】→ 选择【跨境中行】</p>
+</li>
+<li><p><strong>收款信息填写</strong></p>
+<ul>
+<li>📛 姓名：大写拼音，注意姓后面要空一格 名不用空格（例：ZHANG SAN）</li>
+<li>🔢 账号类型：<br>▶️ 港币汇款 → 填写<strong>储蓄账户号</strong><br>▶️ 其他币种 → 填写<strong>外汇宝账户号</strong></li>
+<li>🌍 地区信息：<br>▶️ 国家/地区：中国香港<br>▶️ 省份：HONG KONG<br>▶️ 地址建议填写酒店地址（示例）：NO.1 COASTAL PEAK ROAD, TUEN MUN DISTRICT</li>
+<li>📮 邮编：填写内地居住地邮编（可百度查询）</li>
+<li>🎯 汇款用途：填写【私人旅游】（建议与购汇用途保持一致）</li>
+</ul>
+</li>
+<li><p><strong>安全验证</strong><br>首次操作需开通【手机盾】，按提示设置交易码即可</p>
+</li>
+</ol>
+<hr>
+<h1 id="⏳-汇款到账时间"><a href="#⏳-汇款到账时间" class="headerlink" title="⏳ 汇款到账时间"></a>⏳ 汇款到账时间</h1><p>通常1-3个工作日到账，节假日顺延。建议：<br>✅ 工作日早上操作<br>✅ 保留汇款凭证<br>✅ 到账后登录香港中银APP确认</p>
+<hr>
+<h1 id="💡-常见问题答疑"><a href="#💡-常见问题答疑" class="headerlink" title="💡 常见问题答疑"></a>💡 常见问题答疑</h1><p>Q：为什么建议填写酒店地址？<br>A：部分用户反馈使用开户地址可能触发审核，建议使用其他有效地址</p>
+<p>Q：现汇和现钞的区别？<br>A：现汇用于转账手续费更低，现钞适合现金提取（本教程需使用现汇）</p>
+<p>Q：如何查找外汇宝账户号？<br>A：登录香港中银APP →【账户总览】→ 查看对应币种账户号</p>
+<blockquote>
+<p>✨ 小贴士：操作前建议截图保存每一步骤，汇款金额较大时可分笔操作降低风险。如遇问题，可拨打中国银行客服热线95566（内地）/ +852 3988 2388（香港）咨询。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>中银转香港中银</category>
+      </categories>
+      <tags>
+        <tag>跨境转账</tag>
+        <tag>BOC中银</tag>
+        <tag>入金</tag>
       </tags>
   </entry>
 </search>
